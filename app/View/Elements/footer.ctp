@@ -1,0 +1,1 @@
+<div class="rela-block footer"><p>FOOTER</p><br><p>Classic deluxe custom designer luxury prestige high-quality premium select gourmet pocket pencil sharpener.<br><br>Yours for the asking, no purchase necessary. It's our way of saying thank you.</p></div>
