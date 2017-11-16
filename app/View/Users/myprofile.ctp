@@ -1,5 +1,12 @@
 <!-- FONTS --><!-- Roboto, Yellowtail, and Montserrat -->
 <!-- PAGE STUFF -->
+<?php
+if ($finduser['User']['profile_image'] != '') {
+    $img = Router::url("/" . $finduser['User']['profile_image'], true);
+} else {
+    $img = Router::url("/img/images/uploadPhotoAvatarGroup.png", true);
+}
+?>
 <div class="container">
      <div class="row">
         <div class="rela-block profile-card text-center" style="margin-top: 0px!important;padding: 10px;">
@@ -115,7 +122,7 @@
   width: 180px;
   border: 10px solid #fff;
   border-radius: 100%;
-  background: url("https://pbs.twimg.com/media/CdbiubzVIAANj8J.jpg") center no-repeat;
+  background: url(<?php echo $img; ?>) center no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 550px) {

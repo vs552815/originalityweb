@@ -197,7 +197,7 @@
 
 .card.hovercard .cardheader {
     background: url("http://lorempixel.com/850/280/nature/4/");
-    background-size: cover;
+    background-size: contain;
     height: 135px;
 }
 
@@ -215,7 +215,7 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 5px solid rgba(255,255,255,0.5);
+    
 }
 
 .card.hovercard .info {

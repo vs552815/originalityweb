@@ -19,14 +19,16 @@ if ($imge['User']['profile_image'] != '') {
             <div class="row">
                 <div class="col-md-12">
                     <div>
-                        <?php echo $this->Html->image($fileuser, array('class' => 'img-circle img-thumbnail')); ?>
+                         <h2><?php echo $imge['User']['fullname'] ?></h2>
 
-                        <h2><?php echo $imge['User']['fullname'] ?></h2>
-                     
-                        <div class="btn-group">
-                            <?php echo $this->Form->file('User.profile_image', array('id' => 'my_file', 'accept' => 'image/*')); ?>
-
-                        </div>
+                                <div class="col-lg-12 col-md-12 " >
+                                    <div id="1cttt" style="display:none;"><div id="upload-uimg"></div>
+                                        <div ><a class="btn btn-success upload"  style="    width: 100%;">Crop Image</a> </div>
+                                    </div> 
+                                    <?php echo $this->Html->image($fileuser, array('style' => 'width:100%;cursor:pointer;', 'id' => 'select-uimg','class' => 'img-circle img-thumbnail')); ?><br>
+                                    <?php echo $this->Form->file('User.profile_image', array('id' => 'my_uimg', 'style' => 'display:none', 'accept' => 'image/*')); ?> 
+                                    <?php echo $this->Form->input('profile_img', array('type' => 'hidden', 'id' => 'hiddenfield_uimg')); ?>
+                                </div>
                     </div>
                 </div>
             </div>

@@ -28,12 +28,12 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <link rel="icon" type="image/png"  href="<?php echo $this->Html->url('/'); ?>img/images/icon.png">
         <title> Find Security Jobs in the New York City Area - SecurityHorse</title>
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Yellowtail" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Yellowtail" rel="stylesheet">
 
         <?php
         echo $this->Html->css(array('bootstrap.min.css'));
         echo $this->Html->css(array('cover.css'));
-         echo $this->Html->css(array('main.css'));
+        echo $this->Html->css(array('main.css'));
         echo $this->Html->css(array('croppie.css'));
         echo $this->Html->css(array('http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css'));
         echo $this->Html->css(array('https://fonts.googleapis.com/css?family=Ubuntu:300,400'));
@@ -55,21 +55,34 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         echo $this->fetch('css');
         echo $this->fetch('script');
         ?>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5915063633225550",
+    enable_page_level_ads: true
+  });
+</script>
+        
     </head>
-    <body >
-        <input type="hidden" id="refreshed" value="no">
-        <?php echo $this->Flash->render(); ?>
+    <body style="    height: 100%;
+          display: flex;
+          display: -webkit-flex;
+          flex-direction: column;
+          -webkit-flex-direction: column;">
+          <?php echo $this->Flash->render(); ?>
 
-        <div id="wrapper" style="background-color: #f4f4f4;">
-            <?php echo $this->element('header'); ?>
-            <?php echo $this->fetch('content'); ?>
-            <?php echo $this->element('modal'); ?>
-            <?php //echo $this->element('footer'); ?>
+        <div style="background-color: #f4f4f4;    flex: 1 0 auto;
+             -webkit-flex: 1 0 auto;
+             min-height: 200px;">
+             <?php echo $this->element('header'); ?>
+             <?php echo $this->fetch('content'); ?>
+             <?php echo $this->element('modal'); ?>
+             <?php //echo $this->element('footer'); ?>
         </div>
 
         <?php
         echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js');
-        echo $this->Html->script('js-webshim/minified/polyfiller.js');
+        //echo $this->Html->script('js-webshim/minified/polyfiller.js');
         echo $this->Html->script('https://code.jquery.com/ui/1.12.1/jquery-ui.js');
         echo $this->Html->script('croppie.js');
         echo $this->Html->script('jquery.numeric.js');
@@ -88,18 +101,47 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         </style>
 
 
-
-        <script async defer 
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNSNEtP6ofLe8OEzJWin8FGjuRfQ9JNKc&callback=initialize">
-        </script>  
-
         <?php echo $this->Html->script(array('https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js'));
         ?>
+        <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=yz0vdodim66ub96zkbvjwicbirva0y6scbuqyd85hbr16yrj"></script>
 
- <script type="text/javascript">
-            var webURL = '<?php echo $this->Html->url('/'); ?>'       
-  </script>
+        <script>
+            tinymce.init({
+
+                selector: '#textbottom',
+                height: 200,
+                theme: 'modern',
+                plugins: [
+                    'autolink  hr anchor pagebreak',
+                    'searchreplace wordcount',
+                    'emoticons template paste textcolor colorpicker textpattern '
+                ],
+
+                fontsize_formats: '8pt 10pt 12pt 14pt 18pt 24pt 36pt',
+                toolbar1: ' fontsizeselect | undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+                toolbar2: ' forecolor backcolor ',
+                image_advtab: false,
+                templates: [
+                    {title: 'Test template 1', content: 'Test 1'},
+                    {title: 'Test template 2', content: 'Test 2'}
+                ],
+                content_css: [
+                    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+                    '//www.tinymce.com/css/codepen.min.css',
+                    '//www.securityhorse.com/app/webroot/css/message.css'
+                ],
+                theme_advanced_font_sizes: "10px,12px,13px,14px,16px,18px,20px",
+                font_size_style_values: "10px,12px,13px,14px,16px,18px,20px"
+            });
+
+        </script>
+
+        <script type="text/javascript">
+            var webURL = '<?php echo $this->Html->url('/'); ?>'
+        </script>
         <?php echo $this->Html->script(array('main.js')); ?>
+
+
 
 
     </body>
