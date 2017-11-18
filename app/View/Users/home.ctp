@@ -18,9 +18,11 @@
                     </div>
                     <div class="info">
                         <div class="title">
-                            <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'readpost', $story['Story']['id'])); ?>"><?php echo $story['Story']['title']; ?></a>
+                            
+                            <a  href="<?php echo $this->Html->url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $story['Story']['story_slug'])); ?>">
+                                <?php echo strip_tags($story['Story']['title']); ?></a>
                         </div>
-                        <div class="desc"><?php echo $story['Story']['stroy']; ?></div>
+                        <div class="desc"><?php //echo strip_tags($story['Story']['stroy']);   ?></div>
 
                     </div>
 

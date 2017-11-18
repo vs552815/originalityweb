@@ -3,26 +3,29 @@
     <h2 class="text-center">My Post</h2>
             
             <?php foreach ($user as $value) { ?>
-     <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
-                        <div class="view">
-                            <div class="caption">
-                                <p>47LabsDesign</p>
-                                <a href="" rel="tooltip" title="Appreciate"><span class="fa fa-heart-o fa-2x"></span></a>
-                                <a href="" rel="tooltip" title="View"><span class="fa fa-search fa-2x"></span></a>
-                            </div>
-                            <?php echo $this->Html->image($value['Story']['image'],array('class'=>'img-responsive','style'=>'height:200px;'))?>
-                         
-                        </div>
-                        <div class="info">
-                            <p class="small" style="text-overflow: ellipsis"><?php echo $value['User']['fullname']; ?></p>
-                             <p class="small" style="text-overflow: ellipsis"><?php echo $value['Story']['stroy']; ?></p>
-                            <p class="small coral text-right"><i class="fa fa-clock-o"></i> Posted Today | 10:42 A.M.</small>
-                        </div>
-                        <div class="stats turqbg">
-                            <span class="fa fa-heart-o"> <strong>47</strong></span>
-                            <span class="fa fa-eye pull-right"> <strong>137</strong></span>
-                        </div>
+    
+     <div class="col-lg-3 col-sm-6">
+
+                <div class="card hovercard">
+                    <div class="cardheader" style=" background-image: url(<?php echo $value['Story']['image']; ?>);">
+
                     </div>
+                    <div class="avatar">
+
+                        <?php echo $this->Html->image($value['Story']['main_img']) ?>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'readpost', $value['Story']['id'])); ?>"><?php echo $value['Story']['title']; ?></a>
+                        </div>
+                        <div class="desc"><?php //echo strip_tags($value['Story']['stroy']);   ?></div>
+                        <?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete_post', $value['Story']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $value['Story']['id']))); ?>
+                    </div>
+
+                </div>
+
+            </div>
+ 
      <?php } ?>
  
     

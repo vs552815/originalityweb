@@ -10769,3 +10769,269 @@ Request URL: /originalityweb/img/images/icon.png
 Stack Trace:
 #0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-11-17 13:11:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/images/icon.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:12:02 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/deletepost/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->deletepost('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:12:29 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/deletepost/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->deletepost('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:12:42 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/deletepost/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->deletepost('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:12:43 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/deletepost/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->deletepost('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:12:43 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/deletepost/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->deletepost('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:12:43 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/deletepost/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->deletepost('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:12:48 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/deletepost/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->deletepost('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:13:18 Error: [MissingActionException] Action UsersController::deletepost() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'deletepost',
+)
+Request URL: /originalityweb/users/deletepost/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-11-17 13:13:22 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/delete_post/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->delete_post('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:13:25 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/delete_post/4
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->delete_post('4')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:13:58 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/delete_post/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(226): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->delete_post('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:14:31 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/delete_post/3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(227): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->delete_post('3')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:14:40 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /originalityweb/users/delete_post/4
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(227): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: UsersController->delete_post('4')
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-11-17 13:29:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1505835453_securityhorse_bg_image.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:29:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1510921342_ee10d337367d0e1d369cea4f5ba84aec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:29:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1505835453_securityhorse_bg_image.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:29:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1510921342_ee10d337367d0e1d369cea4f5ba84aec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:30:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1505835453_securityhorse_bg_image.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:30:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1510921342_ee10d337367d0e1d369cea4f5ba84aec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:30:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1505835453_securityhorse_bg_image.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:30:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1510921342_ee10d337367d0e1d369cea4f5ba84aec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:30:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1510921342_ee10d337367d0e1d369cea4f5ba84aec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:37:06 Error: [MissingControllerException] Controller class GameController could not be found.
+Exception Attributes: array (
+  'class' => 'GameController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/game/testing-adadasd
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:37:57 Error: [MissingControllerException] Controller class GameController could not be found.
+Exception Attributes: array (
+  'class' => 'GameController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/game/testing-adadasd
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:38:08 Error: [MissingControllerException] Controller class GameController could not be found.
+Exception Attributes: array (
+  'class' => 'GameController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/game/testing-adadasd
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:38:11 Error: [MissingControllerException] Controller class GameController could not be found.
+Exception Attributes: array (
+  'class' => 'GameController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/game/testing-adadasd
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-17 13:38:24 Error: [MissingControllerException] Controller class GameController could not be found.
+Exception Attributes: array (
+  'class' => 'GameController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/game/testing-adadasd
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -8,12 +8,12 @@
         <div class="col-lg-8">
             <h2 style="text-transform: uppercase;"><?php echo $findstory['Story']['title'] ?></h2>
         </div>
-        <div class="col-lg-4" style="text-align: right;margin-top: 15px;">
+<!--        <div class="col-lg-4" style="text-align: right;margin-top: 15px;">
             <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
             <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
             <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>    
 
-        </div>
+        </div>-->
     </div>
 
     <div class="row">
@@ -30,17 +30,7 @@
                 <?php echo $this->Html->image($findstory['Story']['image'], array('style' => 'width:100%;')); ?>
                 <h4> <?php echo $findstory['Story']['title'] ?></h4>
             </div>
-            
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5915063633225550"
-     data-ad-slot="6573032541"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+         
             
         </div>
 

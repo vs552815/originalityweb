@@ -26,8 +26,8 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content='width=device-width, initial-scale=1.0, user-scalable=0' >
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <link rel="icon" type="image/png"  href="<?php echo $this->Html->url('/'); ?>img/images/icon.png">
-        <title> Find Security Jobs in the New York City Area - SecurityHorse</title>
+        <link rel="icon" type="image/png"  href="<?php echo $this->Html->url('/'); ?>img/601819.png">
+        <title> Originalityweb Provide featuring news, reviews, playthroughs, and more - Originalityweb</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Yellowtail" rel="stylesheet">
 
         <?php
@@ -103,7 +103,7 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
 
         <?php echo $this->Html->script(array('https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js'));
         ?>
-        <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=yz0vdodim66ub96zkbvjwicbirva0y6scbuqyd85hbr16yrj"></script>
+        <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=p4uqad4hmk8ntb6rug6fh0kq7v6d807nwx3dtkrogx7fq0c5"></script>
 
         <script>
             tinymce.init({

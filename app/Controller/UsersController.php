@@ -25,7 +25,7 @@ class UsersController extends AppController {
         // Allow users to register and logout.
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
-        $this->Auth->allow('home','ajax_login','checkLogin','readpost','registerCompany');
+        $this->Auth->allow('home','ajax_login','checkLogin','readpost','registerCompany','delete_post');
     }
     
     public function logout() {
@@ -113,6 +113,7 @@ class UsersController extends AppController {
             } else {
                 unset($this->request->data['Story']['image']);
             }
+             $this->request->data['Story']['story_slug'] = $this->slugStory($this->request->data['Story']['title']);
             //print_r($this->request->data);exit;
             if ($this->Story->save($this->request->data)) {
                 $user_id = $this->Auth->user('id');
@@ -132,6 +133,7 @@ class UsersController extends AppController {
          
          foreach ($user as $i => $j) {
             $user[$i]['Story']['image'] = Router::url("/" . $user[$i]['Story']['image'], true);
+            $user[$i]['Story']['main_img'] = Router::url("/" . $user[$i]['Story']['main_img'], true);
         }
           
         $this->set('user',$user);
@@ -145,8 +147,16 @@ class UsersController extends AppController {
          
      }
      
-      public function readpost($id){
+      public function readpost(){
            $this->layout = 'home';
+           
+           if ($this->request->params['storyslug'] != '') {
+            $c = $this->Story->find('first', array('conditions' => array('Story.story_slug' => $this->request->params['storyslug'])));
+            if ($c) {
+                $id = $c['Story']['id'];
+            }
+        }
+        
            
             $findstory = $this->Story->find('first', array('conditions' => array('Story.id'=>$id)));
            $findstory['Story']['image'] = Router::url("/" . $findstory['Story']['image'], true);
@@ -217,5 +227,21 @@ class UsersController extends AppController {
             }
         }
     }
+    
+    public function delete_post($id) {
+        
+         $this->Story->id = $id;
+        if (!$this->Story->exists()) {
+            throw new NotFoundException(__('Invalid Restaurant'));
+        }
+        $this->request->allowMethod('post', 'delete');
+        if ($this->Story->delete()) {
+         //   $this->Flash->success(__('The Story has been deleted.'));
+        } else {
+            $this->Flash->error(__('The Story could not be deleted. Please, try again.'));
+        }
+        return $this->redirect(array('action' => 'viewpost'));
+     }
+    
 
 }

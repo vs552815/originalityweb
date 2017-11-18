@@ -1,5 +1,6 @@
-
-
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+*{    font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 .card {
    
     padding-top: 20px;
@@ -196,8 +197,8 @@
 }
 
 .card.hovercard .cardheader {
-    background: url("http://lorempixel.com/850/280/nature/4/");
-    background-size: contain;
+    
+        background-size: cover;
     height: 135px;
 }
 
