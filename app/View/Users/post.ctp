@@ -5,7 +5,7 @@
 
         <div class="form-group">
             <div style="width:50%;float:left;">
-                <p style="text-align:center;font-weight: bold;">Header Image</p>
+                <p style="text-align:center;font-weight: bold;">Circle Image</p>
                 <div style="width:50%;margin: 0 auto;">
                     <div class="col-lg-12 col-md-12 " >
                         <div id="cttt" style="display:none;"><div id="upload-cpnyimg"></div>
@@ -20,7 +20,7 @@
 
 
             <div style="width:50%;float:left;">
-                <p style="text-align:center;font-weight: bold;">Header Image</p>
+                <p style="text-align:center;font-weight: bold;">Main Image</p>
                 <div style="width:50%;margin: 0 auto;">
                     <div class="col-lg-12 col-md-12 " >
                         <div id="cttt1" style="display:none;"><div id="upload-cpnyimg1"></div>
@@ -36,11 +36,23 @@
         </div>  
 
         <div class="form-group">
-            <lable id="view-lable">title</lable>
+            <lable id="view-lable">Game Title*</lable>
             <?php echo $this->Form->input('title', array('class' => 'form-control', 'div' => false, 'required', 'label' => false)); ?>
         </div>
+        
         <div class="form-group">
-            <lable id="view-lable">stroy</lable>
+            <lable id="view-lable">Yotube Video Link</lable>
+            <?php echo $this->Form->input('youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
+        </div>
+        
+        <div class="form-group">
+            <lable id="view-lable">Google ad script</lable>
+            <?php echo $this->Form->input('google_ad_code', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
+        </div>
+        
+        <div class="form-group">
+            <lable id="view-lable">Game Story*</lable>
+            <br>
             <?php echo $this->Form->input('stroy', array('class' => 'form-control', 'div' => false, 'label' => false, 'id' => 'textbottom')); ?>
         </div>
 

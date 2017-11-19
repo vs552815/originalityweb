@@ -1,6 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 *{    font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.post-css{
+        line-height: 1.6;
+    text-align: justify;
+    font-weight: normal;
+    color: #797979;
+    font-size: 18px;
+}
 .card {
    
     padding-top: 20px;
@@ -221,11 +229,12 @@
 
 .card.hovercard .info {
     padding: 4px 8px 10px;
+        height: 60px;
 }
 
 .card.hovercard .info .title {
     margin-bottom: 4px;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1;
     color: #262626;
     vertical-align: middle;

@@ -25,7 +25,7 @@ class UsersController extends AppController {
         // Allow users to register and logout.
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
-        $this->Auth->allow('home','ajax_login','checkLogin','readpost','registerCompany','delete_post');
+        $this->Auth->allow('home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment');
     }
     
     public function logout() {
@@ -146,10 +146,27 @@ class UsersController extends AppController {
             $this->set('finduser',$finduser);
          
      }
-     
-      public function readpost(){
+     public function story_comment($story_id){
+         $id = $this->Auth->user('id');
+        // print_r();exit;
+           $arr['Comment']['comment']=$this->request->data['commentstory'];
+           $arr['Comment']['story_id']=$story_id;
+           $arr['Comment']['user_id']=$id;
+           if ($this->Comment->save($arr)) {
+             echo json_encode(array('status' => 'success', 'message' => 'The comment has been saved.'));  
+             exit;
+           }exit;
+           
+          
+         
+     }
+
+
+     public function readpost(){
            $this->layout = 'home';
            
+            $find_user = $this->Auth->user('id');
+             $this->set('find_user',$find_user);
            if ($this->request->params['storyslug'] != '') {
             $c = $this->Story->find('first', array('conditions' => array('Story.story_slug' => $this->request->params['storyslug'])));
             if ($c) {
@@ -159,9 +176,24 @@ class UsersController extends AppController {
         
            
             $findstory = $this->Story->find('first', array('conditions' => array('Story.id'=>$id)));
+            
+            $findcomment = $this->Comment->find('all', array('conditions' => array('Comment.story_id'=>$id)));
+              foreach ($findcomment as $i => $j) {
+                 //$findcomment[$i]['Comment']['created_date'] = PkComponent::timeAgoInWords($findcomment[$i]['Comment']['created_date']);
+                  if($findcomment[$i]['User']['profile_image']!=''){
+                       $findcomment[$i]['User']['profile_image'] = Router::url("/" . $findcomment[$i]['User']['profile_image'], true);
+                  }else{
+                      $findcomment[$i]['User']['profile_image'] = Router::url("/" . 'img/images/avatar.png', true);
+                  }
+           
+           
+        }
+            
            $findstory['Story']['image'] = Router::url("/" . $findstory['Story']['image'], true);
            $findstory['Story']['main_img'] = Router::url("/" . $findstory['Story']['main_img'], true);
             $this->set('findstory',$findstory);
+            $this->set('findcomment',$findcomment);
+        //    print_r($findcomment);exit;
          
      }
      

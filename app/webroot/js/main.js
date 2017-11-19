@@ -1,7 +1,11 @@
 /* global webURL */
 ///////////////////////////////////////////////////////////
 jQuery(document).ready(function ($) {
+   
   $('#checkLogin').on('click', function () {
+      // var obj=$(this).attr('rel');
+       var obj2=$(this).attr('data-id');
+      
         var url = webURL + "users/checkLogin";
         $.ajax({
             type: "POST",
@@ -13,14 +17,27 @@ jQuery(document).ready(function ($) {
             {
                 console.info(data); // show response from the php script.
                 if (data.status == 'success') {
-                    if (data.account_type_id == 3) {
-                        window.location.href = webURL + "users/postjob";
-                    } else {
-                        window.location.href = webURL + "users/home";
-                    }
+                       var url = webURL + "users/story_comment/" + obj2;
+                        $.ajax({
+                            type: "POST",
+                            url: url,
+                            data: {commentstory: $('#Comment_obj').val()}, // serializes the form's elements.
+                            dataType: 'json',
+                            context: this,
+                            success: function (data)
+                            {
+                                console.info(data); // show response from the php script.
+                                if (data.status == 'success') {
+                                     location.reload();
+                                } else {
+                                    location.reload();
+                                }
+                            }
+                        });
 
                 } else {
-
+                    swal("", "Please login first.", "error");
+                    $('#LoginPopup').modal('show');
                 }
             }
         });

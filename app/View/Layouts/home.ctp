@@ -77,9 +77,9 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
              <?php echo $this->element('header'); ?>
              <?php echo $this->fetch('content'); ?>
              <?php echo $this->element('modal'); ?>
-             <?php //echo $this->element('footer'); ?>
+           
         </div>
-
+          <?php echo $this->element('footer'); ?>
         <?php
         echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js');
         //echo $this->Html->script('js-webshim/minified/polyfiller.js');
