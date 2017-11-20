@@ -76,6 +76,20 @@ class UsersController extends AppController {
              $find[$i]['Story']['main_img'] = Router::url("/" . $find[$i]['Story']['main_img'], true);
         }
            $this->set('find',$find);
+           /////////////////////////////////////////////////////////////////////////////////////////////////////////
+           
+            $arr = array();
+            $post_search = $this->Story->find('all',array('recursive' => -1));
+           
+            foreach ($post_search as $k => $post) {
+             //   $arr[$k]['created_date_time'] = PkComponent::timeAgoInWords($job['Job']['created_date_time']);
+                $arr[$k]['url']= Router::url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $post['Story']['story_slug']));
+                $arr[$k]['value'] = $post['Story']['title'];
+               // $arr[$k]['id'] = $post['Story']['id'];
+            }
+            $this->set('arr', $arr);
+            $this->render('home');
+        
        //  pr($find);exit;
     }
     
@@ -275,5 +289,8 @@ class UsersController extends AppController {
         return $this->redirect(array('action' => 'viewpost'));
      }
     
+     public function gaming_sloution(){
+         
+     }
 
 }

@@ -11622,3 +11622,12 @@ Request URL: /originalityweb/img/images/avatar.png
 Stack Trace:
 #0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-11-20 04:52:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/images/avatar.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
