@@ -31,8 +31,13 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
         
+           Router::connect('/gaming-questions', array('controller' => 'users', 'action' => 'gaming_questions'));
+        
         Router::connect('/:storyslug', array('controller' => 'users', 'action' => 'readpost'), array('storyslug' => '[a-zA-Z0-9_-]+'));
+        
+        Router::connect('/solution/:solutionslug', array('controller' => 'users', 'action' => 'readsolution'), array('solutionslug' => '[a-zA-Z0-9_-]+'));
 
+     
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

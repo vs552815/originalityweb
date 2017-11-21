@@ -32,16 +32,16 @@
                               </li>
                                    
                               <li>
-                                <a href="https://nextgengamesnew.blogspot.in/">Blog</a>
+                                  <a href="https://nextgengamesnew.blogspot.in/" target="_blank">Blog</a>
                               </li>
-                                   
-                              <li>
-                                 <a href="http://nextgenfreegames.blogspot.in/">Free Game Download</a>
-                              </li>
-                                   
-                              <li>
+ 
+<!--                              <li>
                                 <a href="#">Contact</a>
-                             </li>
+                             </li>-->
+                             
+                              <li>
+                                 <a href="http://nextgenfreegames.blogspot.in/" target="_blank">Free Game Download</a>
+                              </li>
                    
                         </ul>
                 </div>

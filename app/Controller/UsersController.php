@@ -16,7 +16,7 @@ App::uses('CakeEmail', 'Network/Email');
  */
 class UsersController extends AppController {
 
-    public $uses = array('Comment','LikeDislike','Story','User');
+    public $uses = array('Comment','LikeDislike','Story','User','Solution','SolutionImage','SolutionComment');
     //var $helpers = array('Sh');
    public $components = array( 'Pk');
 
@@ -25,7 +25,7 @@ class UsersController extends AppController {
         // Allow users to register and logout.
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
-        $this->Auth->allow('home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment');
+        $this->Auth->allow('home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment','gaming_questions','readsolution','question_comment');
     }
     
     public function logout() {
@@ -70,7 +70,7 @@ class UsersController extends AppController {
     
     public function home(){
          $this->layout = 'home';
-           $find = $this->Story->find('all', array('conditions' => array('Story.id')));
+           $find = $this->Story->find('all', array('conditions' => array('Story.id'),'order'=>array('Story.id' => 'DESC')));
          foreach ($find as $i => $j) {
             $find[$i]['Story']['image'] = Router::url("/" . $find[$i]['Story']['image'], true);
              $find[$i]['Story']['main_img'] = Router::url("/" . $find[$i]['Story']['main_img'], true);
@@ -169,10 +169,19 @@ class UsersController extends AppController {
            if ($this->Comment->save($arr)) {
              echo json_encode(array('status' => 'success', 'message' => 'The comment has been saved.'));  
              exit;
-           }exit;
-           
-          
-         
+           }exit; 
+     }
+     
+     public function question_comment($solution_id){
+         $id = $this->Auth->user('id');
+        // print_r();exit;
+           $arr['SolutionComment']['comment']=$this->request->data['commentsolution'];
+           $arr['SolutionComment']['solutions_id']=$solution_id;
+           $arr['SolutionComment']['user_id']=$id;
+           if ($this->SolutionComment->save($arr)) {
+             echo json_encode(array('status' => 'success', 'message' => 'The SolutionComment has been saved.'));  
+             exit;
+           }exit; 
      }
 
 
@@ -190,7 +199,7 @@ class UsersController extends AppController {
         
            
             $findstory = $this->Story->find('first', array('conditions' => array('Story.id'=>$id)));
-            
+             $this->set('meta_decscriptoi',$findstory['Story']['title']);
             $findcomment = $this->Comment->find('all', array('conditions' => array('Comment.story_id'=>$id)));
               foreach ($findcomment as $i => $j) {
                  //$findcomment[$i]['Comment']['created_date'] = PkComponent::timeAgoInWords($findcomment[$i]['Comment']['created_date']);
@@ -288,9 +297,92 @@ class UsersController extends AppController {
         }
         return $this->redirect(array('action' => 'viewpost'));
      }
+     
+      public function readsolution($id=null){
+         $this->layout = 'home';
+         
+          if ($this->request->params['solutionslug'] != '') {
+            $c = $this->Solution->find('first', array('conditions' => array('Solution.slug_question' => $this->request->params['solutionslug'])));
+            if ($c) {
+                $id = $c['Solution']['id'];
+            }
+        }
+        
+        
     
-     public function gaming_sloution(){
+         $Solution = $this->Solution->find('first',array('Solution.id'=>$id));
+         $Solution['User']['profile_image'] = Router::url("/" . $Solution['User']['profile_image'], true);
+         $this->set('Solution',$Solution);
+        $this->set('meta_decscriptoi',$Solution['Solution']['decscription']);
+         /////////////////////////
+        $che = $this->SolutionImage->find('all', array('conditions' => array('SolutionImage.solutions_id'=>$id), 'recursive' => -1));
+        foreach ($che as $i => $j) {
+            $che[$i]['SolutionImage']['sloution_image'] = Router::url("/" . $che[$i]['SolutionImage']['sloution_image'], true);
+        }
+        $this->set('che', $che);
+        ///////////////////////////////////////////////////////////////// 
+         $findcomment = $this->SolutionComment->find('all', array('conditions' => array('SolutionComment.solutions_id'=>$id)));
+              foreach ($findcomment as $i => $j) {
+                 //$findcomment[$i]['Comment']['created_date'] = PkComponent::timeAgoInWords($findcomment[$i]['Comment']['created_date']);
+                  if($findcomment[$i]['User']['profile_image']!=''){
+                       $findcomment[$i]['User']['profile_image'] = Router::url("/" . $findcomment[$i]['User']['profile_image'], true);
+                  }else{
+                      $findcomment[$i]['User']['profile_image'] = Router::url("/" . 'img/images/avatar.png', true);
+                  }
+        }
+     
+         $this->set('findcomment', $findcomment);
+         
          
      }
+    
+     public function gaming_questions(){
+           $this->layout = 'home';
+            $findSolution = $this->Solution->find('all');
+            
+            foreach ($findSolution as $i => $j) {
+            $findSolution[$i]['User']['profile_image'] = Router::url("/" . $findSolution[$i]['User']['profile_image'], true);
+          
+        }
+            
+            $this->set('findSolution',$findSolution);
+            //print_r($findSolution);exit;
+            
+     }
+     
+     public function ask_question() {
+        $this->layout = 'home';
+        $id = $this->Auth->user('id');
+        if ($this->request->is('post')) {
+            $this->Solution->create();
+            $this->request->data['Solution']['slug_question'] = $this->slugQuestion($this->request->data['Solution']['title']);
+            $this->request->data['Solution']['user_id'] = $id;
+//            print_r($this->request->data);
+//            exit;
+            if ($u = $this->Solution->save($this->request->data)) {
+                $dimg = array();
+                $i = 0;
+                foreach ($this->request->data['SolutionImage']['sloution_image'] as $dishe_img) {
+                    if ($dishe_img['name'] != "") {
+                        $sFileName = time() . "_" . str_replace(" ", "_", $dishe_img['name']);
+                        $sPath = "SolutionImage";
+                        $file = $this->Pk->uploadImage($dishe_img, $sFileName, $sPath);
+                        if ($file['status'] == 'success') {
+                            $dimg[$i]['SolutionImage']['sloution_image'] = $file['url'];
+                            $dimg[$i]['SolutionImage']['solutions_id'] = $u['Solution']['id'];
+                            $dimg[$i]['SolutionImage']['user_id'] = $id;
+                            $i++;
+                        }
+                    } else {
+                        unset($dishe_img);
+                    }
+                }
+                 $this->SolutionImage->saveMany($dimg);
+                return $this->redirect(array('action' => 'gaming_questions'));
+            } else {
+                $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            }
+        }
+    }
 
 }

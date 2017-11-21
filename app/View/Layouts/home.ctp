@@ -23,13 +23,16 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
     <head>
         <?php echo $this->Html->charset(); ?>
         <meta charset="utf-8">
+        <meta name="description" content="<?php echo $meta_decscriptoi ;?>">
+        <meta name="keywords" content="game,gaming,pc,ps4,graphic card,hack,crack,gaming crack,originalityweb,ps4 game,ps4 pro,xbox one,xbox s,originalityweb.com">
+        <meta name="author" content="Vikas Sharma">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content='width=device-width, initial-scale=1.0, user-scalable=0' >
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <link rel="icon" type="image/png"  href="<?php echo $this->Html->url('/'); ?>img/601819.png">
-        <title> Originalityweb Provide featuring news, reviews, playthroughs, and more - Originalityweb</title>
+        <title> Originalityweb </title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Yellowtail" rel="stylesheet">
-
+<!--Provide featuring news, reviews, playthroughs, and more - Originalityweb-->
         <?php
         echo $this->Html->css(array('bootstrap.min.css'));
         echo $this->Html->css(array('cover.css'));
@@ -55,7 +58,22 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         echo $this->fetch('css');
         echo $this->fetch('script');
         ?>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81193898-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81193898-5');
+</script>
+     
+        
+        
+        
+        
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
     google_ad_client: "ca-pub-5915063633225550",

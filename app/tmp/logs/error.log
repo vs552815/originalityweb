@@ -11631,3 +11631,122 @@ Request URL: /originalityweb/img/images/avatar.png
 Stack Trace:
 #0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-11-21 12:32:34 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1049] Unknown database \'originalityweb\'',
+  'enabled' => true,
+)
+Request URL: /originalityweb/
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(271): Mysql->connect()
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(3640): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1162): Model->setDataSource('default')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(3667): Model->setSource('story')
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(3038): Model->getDataSource()
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(3010): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(73): Model->find('all', Array)
+#8 [internal function]: UsersController->home()
+#9 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-11-21 13:27:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null
+Request URL: /originalityweb/users/story_comment/undefined
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(472): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(438): DboSource->_execute('INSERT INTO `or...', Array)
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(1092): DboSource->execute('INSERT INTO `or...')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1940): DboSource->create(Object(Comment), Array, Array)
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1758): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(169): Model->save(Array)
+#6 [internal function]: UsersController->story_comment('undefined')
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-11-21 13:29:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null
+Request URL: /originalityweb/users/story_comment/undefined
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(472): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(438): DboSource->_execute('INSERT INTO `or...', Array)
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(1092): DboSource->execute('INSERT INTO `or...')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1940): DboSource->create(Object(Comment), Array, Array)
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1758): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(169): Model->save(Array)
+#6 [internal function]: UsersController->story_comment('undefined')
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-11-21 14:03:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'first.id' in 'where clause'
+Request URL: /originalityweb/users/ask_question?first_name=&last_name=&display_name=&email=&password=&password_confirmation=
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(472): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(438): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(675): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(1186): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(3038): DboSource->read(Object(User), Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(3010): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(299): Model->find('first', Array)
+#7 [internal function]: UsersController->ask_question()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-11-21 14:08:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'comment' cannot be null
+Request URL: /originalityweb/users/story_comment/undefined
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(472): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(438): DboSource->_execute('INSERT INTO `or...', Array)
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(1092): DboSource->execute('INSERT INTO `or...')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1940): DboSource->create(Object(Comment), Array, Array)
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1758): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(169): Model->save(Array)
+#6 [internal function]: UsersController->story_comment('undefined')
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-11-21 15:03:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/images/cloud-gaming.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-21 15:04:10 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/cloud-gaming.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-21 15:13:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1510839858_2a49cb262ecccb9dfcd2ed9d45c172a0.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-21 15:13:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1510839858_2a49cb262ecccb9dfcd2ed9d45c172a0.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -29,12 +29,19 @@
             <div class="col-sm-12" style="    padding: 0px;">
                
         <div class="panel panel-white post panel-shadow">
-         
+         <div class="alert alert-warning show-alert" style="display:none;text-align: center;">
+         You must be logged first. <br>
+        <span style="text-align:center">
+         <a href="javascript:void(0);" onclick="$('#LoginPopup').modal('show');" id="signup-btn" class="hide-signup">Sign in</a>
+        OR 
+        <a href="javascript:void(0);" onclick="$('#SignupPopup').modal('show');" id="signup-btn" class="hide-login">Sign up</a>
+        </span>
+</div>
             <div class="post-footer">
                 <div class="input-group"> 
                     <input class="form-control" placeholder="Add a comment" type="text" id="Comment_obj">
                     <span class="input-group-addon">
-                        <a href="#" id="checkLogin" rel="<?php echo $find_user ?>" data-id="<?php echo $findstory['Story']['id'] ?>"><i class="fa fa-edit"></i></a>  
+                        <span class="btn" id="checkLogin" rel="<?php echo $find_user ?>" data-id="<?php echo $findstory['Story']['id'] ?>"><i class="fa fa-edit"></i></span>  
                     </span>
                 </div>
                 <?php foreach ($findcomment as $ct){ ?>

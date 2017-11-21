@@ -1,6 +1,14 @@
 /* global webURL */
 ///////////////////////////////////////////////////////////
 jQuery(document).ready(function ($) {
+    
+    $('.hide-login').on('click', function () {
+        $('#LoginPopup').modal('hide');
+    });
+    $('.hide-signup').on('click', function () {
+        $('#SignupPopup').modal('hide');
+    });
+    
    
   $('#checkLogin').on('click', function () {
       // var obj=$(this).attr('rel');
@@ -36,8 +44,8 @@ jQuery(document).ready(function ($) {
                         });
 
                 } else {
-                    swal("", "Please login first.", "error");
-                    $('#LoginPopup').modal('show');
+                   $('.show-alert').show();
+                   // $('#LoginPopup').modal('show');
                 }
             }
         });
@@ -75,6 +83,49 @@ jQuery(document).ready(function ($) {
         });
         e.preventDefault(); // avoid to execute the actual submit of the form.
     });
+
+
+      $('#commentLogin').on('click', function () {
+      // var obj=$(this).attr('rel');
+       var obj=$(this).attr('rel');
+      
+        var url = webURL + "users/checkLogin";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {}, // serializes the form's elements.
+            dataType: 'json',
+            context: this,
+            success: function (data)
+            {
+                console.info(data); // show response from the php script.
+                if (data.status == 'success') {
+                       var url = webURL + "users/question_comment/" + obj;
+                        $.ajax({
+                            type: "POST",
+                            url: url,
+                            data: {commentsolution: $('#Comment_sol').val()}, // serializes the form's elements.
+                            dataType: 'json',
+                            context: this,
+                            success: function (data)
+                            {
+                                console.info(data); // show response from the php script.
+                                if (data.status == 'success') {
+                                     location.reload();
+                                } else {
+                                    location.reload();
+                                }
+                            }
+                        });
+
+                } else {
+                   $('.show-alert').show();
+                   // $('#LoginPopup').modal('show');
+                }
+            }
+        });
+    });
+
 
 
  });
