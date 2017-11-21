@@ -384,5 +384,35 @@ class UsersController extends AppController {
             }
         }
     }
+    
+    public function user_questions(){
+         $this->layout = 'home';
+          $id = $this->Auth->user('id');
+           $find = $this->Solution->find('all', array('conditions' => array('Solution.user_id'=>$id)));
+           foreach ($find as $i => $j) {
+            $find[$i]['User']['profile_image'] = Router::url("/" . $find[$i]['User']['profile_image'], true);
+          
+        }
+         $this->set('find',$find); 
+          
+    }
+    public function editsolution($id){
+         $this->layout = 'home';
+          if ($this->request->is(array('put', 'post'))) {
+              $this->request->data['Solution']['id']=$id;
+            
+              
+            if ($this->Solution->save($this->request->data)) {
+                return $this->redirect(array('controller' => 'users', 'action' => 'user_questions'));
+            } else {
+                $this->Flash->error(__('The Solution could not be saved. Please, try again.'));
+            }
+        } else {
+            $options = array('conditions' => array('Solution.' . $this->Solution->primaryKey => $id));
+            $this->request->data = $this->Solution->find('first', $options);
+            //pr($imge);exit;
+        }
+          
+    }
 
 }

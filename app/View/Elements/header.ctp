@@ -10,7 +10,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-          <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_questions', 'users' => false)); ?>">Gaming Questions</a></li>
+          <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_questions', 'users' => false)); ?>">Ask Questions</a></li>
           <?php $account_typ_id = $this->Session->read('Auth.User.account_type_id');
             if ($account_typ_id == 2) {?>
           <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'viewpost', 'users' => false)); ?>" >View My Post</a></li>
@@ -18,6 +18,7 @@
           <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >My Profile</a></li>
            <?php }else if($account_typ_id == 3){ ?>
           <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >My Profile</a></li>
+          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'user_questions', 'users' => false)); ?>" >My Questions</a></li>
            <?php } ?>
       </ul>
       <ul class="nav navbar-nav navbar-right">
