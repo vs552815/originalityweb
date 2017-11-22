@@ -69,7 +69,7 @@ if ($imge['User']['profile_image'] != '') {
                        
                             <div class="form-group">
                                 <label>Description</label>
-                                <?php echo $this->Form->input('User.description', array( 'class' => 'form-control input-lg', 'placeholder' => 'Description', 'label' => false, 'required')); ?>
+                                <?php echo $this->Form->input('User.description', array( 'class' => 'form-control input-lg', 'placeholder' => 'Description', 'label' => false)); ?>
 
                             </div>
                         </div>
