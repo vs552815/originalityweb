@@ -255,6 +255,7 @@ $uploadC = $('#upload-uimg').croppie({
 $('#my_uimg').on('change', function () {
     $('#1cttt').show();
     $('#select-uimg').hide();
+     $("#my_uimg").hide();
     //$('#hide-remove-button1').hide();
     var reader = new FileReader();
     reader.onload = function (e) {
@@ -273,10 +274,12 @@ $('.upload').on('click', function (ev) {
         type: 'canvas',
         size: 'viewport'
     }).then(function (resp) {
+        
                  $('#select-uimg').attr('src', resp);
                  $('#hiddenfield_uimg').val( resp);
              $('#select-uimg').show();
               $("#1cttt").hide();
+              $("#my_uimg").hide();
                
     });
 });
