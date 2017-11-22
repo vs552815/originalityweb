@@ -11750,3 +11750,27 @@ Request URL: /originalityweb/img/img/story/1510839858_2a49cb262ecccb9dfcd2ed9d45
 Stack Trace:
 #0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-11-22 12:15:18 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /originalityweb/users/registerCompany
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Network\Email\CakeEmail.php(1179): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(287): CakeEmail->send()
+#3 [internal function]: UsersController->registerCompany()
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2017-11-22 12:16:19 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /originalityweb/users/registerCompany
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Network\Email\CakeEmail.php(1179): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(287): CakeEmail->send()
+#3 [internal function]: UsersController->registerCompany()
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

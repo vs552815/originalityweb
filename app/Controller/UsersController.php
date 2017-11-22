@@ -268,6 +268,32 @@ class UsersController extends AppController {
                 }
                 $this->request->data['User']['account_type_id'] = 3;
                 if ($user = $this->User->saveAll($this->request->data)) {
+                    
+                     if ($this->request->is('post')) {
+                        if ($this->request->data['User']['email'] != '') {
+                            $user = $this->User->find('first', array('conditions' => array('User.email' => $this->request->data['User']['email'])));
+                            if ($user) {
+                                $username = $user['User']['email'];
+                                $hash = md5(time() . rand(0, 9999));
+                                $link = Router::url(array('controller' => 'users', 'action' => 'home'), true);
+                                $Email = new CakeEmail();
+                                $Email->config('gmail');
+                                $Email->subject('Welcome to Originalityweb!');
+                                $Email->viewVars(array('link' => $link, 'email' => $username));
+                                $Email->template('usercreated', 'default')
+                                        ->emailFormat('html')
+                                        ->to($user['User']['email'])
+                                        ->from('vs552815@gmail.com')
+                                        ->send();
+                              //  $this->Flash->success(__('Please check your email address for further instractions.'));
+                            } else {
+                                $this->Flash->error(__('Email address does not exist in our system, try again'));
+                            }
+                        } else {
+                            $this->Flash->error(__('Invalid email address, try again'));
+                        }
+                    }
+                    
                     $u = $this->User->findById($this->User->getLastInsertID());
                     $this->Auth->login($u['User']);
                     echo json_encode(array('status' => 'success', 'message' => 'The user has been saved.'));
