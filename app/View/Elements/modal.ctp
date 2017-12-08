@@ -23,9 +23,11 @@
                     </div>
 
                   <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
-                    <button class="btn btn-primary btn-block">Login</button>
+                    <button class="btn btn-primary btn-web-color btn-block">Login</button>
                 </div>
-
+                    <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                        <h5 style="text-align:center;">Don't have an account? <a href="javascript:void(0);" onclick="$('#SignupPopup').modal('show');" id="signup-btn" class="hide-login">Sign up</a></h5>
+                    </div>
                 <?php echo $this->Form->end(); ?>                    
             </div>
             </div>
@@ -75,8 +77,13 @@
                                 </div>-->
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
-                                <button class="btn btn-primary btn-block">Register</button>
+                                <button class="btn btn-primary btn-web-color btn-block">Register</button>
                             </div>
+                        
+                        <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                        <h5 style="text-align:center;">Already registered <a href="javascript:void(0);" onclick="$('#LoginPopup').modal('show');" id="signup-btn" class="hide-signup">Sign in</a></h5>
+                    </div>
+                        
                         <?php echo $this->Form->end(); ?>   
                     </div>
                 
@@ -88,7 +95,7 @@
     <!-- /.modal-dialog -->
 </div>
 <style>
-    .btn-primary {
+    .btn-web-color {
     background-color: #f25b6a;
     color: #fff;
     font-size: 15px;

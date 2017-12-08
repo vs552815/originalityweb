@@ -97,8 +97,33 @@ class AppController extends Controller {
         if (empty($text)) {
             $text = 'n-a';
         }
+        return $text ;
+    }
+    
+     public function slugQuestion($text) {
+        $this->loadModel('TopHeader');
+        $title = $text;
+        // replace non letter or digits by -
+        $text = preg_replace('~[^\pL\d]+~u', '-', $text);
 
+        // transliterate
+        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
 
+        // remove unwanted characters
+        $text = preg_replace('~[^-\w]+~', '', $text);
+
+        // trim
+        $text = trim($text, '-');
+
+        // remove duplicate -
+        $text = preg_replace('~-+~', '-', $text);
+
+        // lowercase
+        $text = strtolower($text);
+
+        if (empty($text)) {
+            $text = 'n-a';
+        }
         return $text ;
     }
     

@@ -3,7 +3,7 @@
 if ($imge['User']['profile_image'] != '') {
     $fileuser = Router::url("/" . $imge['User']['profile_image'], true);
 } else {
-    $fileuser = Router::url("/img/images/uploadPhotoAvatarGroup.png", true);
+    $fileuser = Router::url("/img/images/add_image.png", true);
 }
 ?>
 
@@ -25,8 +25,8 @@ if ($imge['User']['profile_image'] != '') {
                                     <div id="1cttt" style="display:none;"><div id="upload-uimg"></div>
                                         <div ><a class="btn btn-success upload"  style="    width: 100%;">Crop Image</a> </div>
                                     </div> 
-                                    <?php echo $this->Html->image($fileuser, array('style' => 'width:100%;cursor:pointer;', 'id' => 'select-uimg','class' => 'img-circle img-thumbnail')); ?><br>
-                                    <?php echo $this->Form->file('User.profile_image', array('id' => 'my_uimg', 'style' => 'display:none', 'accept' => 'image/*')); ?> 
+                                    <?php echo $this->Html->image($fileuser, array('style' => 'width:50%;cursor:pointer;', 'id' => 'select-uimg','class' => 'img-circle img-thumbnail')); ?><br>
+                                    <?php echo $this->Form->file('User.profile_image', array('id' => 'my_uimg',  'accept' => 'image/*')); ?> 
                                     <?php echo $this->Form->input('profile_img', array('type' => 'hidden', 'id' => 'hiddenfield_uimg')); ?>
                                 </div>
                     </div>
@@ -69,7 +69,7 @@ if ($imge['User']['profile_image'] != '') {
                        
                             <div class="form-group">
                                 <label>Description</label>
-                                <?php echo $this->Form->input('User.description', array( 'class' => 'form-control input-lg', 'placeholder' => 'Description', 'label' => false, 'required')); ?>
+                                <?php echo $this->Form->input('User.description', array( 'class' => 'form-control input-lg', 'placeholder' => 'Description', 'label' => false)); ?>
 
                             </div>
                         </div>

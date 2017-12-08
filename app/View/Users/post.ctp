@@ -57,7 +57,7 @@
         </div>
 
 
-        <button type="submit" class="btn-lg btn-primary" id="login-btn" >post</button>
+        <button type="submit" class="btn-lg btn-primary btn-web-color" id="login-btn" >post</button>
         <?php echo $this->Form->end(); ?>       
 
     </div>
