@@ -129,11 +129,7 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
                 selector: '#textbottom',
                 height: 200,
                 theme: 'modern',
-                plugins: [
-                    'autolink  hr anchor pagebreak',
-                    'searchreplace wordcount',
-                    'emoticons template paste textcolor colorpicker textpattern '
-                ],
+                plugins: 'print preview fullpage powerpaste searchreplace autolink directionality advcode visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists textcolor wordcount tinymcespellchecker a11ychecker imagetools mediaembed  linkchecker contextmenu colorpicker textpattern help',
 
                 fontsize_formats: '8pt 10pt 12pt 14pt 18pt 24pt 36pt',
                 toolbar1: ' fontsizeselect | undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
