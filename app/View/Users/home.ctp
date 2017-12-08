@@ -88,7 +88,7 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
                             <a  href="<?php echo $this->Html->url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $story['Story']['story_slug'])); ?>">
                                 <?php echo strip_tags($story['Story']['title']); ?>
                         </div>
-                        <div class="desc"><?php //echo strip_tags($story['Story']['stroy']);    ?></div>
+                        <div class="desc">Posted by: <?php echo strip_tags($story['User']['fullname']);    ?></div>
 
                     </div>
 

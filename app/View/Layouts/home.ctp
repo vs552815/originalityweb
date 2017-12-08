@@ -87,11 +87,11 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
           display: -webkit-flex;
           flex-direction: column;
           -webkit-flex-direction: column;">
-          <?php echo $this->Flash->render(); ?>
+          <?php //echo $this->Flash->render(); ?>
 
         <div style="background-color: #f4f4f4;    flex: 1 0 auto;
              -webkit-flex: 1 0 auto;
-             min-height: 200px;">
+             min-height: 500px;">
              <?php echo $this->element('header'); ?>
              <?php echo $this->fetch('content'); ?>
              <?php echo $this->element('modal'); ?>

@@ -8,10 +8,10 @@
             if ($achecklohin) {
                 ?>
 
-                <a class="btn btn-lg btn-primary btnnn"  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'ask_question', 'users' => false)); ?>">Ask Question</a>
+                <a class="btn btn-lg btn-primary btn-web-color btnnn"  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'ask_question', 'users' => false)); ?>">Ask Question</a>
 
             <?php } else { ?>
-                <a class="btn btn-lg btn-primary btnnn" id="checkLogin">Ask Question</a>
+                <a class="btn btn-lg btn-primary btn-web-color btnnn" id="checkLogin">Ask Question</a>
 <?php } ?>
         </div>
 

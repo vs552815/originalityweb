@@ -136,13 +136,13 @@ jQuery(document).ready(function ($) {
 $uploadCrr = $('#upload-cpnyimg').croppie({
     enableExif: true,
      viewport: {
-        width: 350,
-        height: 350,
+        width: 250,
+        height: 250,
         type: 'circle'
     },
     boundary: {
-        width: 370,
-        height: 370
+        width: 260,
+        height: 260
     },
     showZoomer: false
 });
@@ -150,6 +150,9 @@ $uploadCrr = $('#upload-cpnyimg').croppie({
 $('#my_cimg').on('change', function () {
     $('#cttt').show();
     $('#select-cmpnyimg').hide();
+    $('.logo-upload').css({width:'100%',float:'none'});
+    $('.logo-upload1').css({width:'100%',margin:'0'});
+    $('.logo-main').hide();
     //$('#hide-remove-button1').hide();
     var reader = new FileReader();
     reader.onload = function (e) {
@@ -172,6 +175,9 @@ $('.upload-cimg').on('click', function (ev) {
                  $('#hiddenfield_cimg').val( resp);
              $('#select-cmpnyimg').show();
               $("#cttt").hide();
+              $('.logo-upload').css({width:'50%',float:'left'});
+               $('.logo-upload1').css({width:'50%',margin:'0 auto'});
+    $('.logo-main').show();
                
     });
 });
@@ -202,6 +208,9 @@ $uploadCrrimg = $('#upload-cpnyimg1').croppie({
 $('#my_cimg1').on('change', function () {
     $('#cttt1').show();
     $('#select-cmpnyimg1').hide();
+     $('.logo-main').css({width:'100%',float:'none'});
+    $('.logo-main1').css({width:'100%',margin:'0'});
+    $('.logo-upload').hide();
     //$('#hide-remove-button1').hide();
     var reader = new FileReader();
     reader.onload = function (e) {
@@ -224,6 +233,9 @@ $('.upload-cimg1').on('click', function (ev) {
                  $('#hiddenfield_cimg1').val( resp);
              $('#select-cmpnyimg1').show();
               $("#cttt1").hide();
+                $('.logo-main').css({width:'50%',float:'left'});
+    $('.logo-main1').css({width:'50%',margin:'0 auto'});
+    $('.logo-upload').show();
                
     });
 });
@@ -241,13 +253,13 @@ $(document).ready(function () {
 $uploadC = $('#upload-uimg').croppie({
     enableExif: true,
      viewport: {
-        width: 250,
-        height: 250,
+        width: 150,
+        height: 150,
         type: 'circle'
     },
     boundary: {
-        width: 300,
-        height: 300
+        width: 160,
+        height: 160
     },
     showZoomer: false
 });

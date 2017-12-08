@@ -25,7 +25,7 @@ class UsersController extends AppController {
         // Allow users to register and logout.
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
-        $this->Auth->allow('home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment','gaming_questions','readsolution','question_comment');
+        $this->Auth->allow('delete_userpost','approved_post','delete_mypost','create_post','home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment','gaming_questions','readsolution','question_comment');
     }
     
     public function logout() {
@@ -70,7 +70,7 @@ class UsersController extends AppController {
     
     public function home(){
          $this->layout = 'home';
-           $find = $this->Story->find('all', array('conditions' => array('Story.id'),'order'=>array('Story.id' => 'DESC')));
+           $find = $this->Story->find('all', array('conditions' => array('Story.id','Story.approved_post'=>1),'order'=>array('Story.id' => 'DESC')));
          foreach ($find as $i => $j) {
             $find[$i]['Story']['image'] = Router::url("/" . $find[$i]['Story']['image'], true);
              $find[$i]['Story']['main_img'] = Router::url("/" . $find[$i]['Story']['main_img'], true);
@@ -128,6 +128,7 @@ class UsersController extends AppController {
                 unset($this->request->data['Story']['image']);
             }
              $this->request->data['Story']['story_slug'] = $this->slugStory($this->request->data['Story']['title']);
+             $this->request->data['Story']['approved_post'] = 1;
             //print_r($this->request->data);exit;
             if ($this->Story->save($this->request->data)) {
                 $user_id = $this->Auth->user('id');
@@ -330,15 +331,17 @@ class UsersController extends AppController {
           if ($this->request->params['solutionslug'] != '') {
             $c = $this->Solution->find('first', array('conditions' => array('Solution.slug_question' => $this->request->params['solutionslug'])));
             if ($c) {
-                $id = $c['Solution']['id'];
+                $ids = $c['Solution']['id'];
             }
         }
         
         
     
-         $Solution = $this->Solution->find('first',array('Solution.id'=>$id));
+         $Solution = $this->Solution->find('first',array('conditions' => array('Solution.id'=>$ids)));
+         
          $Solution['User']['profile_image'] = Router::url("/" . $Solution['User']['profile_image'], true);
          $this->set('Solution',$Solution);
+          
         $this->set('meta_decscriptoi',$Solution['Solution']['decscription']);
          /////////////////////////
         $che = $this->SolutionImage->find('all', array('conditions' => array('SolutionImage.solutions_id'=>$id), 'recursive' => -1));
@@ -346,6 +349,7 @@ class UsersController extends AppController {
             $che[$i]['SolutionImage']['sloution_image'] = Router::url("/" . $che[$i]['SolutionImage']['sloution_image'], true);
         }
         $this->set('che', $che);
+       
         ///////////////////////////////////////////////////////////////// 
          $findcomment = $this->SolutionComment->find('all', array('conditions' => array('SolutionComment.solutions_id'=>$id)));
               foreach ($findcomment as $i => $j) {
@@ -440,5 +444,172 @@ class UsersController extends AppController {
         }
           
     }
+    public function create_post() {
 
+        $this->layout = 'home';
+        if ($this->request->is('post')) {
+            $this->Story->create();
+            if ($this->request->data['Story']['main'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+                $sPath = "story";
+                $file = $this->Pk->uploadImageBase64($this->request->data['Story']['main'], $sFileName, $sPath);
+                if ($file['status'] == 'success') {
+                    unset($this->request->data['Story']['main_img']);
+                    $this->request->data['Story']['main_img'] = $file['url'];
+                } else {
+                    $this->request->data['Story']['main_img'] = "";
+                }
+            } else {
+                unset($this->request->data['Story']['main_img']);
+            }
+            if ($this->request->data['Story']['cimage'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+                $sPath = "story";
+                $file = $this->Pk->uploadImageBase64($this->request->data['Story']['cimage'], $sFileName, $sPath);
+                if ($file['status'] == 'success') {
+                    unset($this->request->data['Story']['image']);
+                    $this->request->data['Story']['image'] = $file['url'];
+                } else {
+                    $this->request->data['Story']['image'] = "";
+                }
+            } else {
+                unset($this->request->data['Story']['image']);
+            }
+            $this->request->data['Story']['story_slug'] = $this->slugStory($this->request->data['Story']['title']);
+            $user_id = $this->Auth->user('id');
+
+            $find_user = $this->User->find('first', array('conditions' => array('User.id' => $user_id), 'recursive' => -1));
+            $this->request->data['Story']['user_id'] = $find_user['User']['id'];
+            $this->request->data['Story']['account_type_id'] = $find_user['User']['account_type_id'];
+
+            if ($this->Story->save($this->request->data)) {
+
+                return $this->redirect(array('action' => 'my_post'));
+            } else {
+                $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            }
+        }
+    }
+    
+    public function my_post(){
+          $this->layout = 'home';
+          $user_id = $this->Auth->user('id');
+     $find_post = $this->Story->find('all', array('conditions' => array('Story.user_id' => $user_id), 'recursive' => -1));
+       foreach ($find_post as $i => $j) {
+            $find_post[$i]['Story']['image'] = Router::url("/" . $find_post[$i]['Story']['image'], true);
+            $find_post[$i]['Story']['main_img'] = Router::url("/" . $find_post[$i]['Story']['main_img'], true);
+        }
+     //print_r($find_user);exit;
+      $this->set('find_post',$find_post);
+    }
+
+    
+      public function delete_mypost($id) {
+        
+         $this->Story->id = $id;
+        if (!$this->Story->exists()) {
+            throw new NotFoundException(__('Invalid Restaurant'));
+        }
+        $this->request->allowMethod('post', 'delete');
+        if ($this->Story->delete()) {
+         //   $this->Flash->success(__('The Story has been deleted.'));
+        } else {
+            $this->Flash->error(__('The Story could not be deleted. Please, try again.'));
+        }
+        return $this->redirect(array('action' => 'my_post'));
+     }
+     public function edit_post($id){
+          $this->layout = 'home';
+          
+           $cc = $this->Story->find('first', array('conditions' => array('Story.id' => $id),'recursive'=>-1));
+          
+           $cc['Story']['main_img'] = Router::url("/" . $cc['Story']['main_img'], true); 
+           $cc['Story']['image'] = Router::url("/" . $cc['Story']['image'], true); 
+        
+        $this->set('cc', $cc);
+          
+     //   print_r($cc);exit;
+         if ($this->request->is(array('post', 'put'))) {
+
+             if ($this->request->data['Story']['main'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+                $sPath = "story";
+                $file = $this->Pk->uploadImageBase64($this->request->data['Story']['main'], $sFileName, $sPath);
+                if ($file['status'] == 'success') {
+                    unset($this->request->data['Story']['main_img']);
+                    $this->request->data['Story']['main_img'] = $file['url'];
+                } else {
+                    $this->request->data['Story']['main_img'] = "";
+                }
+            } else {
+                unset($this->request->data['Story']['main_img']);
+            }
+            if ($this->request->data['Story']['cimage'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+                $sPath = "story";
+                $file = $this->Pk->uploadImageBase64($this->request->data['Story']['cimage'], $sFileName, $sPath);
+                if ($file['status'] == 'success') {
+                    unset($this->request->data['Story']['image']);
+                    $this->request->data['Story']['image'] = $file['url'];
+                } else {
+                    $this->request->data['Story']['image'] = "";
+                }
+            } else {
+                unset($this->request->data['Story']['image']);
+            }
+         
+
+            $this->request->data['Story']['id'] = $id;
+            //print_r($this->request->data);exit;
+            if ($this->Story->save($this->request->data)) {
+                $this->Flash->success(__('The Story has been saved.'));
+                return $this->redirect(array('action' => 'my_post'));
+            } else {
+                $this->Flash->error(__('The Story could not be saved. Please, try again.'));
+            }
+        } else {
+            $options = array('conditions' => array('Story.' . $this->Story->primaryKey => $id));
+            $this->request->data = $this->Story->find('first', $options);
+        }
+     
+         
+     }
+     public function user_post(){
+      $this->layout = 'home';
+          
+     $find_post = $this->Story->find('all', array('conditions' => array('Story.id','Story.approved_post'=>0)));
+       foreach ($find_post as $i => $j) {            $find_post[$i]['Story']['image'] = Router::url("/" . $find_post[$i]['Story']['image'], true);
+
+            $find_post[$i]['Story']['main_img'] = Router::url("/" . $find_post[$i]['Story']['main_img'], true);
+        }
+   //  print_r($find_post);exit;
+      $this->set('find_post',$find_post);
+         
+     }
+     public function approved_post($id){
+         $arr['Story']['id'] = $id;
+         $arr['Story']['approved_post'] = 1;
+        
+         $this->Story->save($arr);
+       
+           $this->Flash->success(__('The Story has been saved.'));
+          return $this->redirect(array('action' => 'home'));
+          exit;
+         
+     } 
+     
+      public function delete_userpost($id) {
+        
+         $this->Story->id = $id;
+        if (!$this->Story->exists()) {
+            throw new NotFoundException(__('Invalid Restaurant'));
+        }
+        $this->request->allowMethod('post', 'delete');
+        if ($this->Story->delete()) {
+         //   $this->Flash->success(__('The Story has been deleted.'));
+        } else {
+            $this->Flash->error(__('The Story could not be deleted. Please, try again.'));
+        }
+        return $this->redirect(array('action' => 'user_post'));
+     }
 }

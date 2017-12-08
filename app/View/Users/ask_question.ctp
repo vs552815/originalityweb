@@ -35,7 +35,7 @@
 			
 			<hr class="colorgraph">
 			<div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-web-color btn-block btn-lg">Submit</button>
                         </div><br>
                          <?php echo $this->Form->end(); ?>       
 		
