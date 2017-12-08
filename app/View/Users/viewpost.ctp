@@ -19,6 +19,8 @@
                             <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'readpost', $value['Story']['id'])); ?>"><?php echo $value['Story']['title']; ?></a>
                         </div>
                         <div class="desc"><?php //echo strip_tags($value['Story']['stroy']);   ?></div>
+                        <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'edit_post', 'users' => false, $value['Story']['id'])); ?>">
+                            Edit</a>
                         <?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete_post', $value['Story']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $value['Story']['id']))); ?>
                     </div>
 

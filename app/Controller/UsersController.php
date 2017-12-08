@@ -212,12 +212,17 @@ class UsersController extends AppController {
            
            
         }
-            
+         
            $findstory['Story']['image'] = Router::url("/" . $findstory['Story']['image'], true);
            $findstory['Story']['main_img'] = Router::url("/" . $findstory['Story']['main_img'], true);
             $this->set('findstory',$findstory);
             $this->set('findcomment',$findcomment);
-        //    print_r($findcomment);exit;
+            
+         $findtrending = $this->Story->find('first', array('order'=>array('Story.id' => 'DESC'),'recursive'=>-1));
+         $findtrending['Story']['image'] = Router::url("/" . $findtrending['Story']['image'], true);
+        $this->set('findtrending',$findtrending);
+           
+      
          
      }
      

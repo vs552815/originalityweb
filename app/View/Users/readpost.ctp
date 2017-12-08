@@ -70,19 +70,22 @@
             
             
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="col-lg-4 col-md-4 col-sm-4" >
+            <div  class="col-sm-12" style="text-align: center;position: relative;margin-bottom: 20px;">
+                <h4 class="h4-tag">TRENDING </h4>
+                <?php echo $this->Html->image($findtrending['Story']['image'], array('style' => 'width:100%;')); ?>
+<!--                <h4> <?php //echo $findstory['Story']['title'] ?></h4>-->
+            </div>
+           
             <?php if($findstory['Story']['youtube_link']!=''){ ?>
+            
             <div  class="col-sm-12 ">
                 <iframe style="    width: 100%;height: 250px;" src="<?php echo $findstory['Story']['youtube_link'] ?>" frameborder="0" allowfullscreen></iframe>
             </div>
             
-            <br><br>
+            
             <?php } ?>
-             <div  class="col-sm-12" style="text-align: center;position: relative;">
-                <h4 class="h4-tag">TRENDING </h4>
-                <?php echo $this->Html->image($findstory['Story']['image'], array('style' => 'width:100%;')); ?>
-<!--                <h4> <?php //echo $findstory['Story']['title'] ?></h4>-->
-            </div>
+             
             
             <?php if($findstory['Story']['google_ad_code']!=''){ ?>
             <br><br>
@@ -104,7 +107,7 @@
         .h4-tag{
             margin-top: 0px;
             position: absolute;
-            top: 35%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: #fff;
