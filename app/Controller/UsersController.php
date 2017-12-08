@@ -344,14 +344,14 @@ class UsersController extends AppController {
           
         $this->set('meta_decscriptoi',$Solution['Solution']['decscription']);
          /////////////////////////
-        $che = $this->SolutionImage->find('all', array('conditions' => array('SolutionImage.solutions_id'=>$id), 'recursive' => -1));
+        $che = $this->SolutionImage->find('all', array('conditions' => array('SolutionImage.solutions_id'=>$ids), 'recursive' => -1));
         foreach ($che as $i => $j) {
             $che[$i]['SolutionImage']['sloution_image'] = Router::url("/" . $che[$i]['SolutionImage']['sloution_image'], true);
         }
         $this->set('che', $che);
-       
+      
         ///////////////////////////////////////////////////////////////// 
-         $findcomment = $this->SolutionComment->find('all', array('conditions' => array('SolutionComment.solutions_id'=>$id)));
+         $findcomment = $this->SolutionComment->find('all', array('conditions' => array('SolutionComment.solutions_id'=>$ids)));
               foreach ($findcomment as $i => $j) {
                  //$findcomment[$i]['Comment']['created_date'] = PkComponent::timeAgoInWords($findcomment[$i]['Comment']['created_date']);
                   if($findcomment[$i]['User']['profile_image']!=''){
@@ -362,7 +362,7 @@ class UsersController extends AppController {
         }
      
          $this->set('findcomment', $findcomment);
-         
+       
          
      }
     

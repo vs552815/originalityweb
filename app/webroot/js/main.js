@@ -85,6 +85,9 @@ jQuery(document).ready(function ($) {
     });
 
 
+
+
+
       $('#commentLogin').on('click', function () {
       // var obj=$(this).attr('rel');
        var obj=$(this).attr('rel');
@@ -326,3 +329,13 @@ $(document).ready(function () {
         });
         e.preventDefault(); // avoid to execute the actual submit of the form.
     });
+    
+    $(document).ready(function(){
+    $('.diable-btn').attr('disabled',true);
+    $('#Comment_sol').keyup(function(){
+        if($(this).val().length !=0)
+            $('.diable-btn').attr('disabled', false);            
+        else
+            $('.diable-btn').attr('disabled',true);
+    })
+});
