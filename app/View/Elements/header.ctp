@@ -46,6 +46,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+          <li><a  class="go-live-text">Go Live</a></li>
           <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_questions', 'users' => false)); ?>">Ask Questions</a></li>
           <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_post', 'users' => false)); ?>">Create Post</a></li>
           <?php $account_typ_id = $this->Session->read('Auth.User.account_type_id');

@@ -51,7 +51,32 @@ jQuery(document).ready(function ($) {
         });
     });
 
-///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+ $('.go-live-text').on('click', function () {
+        var url = webURL + "users/checkLiveLogin";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {}, // serializes the form's elements.
+            dataType: 'json',
+            context: this,
+            success: function (data)
+            {
+                console.info(data); // show response from the php script.
+                if (data.status == 'success') {
+                       window.location.href = webURL + "users/go_live";
+                } else {
+                   $('#LoginPopup').modal('show');
+                   
+                }
+            }
+        });
+    });
+
+
+
+
+///////////////////////////////////////////////////////////////
     $("#frmLogin").submit(function (e) {
         var url = webURL + "users/ajax_login"; // the script where you handle the form input.
         // alert(url); return false;
@@ -321,7 +346,7 @@ $(document).ready(function () {
                 if (data.status == 'success') {
                     window.location.href =  "";
                 } else {
-                    swal("", "That email address already in Gameing Geek.", "error");
+                    swal("", "That email address already in Originalityweb.", "error");
                     //$('#SignupPopup').modal('hide');
                     
                 }

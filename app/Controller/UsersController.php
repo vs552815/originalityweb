@@ -25,13 +25,26 @@ class UsersController extends AppController {
         // Allow users to register and logout.
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
-        $this->Auth->allow('delete_userpost','approved_post','delete_mypost','create_post','home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment','gaming_questions','readsolution','question_comment');
+        $this->Auth->allow('checkLiveLogin','test','delete_userpost','approved_post','delete_mypost','create_post','home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment','gaming_questions','readsolution','question_comment');
     }
     
     public function logout() {
         return $this->redirect($this->Auth->logout());
     }
     function checkLogin() {
+        $this->layout = 'ajax';
+        $this->autoRender = false;
+        if ($this->request->is('ajax')) {
+            $user = $this->Auth->user('id');
+            $account_type_id = $this->Session->read('Auth.User.id');
+            if ($user) {
+                    echo json_encode(array('status' => 'success', 'message' => 'logged in'));
+            } else {
+                echo json_encode(array('status' => 'failed', 'message' => 'not logged in'));
+            }
+        }
+    }
+    function checkLiveLogin() {
         $this->layout = 'ajax';
         $this->autoRender = false;
         if ($this->request->is('ajax')) {
@@ -275,35 +288,35 @@ class UsersController extends AppController {
                 $this->request->data['User']['account_type_id'] = 3;
                 if ($user = $this->User->saveAll($this->request->data)) {
                     
-                     if ($this->request->is('post')) {
-                        if ($this->request->data['User']['email'] != '') {
-                            $user = $this->User->find('first', array('conditions' => array('User.email' => $this->request->data['User']['email'])));
-                            if ($user) {
-                                $username = $user['User']['email'];
-                                $hash = md5(time() . rand(0, 9999));
-                                $link = Router::url(array('controller' => 'users', 'action' => 'home'), true);
-                                $Email = new CakeEmail();
-                                $Email->config('gmail');
-                                $Email->subject('Welcome to Originalityweb!');
-                                $Email->viewVars(array('link' => $link, 'email' => $username));
-                                $Email->template('usercreated', 'default')
-                                        ->emailFormat('html')
-                                        ->to($user['User']['email'])
-                                        ->from('vs552815@gmail.com')
-                                        ->send();
-                              //  $this->Flash->success(__('Please check your email address for further instractions.'));
-                            } else {
-                                $this->Flash->error(__('Email address does not exist in our system, try again'));
-                            }
-                        } else {
-                            $this->Flash->error(__('Invalid email address, try again'));
-                        }
-                    }
+//                     if ($this->request->is('post')) {
+//                        if ($this->request->data['User']['email'] != '') {
+//                            $user = $this->User->find('first', array('conditions' => array('User.email' => $this->request->data['User']['email'])));
+//                            if ($user) {
+//                                $username = $user['User']['email'];
+//                                $hash = md5(time() . rand(0, 9999));
+//                                $link = Router::url(array('controller' => 'users', 'action' => 'home'), true);
+//                                $Email = new CakeEmail();
+//                                $Email->config('gmail');
+//                                $Email->subject('Welcome to Originalityweb!');
+//                                $Email->viewVars(array('link' => $link, 'email' => $username));
+//                                $Email->template('usercreated', 'default')
+//                                        ->emailFormat('html')
+//                                        ->to($user['User']['email'])
+//                                        ->from('vs552815@gmail.com')
+//                                        ->send();
+//                              //  $this->Flash->success(__('Please check your email address for further instractions.'));
+//                            } else {
+//                                $this->Flash->error(__('Email address does not exist in our system, try again'));
+//                            }
+//                        } else {
+//                            $this->Flash->error(__('Invalid email address, try again'));
+//                        }
+//                    }
                     
                     $u = $this->User->findById($this->User->getLastInsertID());
                     $this->Auth->login($u['User']);
                     echo json_encode(array('status' => 'success', 'message' => 'The user has been saved.'));
-                     
+                    
                     //$this->Flash->companyregister(__('The user has been saved.', 'companyregister'));
                     // return $this->redirect(array('action' => 'postjob'));
                 } else {
@@ -617,7 +630,12 @@ class UsersController extends AppController {
         }
         return $this->redirect(array('action' => 'user_post'));
      }
-     public function create_news(){
-         
+     public function go_live(){
+           $this->layout = 'home';
+     }
+     
+     
+     public function test(){
+         $this->layout = 'home';
      }
 }

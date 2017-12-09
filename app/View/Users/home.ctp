@@ -60,49 +60,15 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
 
         </div>
     </div>
+   
+     
+    
 
-    <div id="first-slider">
-        <div id="carousel-example-generic" class="carousel slide carousel-fade">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox" style="text-align: center;">
-                <!-- Item 1 -->
-                <div class="item active " style=" background-image: url(http://s20.postimg.org/uxf8bzlql/image.jpg); background-size: cover;
-                     background-repeat: no-repeat;">
-
-                    <div class="row"><div class="container">
-
-                            <div style="    background: #0000004d;
-                                 padding: 10px;
-                                 color: #fff;">
-                                <h3 data-animation="animated bounceInDown">Add images, or even your logo!</h3>
-                                <h4 data-animation="animated bounceInUp">Easily use stunning effects</h4>             
-                            </div>
-                        </div></div>
-                </div> 
-
-                <!-- End Item 4 -->
-
-            </div>
-            <!-- End Wrapper for slides-->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
-            </a>
-        </div>
+    <a style="text-decoration:none;cursor: pointer;" href=""> 
+    <div class="col-sm-12 well" style="margin-top: 10px;border: 0px; height:120px;background-size: 50px 50px;background: #b51817;color: #fff;" >
+        <h2 style="text-align:center;">Live Streaming</h2>
     </div>
-
-
-
-    <div class="col-sm-12 well" style="margin-top: 10px;border: 0px; height:120px;background-size: 50px 50px;   background: url(https://assets-a.thrillist.com/images/thrillist/background_pattern_2x.png) center center ">
-
-    </div>
+</a>
 
 
 
