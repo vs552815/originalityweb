@@ -617,4 +617,7 @@ class UsersController extends AppController {
         }
         return $this->redirect(array('action' => 'user_post'));
      }
+     public function create_news(){
+         
+     }
 }

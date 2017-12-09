@@ -339,3 +339,57 @@ $(document).ready(function () {
             $('.diable-btn').attr('disabled',true);
     })
 });
+
+// /////////////////////////////////////////////////////////////////// this is for home header images
+//$uploadC = $('#upload-uimg').croppie({
+//    enableExif: true,
+//     viewport: {
+//        width: 150,
+//        height: 150,
+//        type: 'circle'
+//    },
+//    boundary: {
+//        width: 160,
+//        height: 160
+//    },
+//    showZoomer: false
+//});
+//
+//$('#my_uimg').on('change', function () {
+//    $('#1cttt').show();
+//    $('#select-uimg').hide();
+//     $("#my_uimg").hide();
+//    //$('#hide-remove-button1').hide();
+//    var reader = new FileReader();
+//    reader.onload = function (e) {
+//        $uploadC.croppie('bind', {
+//            url: e.target.result
+//        }).then(function () {
+//            console.log('jQuery bind complete');
+//        });
+//
+//    }
+//    reader.readAsDataURL(this.files[0]);
+//});
+//
+//$('.upload').on('click', function (ev) {
+//    $uploadC.croppie('result', {
+//        type: 'canvas',
+//        size: 'viewport'
+//    }).then(function (resp) {
+//        
+//                 $('#select-uimg').attr('src', resp);
+//                 $('#hiddenfield_uimg').val( resp);
+//             $('#select-uimg').show();
+//              $("#1cttt").hide();
+//              $("#my_uimg").hide();
+//               
+//    });
+//});
+//
+//$(document).ready(function () {
+//    $("#select-uimg").click(function () {
+//        $("input[id='my_uimg']").click();
+//    });
+//});
+/////////////////////////////////////////////////////////////

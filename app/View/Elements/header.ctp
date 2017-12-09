@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse" style="    border-radius: 0px;">
+<nav class="navbar navbar-inverse " style="    border-radius: 0px;">
   <div class="container-fluid">
        <div class="btn-group loginsignup">
             <button type="button" class="btn btn-md btn-primary dropdown-toggle" data-toggle="dropdown" style="    color: #fff;
@@ -16,8 +16,8 @@
                 if ($account_typ_id == 2) {
                     ?>
                  <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'viewpost', 'users' => false)); ?>" >View My Post</a></li>
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'post', 'users' => false)); ?>" >New Post</a></li>
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >My Profile</a></li>
+                   <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'user_post', 'users' => false)); ?>" >View User Post</a></li>
+                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >My Profile</a></li>
             <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout', 'users' => false)); ?>" >SIGN OUT</a></li>
 
                 <?php } else if ($account_typ_id == 3) { ?>
@@ -49,11 +49,9 @@
           <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_questions', 'users' => false)); ?>">Ask Questions</a></li>
           <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_post', 'users' => false)); ?>">Create Post</a></li>
           <?php $account_typ_id = $this->Session->read('Auth.User.account_type_id');
-            if ($account_typ_id == 2) {?>
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'viewpost', 'users' => false)); ?>" >View My Post</a></li>
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'user_post', 'users' => false)); ?>" >View User Post</a></li>
+            if ($account_typ_id == 2) {?> 
           <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'post', 'users' => false)); ?>" >New Post</a></li>
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >My Profile</a></li>
+          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_news', 'users' => false)); ?>" >Create News</a></li>
            <?php }else if($account_typ_id == 3){ ?>
           
            <?php } ?>
