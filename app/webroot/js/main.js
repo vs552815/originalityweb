@@ -1,7 +1,9 @@
 /* global webURL */
 ///////////////////////////////////////////////////////////
 jQuery(document).ready(function ($) {
-    
+    //////////////////////
+     $('#timepicker1').timepicker();
+    ///////////////////////
     $('.hide-login').on('click', function () {
         $('#LoginPopup').modal('hide');
     });
@@ -91,7 +93,8 @@ jQuery(document).ready(function ($) {
 
                 console.info(data); // show response from the php script.
                 if (data.status == 'success') {
-                    window.location.href = webURL + "users/home";
+                    window.location.href = "";
+//                    window.location.href = webURL + "users/home";
 
                 } else {
 

@@ -53,11 +53,6 @@
                 </div>
 
                 <div class="form-group">
-                    <lable id="view-lable">Google ad script</lable>
-    <?php echo $this->Form->input('google_ad_code', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
-                </div>
-
-                <div class="form-group">
                     <lable id="view-lable">Game Story*</lable>
                     <br>
     <?php echo $this->Form->input('stroy', array('class' => 'form-control', 'div' => false, 'label' => false, 'id' => 'textbottom')); ?>

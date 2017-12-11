@@ -19017,3 +19017,1053 @@ Request URL: /originalityweb/img/story/1510923032_65dfffdc79054e1467540b0cc8a997
 Stack Trace:
 #0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_8b4bea0a6ca8ef97b8c703d5ae1cb72d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_cc376a6b378f37430bcb542b98a9c56d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_de2ff588a9b50611f746dfce878e8ed7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_d5b052bffe6322dd894ea5d5e77294c6.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_92da3403c90b203719e0a0ab7cacb4ec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_90a1640dd12805a76b912d89576d0755.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_4103f909dbf42c902ab424ac7209e71e.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_1be6ade59e684eaa8234d2ac886d623b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_65e80c82b87ccd0e99d99144ac86556d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_e3da97dbeb91266e476364cd529f2101.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_3c34960449a6a08b236d470bfed9986b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_65dfffdc79054e1467540b0cc8a997c8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_c59b7e2d62e8b563458b7562728aa414.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:02:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_b13f44cf21d90eb311a3c9a217bcc17b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_65e80c82b87ccd0e99d99144ac86556d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_b13f44cf21d90eb311a3c9a217bcc17b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_1be6ade59e684eaa8234d2ac886d623b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_e3da97dbeb91266e476364cd529f2101.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_3c34960449a6a08b236d470bfed9986b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_8b4bea0a6ca8ef97b8c703d5ae1cb72d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_c59b7e2d62e8b563458b7562728aa414.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_de2ff588a9b50611f746dfce878e8ed7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_cc376a6b378f37430bcb542b98a9c56d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_d5b052bffe6322dd894ea5d5e77294c6.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_92da3403c90b203719e0a0ab7cacb4ec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_4103f909dbf42c902ab424ac7209e71e.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_65dfffdc79054e1467540b0cc8a997c8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:03:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_90a1640dd12805a76b912d89576d0755.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_65e80c82b87ccd0e99d99144ac86556d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_b13f44cf21d90eb311a3c9a217bcc17b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_1be6ade59e684eaa8234d2ac886d623b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_e3da97dbeb91266e476364cd529f2101.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_3c34960449a6a08b236d470bfed9986b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_8b4bea0a6ca8ef97b8c703d5ae1cb72d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:21 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_c59b7e2d62e8b563458b7562728aa414.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_de2ff588a9b50611f746dfce878e8ed7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_d5b052bffe6322dd894ea5d5e77294c6.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_cc376a6b378f37430bcb542b98a9c56d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_92da3403c90b203719e0a0ab7cacb4ec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_4103f909dbf42c902ab424ac7209e71e.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_90a1640dd12805a76b912d89576d0755.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:05:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_65dfffdc79054e1467540b0cc8a997c8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_65e80c82b87ccd0e99d99144ac86556d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_b13f44cf21d90eb311a3c9a217bcc17b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_1be6ade59e684eaa8234d2ac886d623b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_e3da97dbeb91266e476364cd529f2101.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_3c34960449a6a08b236d470bfed9986b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_8b4bea0a6ca8ef97b8c703d5ae1cb72d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_c59b7e2d62e8b563458b7562728aa414.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_92da3403c90b203719e0a0ab7cacb4ec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_cc376a6b378f37430bcb542b98a9c56d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_de2ff588a9b50611f746dfce878e8ed7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_d5b052bffe6322dd894ea5d5e77294c6.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_4103f909dbf42c902ab424ac7209e71e.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_90a1640dd12805a76b912d89576d0755.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:12:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_65dfffdc79054e1467540b0cc8a997c8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_65e80c82b87ccd0e99d99144ac86556d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_b13f44cf21d90eb311a3c9a217bcc17b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_1be6ade59e684eaa8234d2ac886d623b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_e3da97dbeb91266e476364cd529f2101.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_3c34960449a6a08b236d470bfed9986b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_8b4bea0a6ca8ef97b8c703d5ae1cb72d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_c59b7e2d62e8b563458b7562728aa414.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_4103f909dbf42c902ab424ac7209e71e.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_92da3403c90b203719e0a0ab7cacb4ec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_de2ff588a9b50611f746dfce878e8ed7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_cc376a6b378f37430bcb542b98a9c56d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_d5b052bffe6322dd894ea5d5e77294c6.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_90a1640dd12805a76b912d89576d0755.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:13:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_65dfffdc79054e1467540b0cc8a997c8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_65e80c82b87ccd0e99d99144ac86556d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_b13f44cf21d90eb311a3c9a217bcc17b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_1be6ade59e684eaa8234d2ac886d623b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_e3da97dbeb91266e476364cd529f2101.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_3c34960449a6a08b236d470bfed9986b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_8b4bea0a6ca8ef97b8c703d5ae1cb72d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_c59b7e2d62e8b563458b7562728aa414.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_d5b052bffe6322dd894ea5d5e77294c6.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_cc376a6b378f37430bcb542b98a9c56d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_4103f909dbf42c902ab424ac7209e71e.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_92da3403c90b203719e0a0ab7cacb4ec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_de2ff588a9b50611f746dfce878e8ed7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_90a1640dd12805a76b912d89576d0755.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:15:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_65dfffdc79054e1467540b0cc8a997c8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_65e80c82b87ccd0e99d99144ac86556d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_b13f44cf21d90eb311a3c9a217bcc17b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_1be6ade59e684eaa8234d2ac886d623b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_e3da97dbeb91266e476364cd529f2101.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_3c34960449a6a08b236d470bfed9986b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_8b4bea0a6ca8ef97b8c703d5ae1cb72d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_c59b7e2d62e8b563458b7562728aa414.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_cc376a6b378f37430bcb542b98a9c56d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_d5b052bffe6322dd894ea5d5e77294c6.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_92da3403c90b203719e0a0ab7cacb4ec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_de2ff588a9b50611f746dfce878e8ed7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_90a1640dd12805a76b912d89576d0755.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_4103f909dbf42c902ab424ac7209e71e.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:19:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_65dfffdc79054e1467540b0cc8a997c8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_65e80c82b87ccd0e99d99144ac86556d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_b13f44cf21d90eb311a3c9a217bcc17b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_1be6ade59e684eaa8234d2ac886d623b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_e3da97dbeb91266e476364cd529f2101.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_3c34960449a6a08b236d470bfed9986b.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_8b4bea0a6ca8ef97b8c703d5ae1cb72d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_c59b7e2d62e8b563458b7562728aa414.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511365658_92da3403c90b203719e0a0ab7cacb4ec.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923606_4103f909dbf42c902ab424ac7209e71e.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511366836_cc376a6b378f37430bcb542b98a9c56d.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510924204_de2ff588a9b50611f746dfce878e8ed7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1511280159_d5b052bffe6322dd894ea5d5e77294c6.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923032_65dfffdc79054e1467540b0cc8a997c8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:22:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1510923372_90a1640dd12805a76b912d89576d0755.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-12-11 12:46:54 Error: [MissingTableException] Table live_stream for model LiveStream was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'live_stream',
+  'class' => 'LiveStream',
+  'ds' => 'default',
+)
+Request URL: /originalityweb/users/add_live_stream
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(3667): Model->setSource('live_stream')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('LiveStream', 'fields')
+#4 C:\xampp\htdocs\originalityweb\app\View\Users\add_live_stream.ctp(2): FormHelper->create('LiveStream', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#9 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-12-11 12:46:55 Error: [MissingTableException] Table live_stream for model LiveStream was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'live_stream',
+  'class' => 'LiveStream',
+  'ds' => 'default',
+)
+Request URL: /originalityweb/users/add_live_stream
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(3667): Model->setSource('live_stream')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\Helper\FormHelper.php(480): FormHelper->_introspectModel('LiveStream', 'fields')
+#4 C:\xampp\htdocs\originalityweb\app\View\Users\add_live_stream.ctp(2): FormHelper->create('LiveStream', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#9 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

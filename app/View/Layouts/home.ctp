@@ -43,6 +43,7 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         echo $this->Html->css(array('http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css'));
         echo $this->Html->css(array('https://fonts.googleapis.com/css?family=Ubuntu:300,400'));
         echo $this->Html->css(array('sweetalert.css'));
+        echo $this->Html->css(array('bootstrap-timepicker.min.css'));
         ?> 
 
         <?php
@@ -184,6 +185,8 @@ if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
             
         </script>
         <?php echo $this->Html->script(array('main.js')); ?>
+        <?php echo $this->Html->script(array('bootstrap-timepicker.min.js')); ?>
+        <?php echo $this->Html->script(array('jquery.countdown.min.js')); ?>
 
 
 

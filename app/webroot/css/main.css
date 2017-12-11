@@ -171,9 +171,18 @@
     .mobile-view-tag{
             border: 1px solid #b1adad2e!important;
     }
-    .go-live-text{
+    .go-live-header{
     color: #b51817!important;
     font-weight: 600;
     font-size: 18px;
+    }
+    
+    .add-live-stream a{
+         background: #000;
+    color: #fff!important;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
     }
 

@@ -16,7 +16,7 @@ App::uses('CakeEmail', 'Network/Email');
  */
 class UsersController extends AppController {
 
-    public $uses = array('Comment','LikeDislike','Story','User','Solution','SolutionImage','SolutionComment');
+    public $uses = array('Comment','LikeDislike','Story','User','Solution','SolutionImage','SolutionComment','LiveStream');
     //var $helpers = array('Sh');
    public $components = array( 'Pk');
 
@@ -25,7 +25,7 @@ class UsersController extends AppController {
         // Allow users to register and logout.
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
-        $this->Auth->allow('checkLiveLogin','test','delete_userpost','approved_post','delete_mypost','create_post','home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment','gaming_questions','readsolution','question_comment');
+        $this->Auth->allow('go_live','checkLiveLogin','test','delete_userpost','approved_post','delete_mypost','create_post','home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment','gaming_questions','readsolution','question_comment');
     }
     
     public function logout() {
@@ -632,7 +632,27 @@ class UsersController extends AppController {
      }
      public function go_live(){
            $this->layout = 'home';
+           $find_live = $this->LiveStream->find('all', array());
+           $this->set('find_live',$find_live);
      }
+     
+      public function add_live_stream(){
+         $this->layout = 'home';
+        $id = $this->Auth->user('id');
+        if ($this->request->is('post')) {
+            $this->LiveStream->create();
+            //$this->request->data['Solution']['slug_question'] = $this->slugQuestion($this->request->data['Solution']['title']);
+            $this->request->data['LiveStream']['user_id'] = $id;
+print_r($this->request->data); exit;
+            if ($this->LiveStream->save($this->request->data)) {
+
+                return $this->redirect(array('action' => 'go_live'));
+            } else {
+                $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            }
+        }
+    }
+     
      
      
      public function test(){
