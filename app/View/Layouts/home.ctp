@@ -72,18 +72,7 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
   gtag('config', 'UA-81193898-5');
 </script>
      
-        
-        
-        
-        
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-5915063633225550",
-    enable_page_level_ads: true
-  });
-</script>
-        
+  
     </head>
     <body style="    height: 100%;
           display: flex;

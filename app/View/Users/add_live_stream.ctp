@@ -1,10 +1,21 @@
 <div class="container">
     <?php echo $this->Form->create('LiveStream', array('enctype' => 'multipart/form-data')); ?>
     <div class="row">
-        <div class="col-lg-12 panel panel-default" style="    padding: 15px;">
+        <div class="col-lg-12 panel panel-default" style="padding: 15px;">
             
             <h3 style="text-align: center;">Create Live Stream</h3>
             
+            <div class="form-group">
+             <?php if($check_watermark['User']['watermark']==''){ ?>
+                <a class="btn btn-lg btn-danger open-watermark-model" style="width:100%;" 
+                        href="#" onclick="$('#watermark-model').modal('show');"
+                        >Add Watermark</a>
+              <?php }else{ ?> 
+               
+                <h3 style="text-align: center;">Watermark: <?php echo $check_watermark['User']['watermark']; ?> <a style="font-size: 12px;cursor: pointer;">(edit)</a></h3>
+                
+              <?php } ?>  
+           </div>
             
             <div class="form-group">
                 <lable id="view-lable">Live Title*</lable>
@@ -28,7 +39,7 @@
             <div class="form-group">
                 <lable id="view-lable">Description*</lable>
                 <br>
-                <?php echo $this->Form->input('live_decescription', array('class' => 'form-control', 'div' => false, 'label' => false, 'id' => 'textbottom')); ?>
+                <?php echo $this->Form->input('live_decescription', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
             </div>
 
             <!--             <div class="form-group">
@@ -41,4 +52,25 @@
 
     </div>
 
+</div>
+
+
+<div class="modal fade" id="watermark-model" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <form class="watermark-form">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add Watermark</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text"  class="form-control  watermark-text" placeholder="Enter Watermark..."/>
+                <a class="btn btn-danger watermark-btn" style="width: 100%;">Submit</a>
+            </div>
+            <div class="modal-footer">
+               
+            </div>
+                </form>
+        </div>
+    </div>
 </div>

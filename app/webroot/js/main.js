@@ -365,8 +365,38 @@ $(document).ready(function () {
             $('.diable-btn').attr('disabled', false);            
         else
             $('.diable-btn').attr('disabled',true);
-    })
+    });
+    
+    //////////////////////////////////////////////////////
+    $(".watermark-btn").click(function (e) {
+        var url = webURL + "users/addwatermark";
+      
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {name: $('.watermark-text').val()}, // serializes the form's elements.
+            dataType: 'json',
+            context: this,
+            success: function (data)
+            {
+                console.info(data); // show response from the php script.
+                if (data.status == 'success') {
+                    location.reload();
+                } else {
+                    location.reload();
+                }
+            }
+        });
+    });
+    
+    
+    
 });
+
+
+
+
+
 
 // /////////////////////////////////////////////////////////////////// this is for home header images
 //$uploadC = $('#upload-uimg').croppie({

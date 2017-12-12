@@ -36,6 +36,7 @@
         Router::connect('/:storyslug', array('controller' => 'users', 'action' => 'readpost'), array('storyslug' => '[a-zA-Z0-9_-]+'));
         
         Router::connect('/solution/:solutionslug', array('controller' => 'users', 'action' => 'readsolution'), array('solutionslug' => '[a-zA-Z0-9_-]+'));
+        Router::connect('/live/:liveslug', array('controller' => 'users', 'action' => 'view_live'), array('liveslug' => '[a-zA-Z0-9_-]+'));
 
      
 /**

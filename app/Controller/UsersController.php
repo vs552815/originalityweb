@@ -25,7 +25,10 @@ class UsersController extends AppController {
         // Allow users to register and logout.
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
-        $this->Auth->allow('go_live','checkLiveLogin','test','delete_userpost','approved_post','delete_mypost','create_post','home','ajax_login','checkLogin','readpost','registerCompany','delete_post','story_comment','gaming_questions','readsolution','question_comment');
+        $this->Auth->allow('go_live','checkLiveLogin','test','delete_userpost','approved_post',
+                'delete_mypost','create_post','home','ajax_login','checkLogin','readpost','registerCompany',
+                'delete_post','story_comment','gaming_questions','readsolution','question_comment'
+                ,'checkapi');
     }
     
     public function logout() {
@@ -596,7 +599,8 @@ class UsersController extends AppController {
       $this->layout = 'home';
           
      $find_post = $this->Story->find('all', array('conditions' => array('Story.id','Story.approved_post'=>0)));
-       foreach ($find_post as $i => $j) {            $find_post[$i]['Story']['image'] = Router::url("/" . $find_post[$i]['Story']['image'], true);
+       foreach ($find_post as $i => $j) {            
+           $find_post[$i]['Story']['image'] = Router::url("/" . $find_post[$i]['Story']['image'], true);
 
             $find_post[$i]['Story']['main_img'] = Router::url("/" . $find_post[$i]['Story']['main_img'], true);
         }
@@ -632,28 +636,90 @@ class UsersController extends AppController {
      }
      public function go_live(){
            $this->layout = 'home';
-           $find_live = $this->LiveStream->find('all', array());
+           $find_live = $this->LiveStream->find('all', array('conditions' => array('LiveStream.id'),'order'=>array('LiveStream.id' => 'DESC')));
            $this->set('find_live',$find_live);
      }
      
       public function add_live_stream(){
          $this->layout = 'home';
         $id = $this->Auth->user('id');
+         $check_watermark = $this->User->find('first', array('conditions' => array('User.id'=>$id)));
+         $this->set('check_watermark',$check_watermark);
         if ($this->request->is('post')) {
             $this->LiveStream->create();
-            //$this->request->data['Solution']['slug_question'] = $this->slugQuestion($this->request->data['Solution']['title']);
+            $this->request->data['LiveStream']['live_slug'] = $this->slugQuestion($this->request->data['LiveStream']['live_title']);
             $this->request->data['LiveStream']['user_id'] = $id;
-print_r($this->request->data); exit;
-            if ($this->LiveStream->save($this->request->data)) {
+            
+            $link =  $this->request->data['LiveStream']['live_link'];
+            $video_id = explode("?v=", $link);
+            $video_id = $video_id[1];
 
+            $this->request->data['LiveStream']['live_link']=$video_id;
+            $this->request->data['LiveStream']['live_status']=1;
+
+           // print_r($this->request->data); exit;
+            if ($this->LiveStream->save($this->request->data)) {
+                $live_id = $this->LiveStream->getLastInsertID();
+                $arr['LiveStream']['live_slug'] = $this->slugLive($this->request->data['LiveStream']['live_title'], $live_id);
+                $arr['LiveStream']['id'] = $live_id;
+                $this->LiveStream->save($arr);
                 return $this->redirect(array('action' => 'go_live'));
             } else {
                 $this->Flash->error(__('The user could not be saved. Please, try again.'));
             }
         }
     }
-     
-     
+    
+    public function addwatermark() {
+        $id = $this->Auth->user('id');
+        // print_r();exit;
+        $arr['User']['watermark'] = $this->request->data['name'];
+        $arr['User']['id'] = $id;
+       
+        if ($this->User->save($arr)) {
+            echo json_encode(array('status' => 'success', 'message' => 'The Watermark has been saved.'));
+        }
+        exit;
+    }
+
+    public function view_live(){
+          $this->layout = 'home';
+        if ($this->request->params['liveslug'] != '') {
+            $c = $this->LiveStream->find('first', array('conditions' => array('LiveStream.live_slug' => $this->request->params['liveslug'])));
+            if ($c) {
+                $id = $c['LiveStream']['id'];
+            }
+        }
+        $find_live = $this->LiveStream->find('first', array('conditions' => array('LiveStream.id'=>$id)));
+        $find_live['User']['profile_image'] = Router::url("/" . $find_live['User']['profile_image'], true);
+        $this->set('find_live',$find_live);
+       
+    }
+
+
+
+
+
+
+//      public function checkapi() {
+//        $find_live = $this->LiveStream->find('all', array('conditions' => array('LiveStream.live_status' => 0)));
+//        $this->set('find_live', $find_live);
+//
+//       
+//        foreach ($find_live as $te) {
+//            
+//              $get = "https://www.googleapis.com/youtube/v3/videos?part=id&id={$te['LiveStream']['live_link']}&key={AIzaSyCpZpTl4y1t0ekebSNR2mahaYrl4ART8-k}";
+//         print_r($get);exit;
+//           
+//            $headers = get_headers('http://gdata.youtube.com/feeds/api/videos/' . $te['LiveStream']['live_link']);
+//            if (!strpos($headers[0], '200')) {
+//                echo "The YouTube video you entered does not exist";
+//                return false;
+//            }
+//
+//        }
+//        exit;
+//    }
      
      public function test(){
          $this->layout = 'home';
