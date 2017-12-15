@@ -12,7 +12,8 @@
                         >Add Watermark</a>
               <?php }else{ ?> 
                
-                <h3 style="text-align: center;">Watermark: <?php echo $check_watermark['User']['watermark']; ?> <a style="font-size: 12px;cursor: pointer;">(edit)</a></h3>
+                <h3 style="text-align: center;">Watermark: <?php echo $check_watermark['User']['watermark']; ?> 
+                    <a style="font-size: 12px;cursor: pointer;"  href="#" onclick="$('#edit-watermark-model').modal('show');">(edit)</a></h3>
                 
               <?php } ?>  
            </div>
@@ -65,7 +66,28 @@
             </div>
             <div class="modal-body">
                 <input type="text"  class="form-control  watermark-text" placeholder="Enter Watermark..."/>
-                <a class="btn btn-danger watermark-btn" style="width: 100%;">Submit</a>
+                <a class="btn btn-danger watermark-btn" style="width: 100%;">Save</a>
+            </div>
+            <div class="modal-footer">
+               
+            </div>
+                </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="edit-watermark-model" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <form class="watermark-form">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Watermark</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text"  class="form-control  edit-watermark-text" placeholder="Enter Watermark..."/>
+                <a class="btn btn-danger watermark-btn edit-watermark-btn" style="width: 100%;">Save</a>
             </div>
             <div class="modal-footer">
                
