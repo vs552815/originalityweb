@@ -1,5 +1,6 @@
 <div class="container">
     <div class="col-sm-12">
+        <div style="padding: 15px;">
         <blockquote class="quote-box">
             <div class="blog-post-actions">
                 <p class="blog-post-bottom pull-left">
@@ -10,7 +11,7 @@
                 </p>
             </div>
         </blockquote>
-
+    </div>
     </div>
 
     <div class="col-sm-12">
@@ -22,7 +23,48 @@
             <span  class="watermark-span"> <?php echo $find_live['User']['watermark'] ?></span>
         </div>
         <div class="col-sm-4">
-            <div  id="green">
+           <div class="col-sm-12">
+       
+            <div class="list-group">
+                <a href="" class="list-group-item youtube">
+                        <h3 class="pull-right">
+                            <i class="fa fa-youtube-play"></i>
+                        </h3>
+                        <h4 class="list-group-item-heading count">Youtub</h4>
+                        <p class="list-group-item-text">Subscribe</p>
+                    </a>
+                <a href="" class="list-group-item facebook-like">
+                    <h3 class="pull-right">
+                        <i class="fa fa-facebook-square"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        Facebook</h4>
+                    <p class="list-group-item-text">
+                         Like Page</p>
+                </a><a href="" class="list-group-item google-plus">
+                    <h3 class="pull-right">
+                        <i class="fa fa-google-plus-square"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        Google+</h4>
+                    <p class="list-group-item-text">
+                        Like Page</p>
+                </a><a href="" class="list-group-item twitter">
+                    <h3 class="pull-right">
+                        <i class="fa fa-twitter-square"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        Twitter</h4>
+                    <p class="list-group-item-text">
+                        Like Page</p>
+                </a>
+           
+        </div>  
+        </div>    
+            
+            
+        <div class="col-sm-12">
+              <div  id="green">
 
                 <div class="panel panel-success coupon">
                     <div class="panel-heading" id="head">
@@ -44,6 +86,12 @@
 
             </div>
         </div>
+     
+          
+        </div>
+        
+        
+        
 
     </div>
 
@@ -113,7 +161,7 @@
     }
 
     .coupon {
-        border: 3px dashed #bcbcbc;
+        border: 1px dashed #bcbcbc;
         border-radius: 10px;
 
         font-weight: 300;
@@ -134,4 +182,39 @@
         font-size: 12px;
     }
 
+    
+    
+    a { transition: all .3s ease;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease; }
+/* Visitor */
+a.visitor i,.visitor h4.list-group-item-heading { color:#E48A07; }
+a.visitor:hover { background-color:#E48A07; }
+a.visitor:hover * { color:#FFF; }
+/* Facebook */
+a.facebook-like i,.facebook-like h4.list-group-item-heading { color:#3b5998; }
+a.facebook-like:hover { background-color:#3b5998; }
+a.facebook-like:hover * { color:#FFF; }
+/* Google */
+a.google-plus i,.google-plus h4.list-group-item-heading { color:#dd4b39; }
+a.google-plus:hover { background-color:#dd4b39; }
+a.google-plus:hover * { color:#FFF; }
+/* Twitter */
+a.twitter i,.twitter h4.list-group-item-heading { color:#00acee; }
+a.twitter:hover { background-color:#00acee; }
+a.twitter:hover * { color:#FFF; }
+/* Linkedin */
+a.linkedin i,.linkedin h4.list-group-item-heading { color:#0e76a8; }
+a.linkedin:hover { background-color:#0e76a8; }
+a.linkedin:hover * { color:#FFF; }
+/* Tumblr */
+a.tumblr i,.tumblr h4.list-group-item-heading { color:#34526f; }
+a.tumblr:hover { background-color:#34526f; }
+a.tumblr:hover * { color:#FFF; }
+/* Youtube */
+a.youtube i,.youtube h4.list-group-item-heading { color:#c4302b; }
+a.youtube:hover { background-color:#c4302b; }
+a.youtube:hover * { color:#FFF; }
+/* Vimeo */
+a.vimeo i,.vimeo h4.list-group-item-heading { color:#44bbff; }
+a.vimeo:hover { background-color:#44bbff; }
+a.vimeo:hover * { color:#FFF; }
 </style>

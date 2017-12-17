@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-lg-12 panel panel-default" style="padding: 15px;">
             
-            <h3 style="text-align: center;">Create Live Stream</h3>
+            <h3 style="text-align: center;">Go Live</h3>
             
             <div class="form-group">
              <?php if($check_watermark['User']['watermark']==''){ ?>

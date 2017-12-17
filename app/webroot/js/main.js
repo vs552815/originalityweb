@@ -66,7 +66,7 @@ jQuery(document).ready(function ($) {
             {
                 console.info(data); // show response from the php script.
                 if (data.status == 'success') {
-                       window.location.href = webURL + "users/go_live";
+                       window.location.href = webURL + "users/add_live_stream";
                 } else {
                    $('#LoginPopup').modal('show');
                    

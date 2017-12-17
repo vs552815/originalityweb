@@ -25,7 +25,7 @@ class UsersController extends AppController {
         // Allow users to register and logout.
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
-        $this->Auth->allow('go_live','checkLiveLogin','test','delete_userpost','approved_post',
+        $this->Auth->allow('live_stream','checkLiveLogin','test','delete_userpost','approved_post',
                 'delete_mypost','create_post','home','ajax_login','checkLogin','readpost','registerCompany',
                 'delete_post','story_comment','gaming_questions','readsolution','question_comment'
                 ,'checkapi');
@@ -634,7 +634,7 @@ class UsersController extends AppController {
         }
         return $this->redirect(array('action' => 'user_post'));
      }
-     public function go_live(){
+     public function live_stream(){
            $this->layout = 'home';
            $find_live = $this->LiveStream->find('all', array('conditions' => array('LiveStream.id'),'order'=>array('LiveStream.id' => 'DESC')));
            $this->set('find_live',$find_live);
@@ -663,7 +663,7 @@ class UsersController extends AppController {
                 $arr['LiveStream']['live_slug'] = $this->slugLive($this->request->data['LiveStream']['live_title'], $live_id);
                 $arr['LiveStream']['id'] = $live_id;
                 $this->LiveStream->save($arr);
-                return $this->redirect(array('action' => 'go_live'));
+                return $this->redirect(array('action' => 'live_stream'));
             } else {
                 $this->Flash->error(__('The user could not be saved. Please, try again.'));
             }
@@ -721,6 +721,9 @@ class UsersController extends AppController {
 //        exit;
 //    }
      
+     public function youtube_profile(){
+         $this->layout = 'home';
+     }
      public function test(){
          $this->layout = 'home';
      }
