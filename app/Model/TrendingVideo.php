@@ -61,20 +61,20 @@ class TrendingVideo extends AppModel {
  *
  * @var array
  */
-	public $hasAndBelongsToMany = array(
-		'Comment' => array(
-			'className' => 'Comment',
-			'joinTable' => 'trending_video_comment',
-			'foreignKey' => 'trending_video_id',
-			'associationForeignKey' => 'comment_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-		)
-	);
+//	public $hasAndBelongsToMany = array(
+//		'Comment' => array(
+//			'className' => 'Comment',
+//			'joinTable' => 'trending_video_comment',
+//			'foreignKey' => 'trending_video_id',
+//			'associationForeignKey' => 'comment_id',
+//			'unique' => 'keepExisting',
+//			'conditions' => '',
+//			'fields' => '',
+//			'order' => '',
+//			'limit' => '',
+//			'offset' => '',
+//			'finderQuery' => '',
+//		)
+//	);
 
 }
