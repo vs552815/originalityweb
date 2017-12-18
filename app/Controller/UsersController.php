@@ -16,7 +16,8 @@ App::uses('CakeEmail', 'Network/Email');
  */
 class UsersController extends AppController {
 
-    public $uses = array('Comment','LikeDislike','Story','User','Solution','SolutionImage','SolutionComment','LiveStream');
+    public $uses = array('Comment','LikeDislike','Story','User','Solution','SolutionImage','SolutionComment','LiveStream'
+        ,'TrendingLikeDislike','TrendingVideo','TrendingVideoComment','VideoComment','VideoLikeDislike','YotubeProfile');
     //var $helpers = array('Sh');
    public $components = array( 'Pk');
 
@@ -28,7 +29,7 @@ class UsersController extends AppController {
         $this->Auth->allow('live_stream','checkLiveLogin','test','delete_userpost','approved_post',
                 'delete_mypost','create_post','home','ajax_login','checkLogin','readpost','registerCompany',
                 'delete_post','story_comment','gaming_questions','readsolution','question_comment'
-                ,'checkapi');
+                ,'checkapi','view_live','trending','view_video');
     }
     
     public function logout() {
@@ -693,38 +694,79 @@ class UsersController extends AppController {
         $find_live = $this->LiveStream->find('first', array('conditions' => array('LiveStream.id'=>$id)));
         $find_live['User']['profile_image'] = Router::url("/" . $find_live['User']['profile_image'], true);
         $this->set('find_live',$find_live);
-       
+        //print_r($find_live);exit;
+        
+        ////////////////////////////////////////////////////////////////////////////////////find youtube profile
     }
 
-
-
-
-
-
-//      public function checkapi() {
-//        $find_live = $this->LiveStream->find('all', array('conditions' => array('LiveStream.live_status' => 0)));
-//        $this->set('find_live', $find_live);
-//
-//       
-//        foreach ($find_live as $te) {
-//            
-//              $get = "https://www.googleapis.com/youtube/v3/videos?part=id&id={$te['LiveStream']['live_link']}&key={AIzaSyCpZpTl4y1t0ekebSNR2mahaYrl4ART8-k}";
-//         print_r($get);exit;
-//           
-//            $headers = get_headers('http://gdata.youtube.com/feeds/api/videos/' . $te['LiveStream']['live_link']);
-//            if (!strpos($headers[0], '200')) {
-//                echo "The YouTube video you entered does not exist";
-//                return false;
-//            }
-//
-//        }
-//        exit;
-//    }
      
      public function youtube_profile(){
-         $this->layout = 'home';
+           $this->layout = 'home';
+        $id = $this->Auth->user('id');
+        if ($this->request->is(array('put', 'post'))) {
+         // print_r($this->request->data);exit;
+            if ($this->User->save($this->request->data)) {
+                return $this->redirect(array('controller' => 'users', 'action' => 'youtube_profile'));
+            } else {
+                $this->Flash->error(__('The youtube_profile could not be saved. Please, try again.'));
+            }
+        } else {
+            $options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+            $imge = $this->request->data = $this->User->find('first', $options);
+        }
+         
      }
-     public function test(){
+     
+     public function trending(){
+         $this->layout = 'home';
+         
+           $find_live = $this->TrendingVideo->find('all', array('conditions' => array('TrendingVideo.id'),'order'=>array('TrendingVideo.id' => 'DESC')));
+           $this->set('find_live',$find_live);
+           print_r($find_live);exit;
+     }
+     public function add_video(){
+         //TrendingVideo
+        $this->layout = 'home';
+        $id = $this->Auth->user('id');
+        $check_watermark = $this->User->find('first', array('conditions' => array('User.id' => $id)));
+        $this->set('check_watermark', $check_watermark);
+        if ($this->request->is('post')) {
+            $this->TrendingVideo->create();
+            $link = $this->request->data['TrendingVideo']['trending_video_link'];
+            $video_id = explode("?v=", $link);
+            $video_id = $video_id[1];
+            $this->request->data['TrendingVideo']['trending_video_link'] = $video_id;
+            $this->request->data['TrendingVideo']['user_id'] = $id;
+
+           
+            if ($this->TrendingVideo->save($this->request->data)) {
+                $trending_id = $this->TrendingVideo->getLastInsertID();
+                $arr['TrendingVideo']['trending_slug'] = $this->slugTreding($this->request->data['TrendingVideo']['trending_video_title'], $trending_id);
+                $arr['TrendingVideo']['id'] = $trending_id;
+                $this->TrendingVideo->save($arr);
+                return $this->redirect(array('action' => 'trending'));
+            } else {
+                $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            }
+        }
+    }
+    
+    public function view_video(){
+           $this->layout = 'home';
+        if ($this->request->params['liveslug'] != '') {
+            $c = $this->LiveStream->find('first', array('conditions' => array('LiveStream.live_slug' => $this->request->params['liveslug'])));
+            if ($c) {
+                $id = $c['LiveStream']['id'];
+            }
+        }
+        $find_live = $this->LiveStream->find('first', array('conditions' => array('LiveStream.id'=>$id)));
+        $find_live['User']['profile_image'] = Router::url("/" . $find_live['User']['profile_image'], true);
+        $this->set('find_live',$find_live);
+        //print_r($find_live);exit;
+        
+    }
+    
+    public function test(){
          $this->layout = 'home';
      }
 }

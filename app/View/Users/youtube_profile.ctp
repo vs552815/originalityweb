@@ -1,5 +1,6 @@
 <div class="container">
-    <div style="text-align: center;"><h2>Edit your profile.<small>It's always easy</small></h2></div>
+
+    <div style="text-align: center;"><h2>Create<small> Your profile.</small></h2></div>
     <br>
     <?php echo $this->Form->create('User', array('enctype' => 'multipart/form-data')); ?>
     <?php echo $this->Form->input('User.id'); ?>
@@ -10,42 +11,52 @@
                 <div class="col-md-12">
 
                         <hr class="colorgraph">
+                        
+                        
+                        
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 
-                        <div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6">
-					<div class="form-group">
-                                             <label>Full Name</label>
-                           <?php echo $this->Form->input('User.fullname', array('class' => 'form-control input-lg', 'placeholder' => 'Full Name', 'label' => false, 'required')); ?>                 
-                               
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6">
-					<div class="form-group">
-                                             <label>Contact Number</label>
-				  <?php echo $this->Form->input('User.contact', array('class' => 'form-control input-lg', 'placeholder' => 'Contact Number', 'label' => false, 'required')); ?>                 
-                        
-					</div>
-				</div>
-			</div>
-                         
+                                 
 
                         
                         <div class="form-group">
-                            <label>Email Address</label>
-                            <?php echo $this->Form->input('User.email', array('class' => 'form-control input-lg', 'placeholder' => 'Email Address', 'label' => false, 'required')); ?>
+                            <label>YouTube channel URL</label>
+                            <?php echo $this->Form->input('User.youtube_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'YouTube channel URL', 'label' => false, 'required')); ?>
 
                         </div>
-                       
-                            <div class="form-group">
-                                <label>Description</label>
-                                <?php echo $this->Form->input('User.description', array( 'class' => 'form-control input-lg', 'placeholder' => 'Description', 'label' => false)); ?>
-
-                            </div>
                                 
-                                 <div class="row text-center">
-                            <button type="submit" class="btn btn-success btn-block btn-lg">Save</button></div>
+                        <div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="form-group">
+                                             <label>Twitter Page Link</label>
+                           <?php echo $this->Form->input('User.twitter_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'Twitter Page Link', 'label' => false, 'required')); ?>                 
+                               
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="form-group">
+                                             <label>Facebook Page Link</label>
+				  <?php echo $this->Form->input('User.facebook_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'Facebook Page Link', 'label' => false, 'required')); ?>                 
+                        
+					</div>
+				</div>
+                            
+                            
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="form-group">
+                                             <label>Google+ Page Link</label>
+				  <?php echo $this->Form->input('User.google_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'Google+ Page Link', 'label' => false, 'required')); ?>                 
+                        
+					</div>
+				</div>
+                            
+			</div>
+                        
+                       
+                         <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block btn-lg">Save</button>
+                        </div>
                         </div>
                         </div>
                       

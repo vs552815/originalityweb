@@ -37,6 +37,7 @@
         
         Router::connect('/solution/:solutionslug', array('controller' => 'users', 'action' => 'readsolution'), array('solutionslug' => '[a-zA-Z0-9_-]+'));
         Router::connect('/live/:liveslug', array('controller' => 'users', 'action' => 'view_live'), array('liveslug' => '[a-zA-Z0-9_-]+'));
+        Router::connect('/trending/:trendingslug', array('controller' => 'users', 'action' => 'view_video'), array('trendingslug' => '[a-zA-Z0-9_-]+'));
 
      
 /**

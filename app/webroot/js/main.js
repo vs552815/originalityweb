@@ -53,7 +53,7 @@ jQuery(document).ready(function ($) {
         });
     });
 
-///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////go live page check
  $('.go-live-text').on('click', function () {
         var url = webURL + "users/checkLiveLogin";
         $.ajax({
@@ -75,6 +75,27 @@ jQuery(document).ready(function ($) {
         });
     });
 
+///////////////////////////////////////////////////////////////add trending viddeo
+ $('.go-trending-text').on('click', function () {
+        var url = webURL + "users/checkLiveLogin";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {}, // serializes the form's elements.
+            dataType: 'json',
+            context: this,
+            success: function (data)
+            {
+                console.info(data); // show response from the php script.
+                if (data.status == 'success') {
+                       window.location.href = webURL + "users/add_video";
+                } else {
+                   $('#LoginPopup').modal('show');
+                   
+                }
+            }
+        });
+    });
 
 
 
