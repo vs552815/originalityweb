@@ -25564,3 +25564,383 @@ Stack Trace:
 #12 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #13 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2018-01-31 04:09:31 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:10:30 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:10:59 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:14:35 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:16:02 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:16:05 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:16:20 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:17:33 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:17:45 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:17:57 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:18:21 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:18:30 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:18:33 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:18:48 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:19:23 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:20:42 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:21:02 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:22:08 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:23:04 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:23:57 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:24:44 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:26:26 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:27:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:28:26 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:28:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:29:44 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:30:41 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:31:02 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:31:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:32:36 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:33:25 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:34:38 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:35:21 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:35:53 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:36:13 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:36:31 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:37:05 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:37:41 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 04:40:30 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/images/index/construction/logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 05:28:53 Error: [MissingControllerException] Controller class Index-construction.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Index-construction.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/index-construction.html
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-01-31 06:29:11 Error: [MissingActionException] Action UsersController::create_news() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'create_news',
+)
+Request URL: /originalityweb/users/create_news
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-01-31 06:32:27 Error: [MissingControllerException] Controller class Index-construction.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Index-construction.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/index-construction.html
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

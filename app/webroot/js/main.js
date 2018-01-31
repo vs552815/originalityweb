@@ -460,7 +460,11 @@ $(document).ready(function () {
 });
 
 
-
+$("#open-menu").click(function () {
+                    $(".fade-bg").fadeToggle();
+                    $("ul.fab-menu-inner").toggleClass("popin popout");
+                    $("#open-menu > i").toggleClass("fa-bars fa-times", "slow");
+                });
 
 
 

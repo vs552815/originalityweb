@@ -1,69 +1,118 @@
-<nav class="navbar navbar-inverse " style="    border-radius: 0px;">
-  <div class="container-fluid">
-       <div class="btn-group loginsignup">
-            <button type="button" class="btn btn-md btn-primary dropdown-toggle" data-toggle="dropdown" style="    color: #fff;
-                    background-color: #000;
-                    border: #000;
-                    font-size: 27px;     padding-bottom: 0px;
-    padding-top: 2px;
-    padding-right: 0px;">
-                <span class="caret"></span>
 
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-           </button>
-            <ul class="dropdown-menu signup-new" role="menu">
-                 <?php $account_typ_id = $this->Session->read('Auth.User.account_type_id');
-                if ($account_typ_id == 2) {
-                    ?>
-                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'viewpost', 'users' => false)); ?>" >View My Post</a></li>
-                   <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'user_post', 'users' => false)); ?>" >View User Post</a></li>
-                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >My Profile</a></li>
-            <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout', 'users' => false)); ?>" >SIGN OUT</a></li>
 
-                <?php } else if ($account_typ_id == 3) { ?>
-            <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'youtube_profile', 'users' => false)); ?>" >YouTube Profile</a></li>
-           <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >My Profile</a></li>
-           
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'my_post', 'users' => false)); ?>" >My Posts</a></li>
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'user_questions', 'users' => false)); ?>" >My Questions</a></li>
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout', 'users' => false)); ?>" >SIGN OUT</a></li>
-                <?php }else{ ?>
-                
+<header class="header-section fixed-header">
+    <div class="header-section-container">
+        <div class="top-header">
+            <ul class="fab-menu" id="fab-menu-mobile">
+    <li>
+        <a href="javascript:void(0)" class="material-shadow " id="open-menu">
+            <i class="fa fa-bars" aria-hidden="true"></i> 
+           <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+        </a>
+
+        <ul class="fab-menu-inner popout">
+
+            <?php
+            $account_typ_id = $this->Session->read('Auth.User.account_type_id');
+            if ($account_typ_id == 2) {
+                ?>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'viewpost', 'users' => false)); ?>" >
+                       V<span class="tip-name"> View My Post</span>
+                    </a></li>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'user_post', 'users' => false)); ?>" >
+                     V   <span class="tip-name">View User Post</span></a></li>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >
+                      M  <span class="tip-name">My Profile</span></a></li>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout', 'users' => false)); ?>" >
+                   S     <span class="tip-name">SIGN OUT</span></a></li>
+
+<?php } else if ($account_typ_id == 3) { ?>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'youtube_profile', 'users' => false)); ?>" >
+                      Y  <span class="tip-name">YouTube Profile</span></a></li>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >
+                     M   <span class="tip-name">My Profile</span></a></li>
+
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'my_post', 'users' => false)); ?>" >
+                      M  <span class="tip-name">My Posts</span></a></li>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'user_questions', 'users' => false)); ?>" >
+                      M  <span class="tip-name">My Questions</span></a></li>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout', 'users' => false)); ?>" >
+                      S  <span class="tip-name">SIGN OUT</span></a></li>
+<?php } else { ?>
+
                 <li><a href="#" style="    border-left: 0px;" onclick="$('#LoginPopup').modal('show');" id="signin-btn">
-                        <i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                        L<span class="tip-name">Login</span> </a></li>
                 <li><a href="#" onclick="$('#SignupPopup').modal('show');" id="signup-btn">
-                        <i class="fa fa-user-plus" aria-hidden="true"></i> Sign up</a></li>
-                           <?php } ?>
-                
-            </ul> 
-        </div>
-    <div class="navbar-header">
-       
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'home', 'users' => false)); ?>">Originalityweb</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-          <li><a  class="go-live-header go-live-text" href="javascript:void(0);">Go Live</a></li>
-          <li><a class="go-live-header" href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'live_stream', 'users' => false)); ?>">
-                  Live Streams</a></li>
-           <li><a  class="go-live-header" href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'trending', 'users' => false)); ?>"
-                   >Trending</a></li>
-          <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_questions', 'users' => false)); ?>">Ask Questions</a></li>
-          <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_post', 'users' => false)); ?>">Create Post</a></li>
-          <?php $account_typ_id = $this->Session->read('Auth.User.account_type_id');
-            if ($account_typ_id == 2) {?> 
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'post', 'users' => false)); ?>" >New Post</a></li>
-          <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_news', 'users' => false)); ?>" >Create News</a></li>
-           <?php }else if($account_typ_id == 3){ ?>
+                      S <span class="tip-name">Sign up</span></a></li>
+<?php } ?>
+
+        </ul> 
+                   
+
+
+                    </ul>
+    </li>
+</ul>
+    <div class="container">
+        <div class="row">
+            <div class="top-header-widget pt-0 pb-0">
+                <div class="top-header-widget-container mtl">
+                    <div class="navbar-header">
+                        <a href="index-construction.html" class="navbar-brand" title="PLUME" style="margin:0px;">
+                            Originalityweb
+                        </a>
+                    </div>
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="fa fa-plus" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
           
-           <?php } ?>
-      </ul>
-      
+            
+            
+        </div>
     </div>
-  </div>
-</nav>
+</div>
+
+        <div class="header-menu header-menu-center-side">
+
+            <div class="header-menu" style=""><div class="header-menu-container">
+                    
+                    <nav class="navbar">
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                                        <ul class="nav navbar-nav">
+                                            <li><a  class="go-live-header go-live-text" href="javascript:void(0);">Go Live</a></li>
+                                            <li><a class="go-live-header" href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'live_stream', 'users' => false)); ?>">
+                                                    Live Streams</a></li>
+                                            <li><a  class="go-live-header" href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'trending', 'users' => false)); ?>"
+                                                    >Trending</a></li>
+                                            <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_questions', 'users' => false)); ?>">Ask Questions</a></li>
+                                            <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_post', 'users' => false)); ?>">Create Post</a></li>
+                                            <?php $account_typ_id = $this->Session->read('Auth.User.account_type_id');
+                                            if ($account_typ_id == 2) {
+                                                ?> 
+                                                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'post', 'users' => false)); ?>" >New Post</a></li>
+                                                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_news', 'users' => false)); ?>" >Create News</a></li>
+                                            <?php } else if ($account_typ_id == 3) { ?>
+
+<?php } ?>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+
+                </div></div>
+        </div>
+    </div>
+</header>
