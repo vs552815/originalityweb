@@ -16,7 +16,7 @@ App::uses('CakeEmail', 'Network/Email');
 class UsersController extends AppController {
 
     public $uses = array('Comment', 'LikeDislike', 'Story', 'User', 'Solution', 'SolutionImage', 'SolutionComment', 'LiveStream'
-        , 'TrendingLikeDislike', 'TrendingVideo', 'TrendingVideoComment', 'VideoComment', 'VideoLikeDislike', 'YotubeProfile');
+        , 'TrendingLikeDislike', 'TrendingVideo', 'TrendingVideoComment', 'VideoComment', 'VideoLikeDislike', 'YotubeProfile','UpcomingGame');
     //var $helpers = array('Sh');
     public $components = array('Pk');
 
@@ -26,7 +26,7 @@ class UsersController extends AppController {
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
         $this->Auth->allow('live_stream', 'checkLiveLogin', 'test', 'delete_userpost', 'approved_post', 'delete_mypost', 'create_post', 'home', 'ajax_login', 'checkLogin', 'readpost', 'registerCompany', 'delete_post', 'story_comment', 'gaming_questions', 'readsolution', 'question_comment'
-                , 'checkapi', 'view_live', 'trending', 'view_video');
+                , 'checkapi', 'view_live', 'trending', 'view_video','create_upcomeing');
     }
 
     public function logout() {
@@ -86,6 +86,7 @@ class UsersController extends AppController {
 
     public function home() {
         $this->layout = 'home';
+        //UpcomingGame
         $find = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1), 'order' => array('Story.id' => 'DESC')));
         foreach ($find as $i => $j) {
             $find[$i]['Story']['image'] = Router::url("/" . $find[$i]['Story']['image'], true);
@@ -93,6 +94,20 @@ class UsersController extends AppController {
         }
         $this->set('find', $find);
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        $find_upcoming = $this->UpcomingGame->find('all', array('conditions' => array('UpcomingGame.id'), 'order' => array('UpcomingGame.id' => 'DESC')));
+        foreach ($find_upcoming as $i => $j) {
+            $find_upcoming[$i]['UpcomingGame']['image'] = Router::url("/" . $find_upcoming[$i]['UpcomingGame']['image'], true);
+           
+        }
+       // print_r($find_upcoming);exit;
+        $this->set('find_upcoming', $find_upcoming);
+        
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        
 
         $arr = array();
         $post_search = $this->Story->find('all', array('recursive' => -1));
@@ -750,8 +765,55 @@ class UsersController extends AppController {
         //print_r($find_live);exit;
     }
 
+    public function create_upcomeing() {
+        $this->layout = 'home';
+        //UpcomingGame
+          if ($this->request->is('post')) {
+            $this->UpcomingGame->create();
+//            if ($this->request->data['UpcomingGame']['cimage'] != "") {
+//                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+//                $sPath = "UpcomingGame";
+//                $file = $this->Pk->uploadImageBase64($this->request->data['UpcomingGame']['cimage'], $sFileName, $sPath);
+//                if ($file['status'] == 'success') {
+//                    unset($this->request->data['UpcomingGame']['image']);
+//                    $this->request->data['UpcomingGame']['image'] = $file['url'];
+//                } else {
+//                    $this->request->data['UpcomingGame']['image'] = "";
+//                }
+//            } else {
+//                unset($this->request->data['UpcomingGame']['image']);
+//            }
+
+            if ($this->request->data['UpcomingGame']['image']!= "") {
+
+                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+                $sPath = "UpcomingGame";
+                $file = $this->Pk->uploadImage($this->request->data['UpcomingGame']['image'], $sFileName, $sPath);
+                if ($file['status'] == 'success') {
+                    unset($this->request->data['UpcomingGame']['image']);
+                    $this->request->data['UpcomingGame']['image'] = $file['url'];
+                } else {
+                    $this->request->data['UpcomingGame']['image'] = "";
+                }
+            } else {
+                unset($this->request->data['UpcomingGame']['image']);
+            }
+ // print_r($this->request->data);exit;
+            if ($this->UpcomingGame->save($this->request->data)) {
+                 $upcoming_id = $this->UpcomingGame->getLastInsertID();
+                $arr['UpcomingGame']['upcoming_games_slug'] = $this->slugUpcomingGame($this->request->data['UpcomingGame']['title'], $upcoming_id);
+                $arr['UpcomingGame']['id'] = $upcoming_id;
+                $this->UpcomingGame->save($arr);
+                return $this->redirect(array('action' => 'home'));
+            } else {
+                $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            }
+        }
+    }
+
     public function test() {
         $this->layout = 'home';
+       
     }
 
 }

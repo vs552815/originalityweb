@@ -5,7 +5,7 @@
 
         <div class="form-group">
             <div style="width:50%;float:left;">
-                <p style="text-align:center;font-weight: bold;">Circle Image</p>
+                <p style="text-align:center;font-weight: bold;">Avatar</p>
                 <div style="width:50%;margin: 0 auto;">
                     <div class="col-lg-12 col-md-12 " >
                         <div id="cttt" style="display:none;"><div id="upload-cpnyimg"></div>
@@ -20,7 +20,7 @@
 
 
             <div style="width:50%;float:left;">
-                <p style="text-align:center;font-weight: bold;">Main Image</p>
+                <p style="text-align:center;font-weight: bold;">Cover Image</p>
                 <div style="width:50%;margin: 0 auto;">
                     <div class="col-lg-12 col-md-12 " >
                         <div id="cttt1" style="display:none;"><div id="upload-cpnyimg1"></div>
@@ -35,8 +35,9 @@
 
         </div>  
 
+       
         <div class="form-group">
-            <lable id="view-lable">Game Title*</lable>
+            <lable id="view-lable">Title*</lable>
             <?php echo $this->Form->input('title', array('class' => 'form-control', 'div' => false, 'required', 'label' => false)); ?>
         </div>
         
@@ -48,6 +49,22 @@
         <div class="form-group">
             <lable id="view-lable">Google ad script</lable>
             <?php echo $this->Form->input('google_ad_code', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
+        </div>
+        
+         <div class="form-group">
+            <lable id="view-lable">Category*</lable>
+            <br>
+             <?php
+                            echo $this->Form->input('ManageDesigner.item_category', array('type' => 'select', 'options' => array(
+                                    'ps4' => 'PS4',
+                                    'xbox' => 'XBOX',
+                                    'pc' => 'PC',
+                                    'movies' => 'MOVIES',
+                                    'tv' => 'TV',
+                                    'nintendo' => 'NINTENDO',
+                                ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
+                                'class' => 'form-control btn dropdown-toggle selectpicker btn-default','required'));
+                            ?>
         </div>
         
         <div class="form-group">

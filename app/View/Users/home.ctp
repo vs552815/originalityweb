@@ -53,7 +53,7 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
 
 
 
-<div class="container" style="padding-bottom: 100px;">
+<div class="container" style="padding-bottom: 100px;    box-shadow: 0 3px 25px 0 rgba(47,56,68,0.22);background: #fff;">
     <div class="" style="    margin: 10px 0 10px 0 ;
          border: 0px;
 
@@ -68,9 +68,115 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
 
         </div>
     </div>
-
+    
     <div class="row">
+        <div class="alert alert-success">  <span>Upcoming Games</span></div>
+        
+          <div class="col-md-4">
+            <!-- begin panel group -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                
+                <!-- panel 1 -->
+                  <?php foreach($find_upcoming as $k =>$game){ ?>
+                <div class="panel panel-default">
+                    <!--wrap panel heading in span to trigger image change as well as collapse -->
+                    <span class="side-tab" data-target="#tab<?php echo $game['UpcomingGame']['id'] ?>" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingOne"data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $game['UpcomingGame']['id'] ?>" aria-expanded="true" aria-controls="collapseOne">
+                            <h4 class="panel-title"><b><?php echo $game['UpcomingGame']['title'] ?></b></h4>
+                        </div>
+                    </span>
+                    
+                    <div id="collapse<?php echo $game['UpcomingGame']['id'] ?>" class="panel-collapse collapse <?php echo $k == 0 ? "" : ""; ?>" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                        <!-- Tab content goes here -->
+                        <b>Release Date<?php echo $game['UpcomingGame']['release_date'] ?></b>
+                        <?php echo $game['UpcomingGame']['description'] ?>
+                        </div>
+                    </div>
+                </div> 
+                <?php } ?>
+                <!-- / panel 1 -->
+                
+            </div> <!-- / panel-group -->
+             
+        </div> <!-- /col-md-4 -->
+        
+        <div class="col-md-8">
+            <!-- begin macbook pro mockup -->
+            <div class="md-macbook-pro md-glare">
+                <div class="md-lid">
+                    <div class="md-camera"></div>
+                    <div class="md-screen">
+                    <!-- content goes here -->                
+                        <div class="tab-featured-image">
+                            <div class="tab-content">
+                                 <?php foreach($find_upcoming as $k =>$game){ ?>
+                                <div class="tab-pane   <?php echo $k == 0 ? "in active" : ""; ?>" id="tab<?php echo $game['UpcomingGame']['id'] ?>">
+                                     <?php echo $this->Html->image($game['UpcomingGame']['image'], array('alt' => 'tab'.$game['UpcomingGame']['id'],'class'=>'img img-responsive')) ?>
+                                </div>
+                                 <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-base"></div>
+            </div> <!-- end macbook pro mockup -->
 
+
+
+        </div> <!-- / .col-md-8 -->
+        
+        
+    </div>
+    <style>
+        
+        .alert-success {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    border-radius: 0;
+}
+        .tab-pane .img-responsive{
+            width:100%;
+        }
+        .panel-heading:hover {
+    cursor:pointer;
+}
+.panel-heading {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+.side-tab:hover {
+        cursor: pointer;
+    }
+    .panel.panel-default {
+        border: none;
+        box-shadow: none !important;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        
+    }
+    .panel-heading {
+        border: none;
+        background-color: #eee;
+    
+    }
+    .panel-body {
+        background-color: #f5f5f5;
+    }
+    .panel-title {
+        font-weight: 400;
+        color: #000;
+    }
+    </style>
+  
+    <div class="row">
+<div class="alert alert-success">  <span>Top Stories</span></div>
         <?php foreach ($find as $story) { ?>
             <div class="col-lg-3 col-sm-6">
                 <a  href="<?php echo $this->Html->url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $story['Story']['story_slug'])); ?>">
@@ -103,9 +209,32 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
             </div>
         <?php } ?>
     </div>
+    
+    <div class="row">
+               <!-- Nav tabs --><div class="">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">All</a></li>
+                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">PS4</a></li>
+                                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">XBOX</a></li>
+                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">PC</a></li>
+                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">NINTENDO</a></li>
+                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">TV</a></li>
+                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">MOVIES</a></li>
+                                    </ul>
+
+</div>
+    </div>
 </div>
 
 <style>
+.nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
 
     .header-text {
         position: absolute;

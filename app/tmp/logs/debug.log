@@ -7548,3 +7548,206 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+2018-01-31 13:43:06 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php, line 1089]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+implode - [internal], line ??
+DboSource::create() - CORE\Cake\Model\Datasource\DboSource.php, line 1089
+Model::_doSave() - CORE\Cake\Model\Model.php, line 1940
+Model::save() - CORE\Cake\Model\Model.php, line 1758
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 772
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 13:55:47 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\originalityweb\app\Controller\Component\PkComponent.php, line 139]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PkComponent::uploadImageBase64() - APP\Controller\Component\PkComponent.php, line 139
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 776
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 13:55:47 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\originalityweb\app\Controller\Component\PkComponent.php, line 140]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PkComponent::uploadImageBase64() - APP\Controller\Component\PkComponent.php, line 140
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 776
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 13:55:47 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\originalityweb\app\Controller\Component\PkComponent.php, line 149]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PkComponent::uploadImageBase64() - APP\Controller\Component\PkComponent.php, line 149
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 776
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 13:56:16 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\originalityweb\app\Controller\Component\PkComponent.php, line 139]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PkComponent::uploadImageBase64() - APP\Controller\Component\PkComponent.php, line 139
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 776
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 13:56:16 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\originalityweb\app\Controller\Component\PkComponent.php, line 140]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PkComponent::uploadImageBase64() - APP\Controller\Component\PkComponent.php, line 140
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 776
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 13:56:16 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\originalityweb\app\Controller\Component\PkComponent.php, line 149]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PkComponent::uploadImageBase64() - APP\Controller\Component\PkComponent.php, line 149
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 776
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 14:02:14 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\originalityweb\app\Controller\Component\PkComponent.php, line 139]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PkComponent::uploadImageBase64() - APP\Controller\Component\PkComponent.php, line 139
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 790
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 14:02:14 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\originalityweb\app\Controller\Component\PkComponent.php, line 140]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PkComponent::uploadImageBase64() - APP\Controller\Component\PkComponent.php, line 140
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 790
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 14:02:14 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\originalityweb\app\Controller\Component\PkComponent.php, line 149]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PkComponent::uploadImageBase64() - APP\Controller\Component\PkComponent.php, line 149
+UsersController::create_upcomeing() - APP\Controller\UsersController.php, line 790
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 14:05:40 Debug: Notice (8): Undefined variable: story in [C:\xampp\htdocs\originalityweb\app\View\Users\home.ctp, line 114]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\home.ctp, line 114
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+UsersController::home() - APP\Controller\UsersController.php, line 121
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 14:05:40 Debug: Notice (8): Undefined variable: story in [C:\xampp\htdocs\originalityweb\app\View\Users\home.ctp, line 114]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\home.ctp, line 114
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+UsersController::home() - APP\Controller\UsersController.php, line 121
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 14:05:55 Debug: Notice (8): Undefined variable: story in [C:\xampp\htdocs\originalityweb\app\View\Users\home.ctp, line 114]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\home.ctp, line 114
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+UsersController::home() - APP\Controller\UsersController.php, line 121
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 14:05:55 Debug: Notice (8): Undefined variable: story in [C:\xampp\htdocs\originalityweb\app\View\Users\home.ctp, line 114]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\home.ctp, line 114
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+UsersController::home() - APP\Controller\UsersController.php, line 121
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 14:06:13 Debug: Notice (8): Undefined variable: story in [C:\xampp\htdocs\originalityweb\app\View\Users\home.ctp, line 114]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\home.ctp, line 114
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+UsersController::home() - APP\Controller\UsersController.php, line 121
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-01-31 14:06:13 Debug: Notice (8): Undefined variable: story in [C:\xampp\htdocs\originalityweb\app\View\Users\home.ctp, line 114]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\home.ctp, line 114
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+UsersController::home() - APP\Controller\UsersController.php, line 121
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 491
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+

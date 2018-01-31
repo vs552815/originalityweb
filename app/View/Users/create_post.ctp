@@ -9,7 +9,7 @@
                 <div class="form-group">
 
                     <div style="width:50%;float:left;" class="logo-upload">
-                        <p style="text-align:center;font-weight: bold;">Content Image</p>
+                        <p style="text-align:center;font-weight: bold;">Avatar</p>
                         <div style="width:50%;margin: 0 auto;" class="logo-upload1">
                             <div class="col-lg-12 col-md-12 " >
                                 <div id="cttt" style="display:none;"><div id="upload-cpnyimg"></div>
@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col-lg-12 panel panel-default" style="    padding: 15px;">
                 <div class="form-group">
-                    <lable id="view-lable">Game Title*</lable>
+                    <lable id="view-lable">Title*</lable>
     <?php echo $this->Form->input('title', array('class' => 'form-control', 'div' => false, 'required', 'label' => false)); ?>
                 </div>
 
@@ -51,6 +51,23 @@
                     <lable id="view-lable">Yotube Video Link</lable>
     <?php echo $this->Form->input('youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
                 </div>
+                
+                
+         <div class="form-group">
+            <lable id="view-lable">Category*</lable>
+            <br>
+             <?php
+                            echo $this->Form->input('ManageDesigner.item_category', array('type' => 'select', 'options' => array(
+                                    'ps4' => 'PS4',
+                                    'xbox' => 'XBOX',
+                                    'pc' => 'PC',
+                                    'movies' => 'MOVIES',
+                                    'tv' => 'TV',
+                                    'nintendo' => 'NINTENDO',
+                                ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
+                                'class' => 'form-control btn dropdown-toggle selectpicker btn-default','required'));
+                            ?>
+        </div>
 
                 <div class="form-group">
                     <lable id="view-lable">Game Story*</lable>

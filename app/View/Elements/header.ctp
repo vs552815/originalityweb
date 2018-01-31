@@ -16,6 +16,8 @@
             $account_typ_id = $this->Session->read('Auth.User.account_type_id');
             if ($account_typ_id == 2) {
                 ?>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_upcomeing', 'users' => false)); ?>" >
+                  U <span class="tip-name">Upcoming Games</span></a></li>
                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'viewpost', 'users' => false)); ?>" >
                        V<span class="tip-name"> View My Post</span>
                     </a></li>
@@ -27,6 +29,7 @@
                    S     <span class="tip-name">SIGN OUT</span></a></li>
 
 <?php } else if ($account_typ_id == 3) { ?>
+                   
                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'youtube_profile', 'users' => false)); ?>" >
                       Y  <span class="tip-name">YouTube Profile</span></a></li>
                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >
@@ -38,6 +41,9 @@
                       M  <span class="tip-name">My Questions</span></a></li>
                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout', 'users' => false)); ?>" >
                       S  <span class="tip-name">SIGN OUT</span></a></li>
+                      
+         
+                      
 <?php } else { ?>
 
                 <li><a href="#" style="    border-left: 0px;" onclick="$('#LoginPopup').modal('show');" id="signin-btn">
@@ -95,11 +101,12 @@
                                                     >Trending</a></li>
                                             <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_questions', 'users' => false)); ?>">Ask Questions</a></li>
                                             <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_post', 'users' => false)); ?>">Create Post</a></li>
-                                            <?php $account_typ_id = $this->Session->read('Auth.User.account_type_id');
+                                            <?php
+                                            $account_typ_id = $this->Session->read('Auth.User.account_type_id');
                                             if ($account_typ_id == 2) {
                                                 ?> 
                                                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'post', 'users' => false)); ?>" >New Post</a></li>
-                                                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_news', 'users' => false)); ?>" >Create News</a></li>
+                                                
                                             <?php } else if ($account_typ_id == 3) { ?>
 
 <?php } ?>
