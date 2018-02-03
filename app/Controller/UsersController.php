@@ -26,7 +26,7 @@ class UsersController extends AppController {
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
         $this->Auth->allow('live_stream', 'checkLiveLogin', 'test', 'delete_userpost', 'approved_post', 'delete_mypost', 'create_post', 'home', 'ajax_login', 'checkLogin', 'readpost', 'registerCompany', 'delete_post', 'story_comment', 'gaming_questions', 'readsolution', 'question_comment'
-                , 'checkapi', 'view_live', 'trending', 'view_video','create_upcomeing');
+                , 'checkapi', 'view_live', 'trending', 'view_video','create_upcomeing','getdatabycategory');
     }
 
     public function logout() {
@@ -87,7 +87,7 @@ class UsersController extends AppController {
     public function home() {
         $this->layout = 'home';
         //UpcomingGame
-        $find = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1), 'order' => array('Story.id' => 'DESC')));
+        $find = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1),'limit'=>4 ,'order' => array('Story.id' => 'DESC')));
         foreach ($find as $i => $j) {
             $find[$i]['Story']['image'] = Router::url("/" . $find[$i]['Story']['image'], true);
             $find[$i]['Story']['main_img'] = Router::url("/" . $find[$i]['Story']['main_img'], true);
@@ -103,6 +103,15 @@ class UsersController extends AppController {
        // print_r($find_upcoming);exit;
         $this->set('find_upcoming', $find_upcoming);
         
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
+        $find_all = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1)
+           // , 'limit'=>4 
+            ,'order' => array('Story.id' => 'DESC')));
+        foreach ($find_all as $i => $k) {
+            $find_all[$i]['Story']['image'] = Router::url("/" . $find_all[$i]['Story']['image'], true);
+            $find_all[$i]['Story']['main_img'] = Router::url("/" . $find_all[$i]['Story']['main_img'], true);
+        }
+        $this->set('find_all', $find_all);
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
         
         
@@ -505,8 +514,9 @@ class UsersController extends AppController {
             $this->request->data['Story']['account_type_id'] = $find_user['User']['account_type_id'];
 
             if ($this->Story->save($this->request->data)) {
-
+                    $this->Flash->pending_popup(__('The Story has been saved.'));
                 return $this->redirect(array('action' => 'my_post'));
+                
             } else {
                 $this->Flash->error(__('The user could not be saved. Please, try again.'));
             }
@@ -815,5 +825,20 @@ class UsersController extends AppController {
         $this->layout = 'home';
        
     }
+    
+     public function getdatabycategory() {
+             if ($this->request->is('ajax')) {
+        $category = $this->request->data['obj_name'];
+        $ajax_find = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1
+                , 'Story.story_catogory' => $category), 'order' => array('Story.id' => 'DESC'), 'recursive' => -1));
+     
+        foreach ($ajax_find as $i => $j) {
+            $ajax_find[$i]['Story']['image'] = Router::url("/" . $ajax_find[$i]['Story']['image'], true);
+            $ajax_find[$i]['Story']['main_img'] = Router::url("/" . $ajax_find[$i]['Story']['main_img'], true);
+        }
+        //     print_r($category);exit;
+          $this->set('ajax_find', $ajax_find);
+     }
+     }
 
 }

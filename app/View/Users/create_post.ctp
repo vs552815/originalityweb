@@ -58,12 +58,13 @@
             <br>
              <?php
                             echo $this->Form->input('ManageDesigner.item_category', array('type' => 'select', 'options' => array(
-                                    'ps4' => 'PS4',
-                                    'xbox' => 'XBOX',
-                                    'pc' => 'PC',
-                                    'movies' => 'MOVIES',
-                                    'tv' => 'TV',
-                                    'nintendo' => 'NINTENDO',
+                                    'not clear' => 'Just Story',
+                                    'ps4' => 'PS4 Story',
+                                    'xbox' => 'XBOX Story',
+                                    'pc' => 'PC Story',
+                                    'movies' => 'MOVIES Story',
+                                    'tv' => 'TV Story',
+                                    'nintendo' => 'NINTENDO Story',
                                 ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
                                 'class' => 'form-control btn dropdown-toggle selectpicker btn-default','required'));
                             ?>

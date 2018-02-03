@@ -113,34 +113,8 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
 
         <?php echo $this->Html->script(array('https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js'));
         ?>
-        <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=p4uqad4hmk8ntb6rug6fh0kq7v6d807nwx3dtkrogx7fq0c5"></script>
-
-        <script>
-            tinymce.init({
-
-                selector: '#textbottom',
-                height: 200,
-                theme: 'modern',
-                plugins: 'print preview fullpage powerpaste searchreplace autolink directionality advcode visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists textcolor wordcount tinymcespellchecker a11ychecker imagetools mediaembed  linkchecker contextmenu colorpicker textpattern help',
-
-                fontsize_formats: '8pt 10pt 12pt 14pt 18pt 24pt 36pt',
-                toolbar1: ' fontsizeselect | undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
-                toolbar2: ' forecolor backcolor ',
-                image_advtab: false,
-                templates: [
-                    {title: 'Test template 1', content: 'Test 1'},
-                    {title: 'Test template 2', content: 'Test 2'}
-                ],
-                content_css: [
-                    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
-                    '//www.tinymce.com/css/codepen.min.css',
-                    '//www.securityhorse.com/app/webroot/css/message.css'
-                ],
-                theme_advanced_font_sizes: "10px,12px,13px,14px,16px,18px,20px",
-                font_size_style_values: "10px,12px,13px,14px,16px,18px,20px"
-            });
-
-        </script>
+        
+      
 
         <script type="text/javascript">
             var webURL = '<?php echo $this->Html->url('/'); ?>'
@@ -177,7 +151,19 @@ if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
         <?php echo $this->Html->script(array('bootstrap-timepicker.min.js')); ?>
         <?php echo $this->Html->script(array('jquery.countdown.min.js')); ?>
 
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
 
+
+        <script>
+    $(document).ready(function() {
+        $('#textbottom').summernote({
+            tabsize: 2,
+        height: 250
+        });
+    });
+        </script>
+        
 
 
     </body>

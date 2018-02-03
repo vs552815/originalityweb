@@ -461,11 +461,36 @@ $(document).ready(function () {
 
 
 $("#open-menu").click(function () {
-                    $(".fade-bg").fadeToggle();
-                    $("ul.fab-menu-inner").toggleClass("popin popout");
-                    $("#open-menu > i").toggleClass("fa-bars fa-times", "slow");
-                });
+    $(".fade-bg").fadeToggle();
+    $("ul.fab-menu-inner").toggleClass("popin popout");
+    $("#open-menu > i").toggleClass("fa-bars fa-times", "slow");
+});
 
+  $(".tab-data").click(function (e) {
+      
+       var obj =$(this).attr('rel');
+     // alert(obj);return false;
+        var url = webURL + "users/getdatabycategory";
+      
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {obj_name: obj}, // serializes the form's elements.
+           // dataType: 'json',
+            context: this,
+            success: function (data)
+            {
+            console.info(data); // show response from the php script.
+            if (!$.trim(data)) {
+                swal("", "no result found !", "warning");
+            } else {
+                $('.tab-data-container').html(data);
+            }
+
+        }
+        });
+    });
+    
 
 
 // /////////////////////////////////////////////////////////////////// this is for home header images

@@ -64,7 +64,7 @@
             <div class="top-header-widget pt-0 pb-0">
                 <div class="top-header-widget-container mtl">
                     <div class="navbar-header">
-                        <a href="index-construction.html" class="navbar-brand" title="PLUME" style="margin:0px;">
+                        <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'home', 'users' => false)); ?>" class="navbar-brand" title="PLUME" style="margin:0px;">
                             Originalityweb
                         </a>
                     </div>

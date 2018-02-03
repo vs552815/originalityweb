@@ -51,9 +51,26 @@
             <?php echo $this->Form->input('youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
         </div>
         
-        <div class="form-group">
+<!--        <div class="form-group">
             <lable id="view-lable">Google ad script</lable>
-            <?php echo $this->Form->input('google_ad_code', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
+            <?php //echo $this->Form->input('google_ad_code', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
+        </div>-->
+
+        <div class="form-group">
+            <lable id="view-lable">Category*</lable>
+            <br>
+             <?php
+                            echo $this->Form->input('ManageDesigner.item_category', array('type' => 'select', 'options' => array(
+                                    'not clear' => 'Just Story',
+                                    'ps4' => 'PS4 Story',
+                                    'xbox' => 'XBOX Story',
+                                    'pc' => 'PC Story',
+                                    'movies' => 'MOVIES Story',
+                                    'tv' => 'TV Story',
+                                    'nintendo' => 'NINTENDO Story',
+                                ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
+                                'class' => 'form-control btn dropdown-toggle selectpicker btn-default','required'));
+                            ?>
         </div>
         
         <div class="form-group">

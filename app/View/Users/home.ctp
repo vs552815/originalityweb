@@ -176,16 +176,10 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
     </style>
   
     <div class="row">
-<div class="alert alert-success">  <span>Top Stories</span></div>
+<div class="alert alert-success">  <span>New Stories</span></div>
         <?php foreach ($find as $story) { ?>
             <div class="col-lg-3 col-sm-6">
                 <a  href="<?php echo $this->Html->url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $story['Story']['story_slug'])); ?>">
-                   
-                    
-                    
-                    
-                    
-                    
                     <div class="card hovercard">
                         <div class="cardheader" style=" background-image: url(<?php echo $story['Story']['image']; ?>);" alt="<?php echo $story['Story']['title']; ?>" >
 
@@ -211,23 +205,60 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
     </div>
     
     <div class="row">
+        <div class="alert alert-success" style="margin-bottom: 0px;">  <span>Top Stories</span></div>
                <!-- Nav tabs --><div class="">
                                     <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">All</a></li>
-                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">PS4</a></li>
-                                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">XBOX</a></li>
-                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">PC</a></li>
-                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">NINTENDO</a></li>
-                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">TV</a></li>
-                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">MOVIES</a></li>
+                                        <li class="active">
+                                            <a href="javascript:void(0);" onclick="location.reload();"  data-toggle="tab">All</a>
+                                        </li>
+                                        <li ><a href=""  class="tab-data" data-toggle="tab" rel="ps4">PS4</a></li>
+                                        <li ><a href=""  class="tab-data" data-toggle="tab" rel="xbox">XBOX</a></li>
+                                        <li ><a href="" class="tab-data" data-toggle="tab" rel="pc">PC</a></li>
+                                        <li ><a href=""  class="tab-data" data-toggle="tab" rel="nintendo">NINTENDO</a></li>
+                                        <li ><a href=""  class="tab-data" data-toggle="tab" rel="tv">TV</a></li>
+                                        <li ><a href=""   class="tab-data" data-toggle="tab" rel="movies">MOVIES</a></li>
                                     </ul>
 
 </div>
+               <div class="tab-data-container">
+                   <?php foreach ($find_all as $story) { ?>
+            <div class="col-lg-3 col-sm-6">
+                <a  href="<?php echo $this->Html->url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $story['Story']['story_slug'])); ?>">
+                    <div class="card hovercard">
+                        <div class="cardheader" style=" background-image: url(<?php echo $story['Story']['image']; ?>);" alt="<?php echo $story['Story']['title']; ?>" >
+
+                        </div>
+                        <div class="avatar">
+
+                            <?php echo $this->Html->image($story['Story']['main_img'], array('alt' => $story['Story']['title'])) ?>
+                        </div>
+                        <div class="info">
+                            <div class="title">
+
+                                <a  href="<?php echo $this->Html->url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $story['Story']['story_slug'])); ?>">
+                                    <?php echo strip_tags($story['Story']['title']); ?>
+                            </div>
+                            <div class="desc">Posted by: <?php echo strip_tags($story['User']['fullname']); ?></div>
+
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+        <?php } ?>
+               </div>
     </div>
 </div>
 
 <style>
-.nav-tabs { border-bottom: 2px solid #DDD; }
+.glyphicon { margin-right:5px;}
+.section-box h2 { margin-top:0px;}
+.section-box h2 a { font-size:15px; }
+.glyphicon-heart { color:#e74c3c;}
+.glyphicon-comment { color:#27ae60;}
+.separator { padding-right:5px;padding-left:5px; }
+.section-box hr {margin-top: 0;margin-bottom: 5px;border: 0;border-top: 1px solid rgb(199, 199, 199);}
+    .nav-tabs { border-bottom: 2px solid #DDD; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
     .nav-tabs > li > a { border: none; color: #666; }
         .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
