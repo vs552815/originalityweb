@@ -1,7 +1,7 @@
 
-<div class="col-sm-12 well" style="border: 0px; height:120px;background-size: 50px 50px;   background: url(https://assets-a.thrillist.com/images/thrillist/background_pattern_2x.png) center center ">
+<!--<div class="col-sm-12 well" style="border: 0px; height:120px;background-size: 50px 50px;   background: url(https://assets-a.thrillist.com/images/thrillist/background_pattern_2x.png) center center ">
 
-</div>
+</div>-->
 
 <div class="container">
     <div class="row">
@@ -80,8 +80,8 @@
             <?php if($findstory['Story']['youtube_link']!=''){ ?>
             
             <div  class="col-sm-12 ">
-                <iframe style="    width: 100%;height: 250px;" src="<?php echo $findstory['Story']['youtube_link'] ?>" frameborder="0" allowfullscreen></iframe>
-            </div>
+                <iframe width="100%" height="200px" src="<?php echo "https://www.youtube.com/embed/" . $findstory['Story']['youtube_link'] ?>" frameborder="0" allowfullscreen>
+                </iframe>  </div>
             
             
             <?php } ?>

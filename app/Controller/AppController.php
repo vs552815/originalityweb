@@ -73,35 +73,9 @@ class AppController extends Controller {
         $this->Auth->allow('index', 'view');
     }
     
-     public function slugStory($text) {
-        $this->loadModel('TopHeader');
-        $title = $text;
-        // replace non letter or digits by -
-        $text = preg_replace('~[^\pL\d]+~u', '-', $text);
-
-        // transliterate
-        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
-        // remove unwanted characters
-        $text = preg_replace('~[^-\w]+~', '', $text);
-
-        // trim
-        $text = trim($text, '-');
-
-        // remove duplicate -
-        $text = preg_replace('~-+~', '-', $text);
-
-        // lowercase
-        $text = strtolower($text);
-
-        if (empty($text)) {
-            $text = 'n-a';
-        }
-        return $text ;
-    }
-    
+  
      public function slugQuestion($text) {
-        $this->loadModel('TopHeader');
+      //  $this->loadModel('TopHeader');
         $title = $text;
         // replace non letter or digits by -
         $text = preg_replace('~[^\pL\d]+~u', '-', $text);
@@ -128,7 +102,7 @@ class AppController extends Controller {
     }
     
     public function slugLive($text, $job_id) {
-        $this->loadModel('Job');
+        //$this->loadModel('Job');
         $title = $text;
         // replace non letter or digits by -
         $text = preg_replace('~[^\pL\d]+~u', '-', $text);
@@ -157,7 +131,7 @@ class AppController extends Controller {
     }
     
         public function slugTreding($text, $job_id) {
-        $this->loadModel('Job');
+        //$this->loadModel('Job');
         $title = $text;
         // replace non letter or digits by -
         $text = preg_replace('~[^\pL\d]+~u', '-', $text);
@@ -186,7 +160,7 @@ class AppController extends Controller {
     }
     
     public function slugUpcomingGame($text, $game_id) {
-        $this->loadModel('UpcomingGame');
+       // $this->loadModel('UpcomingGame');
         $title = $text;
         // replace non letter or digits by -
         $text = preg_replace('~[^\pL\d]+~u', '-', $text);
@@ -211,4 +185,59 @@ class AppController extends Controller {
         }
         return $text . "-" . $game_id;
     }
+    
+       public function slugStory($text, $story_id) {
+      //  $this->loadModel('TopHeader');
+        $title = $text;
+        // replace non letter or digits by -
+        $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+
+        // transliterate
+        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+        // remove unwanted characters
+        $text = preg_replace('~[^-\w]+~', '', $text);
+
+        // trim
+        $text = trim($text, '-');
+
+        // remove duplicate -
+        $text = preg_replace('~-+~', '-', $text);
+
+        // lowercase
+        $text = strtolower($text);
+
+        if (empty($text)) {
+            $text = 'n-a';
+        }
+        return $text . "-" . $story_id;
+    }
+    
+    public function gamingSlugStory($text, $gaming_id) {
+      //  $this->loadModel('TopHeader');
+        $title = $text;
+        // replace non letter or digits by -
+        $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+
+        // transliterate
+        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+        // remove unwanted characters
+        $text = preg_replace('~[^-\w]+~', '', $text);
+
+        // trim
+        $text = trim($text, '-');
+
+        // remove duplicate -
+        $text = preg_replace('~-+~', '-', $text);
+
+        // lowercase
+        $text = strtolower($text);
+
+        if (empty($text)) {
+            $text = 'n-a';
+        }
+        return $text . "-" . $gaming_id;
+    }
+    
 }

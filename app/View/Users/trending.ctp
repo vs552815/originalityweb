@@ -5,17 +5,6 @@
         </h1>
     </div>
     
-    <div class="col-sm-12">
-        <div class="col-sm-6 col-md-6">
-            <h2>Trending Videos</h2>
-        </div>  
-        <div class="col-sm-6 col-md-6">
-            <a class="btn btn-lg btn-danger go-trending-text" href="javascript:void(0)" style="float: right;">
-                <i class="fa fa-plus" aria-hidden="true"></i> Add a Video
-            </a>
-        </div>  
-    </div>
-    
    
     <div class="col-sm-12 col-lg-12" style="padding: 0px;">
         <div style="padding: 15px;">
@@ -24,10 +13,10 @@
                 <div class="row">
                     <div class="col col-xs-6">
                         <h3 class="panel-title" style="    line-height: 30px;
-                            height: 30px;">Live Streamings</h3>
+                            height: 30px;">Trending Videos</h3>
                     </div>
                     <div class="col col-xs-6 text-right">
-                        <button type="button" class="btn btn-sm btn-danger go-live-text">Add New Stream</button>
+                        <a type="button" class="btn btn-sm btn-danger go-trending-text" href="javascript:void(0)">Add a Video</a>
                     </div>
                 </div>
             </div>

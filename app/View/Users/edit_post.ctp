@@ -1,72 +1,144 @@
 <div class="container">
-    
-        <div class="" >
+
+    <div class="" >
         <?php echo $this->Form->create('Story', array('enctype' => 'multipart/form-data')); ?>
         <!-- Message body -->
         <div class="row" style="    margin-bottom: 50px;">
-  <div class="col-lg-12" style="    padding: 15px;">
-        <div class="form-group">
-      
-            <div style="width:50%;float:left;" class="logo-upload">
-                <p style="text-align:center;font-weight: bold;">Content Image</p>
-                <div style="width:50%;margin: 0 auto;" class="logo-upload1">
-                    <div class="col-lg-12 col-md-12 " >
-                        <div id="cttt" style="display:none;"><div id="upload-cpnyimg"></div>
-                            <div style="width:35%;margin:0 auto;" ><a class="btn btn-primary upload-cimg"  style="    width: 100%;">Crop Image</a> </div>
-                        </div> 
-                        <?php echo $this->Html->image($cc['Story']['main_img'], array('style' => 'width:100%;cursor:pointer;', 'id' => 'select-cmpnyimg')); ?><br>
-                        <?php echo $this->Form->file('Story.main_img', array('id' => 'my_cimg', 'style' => 'display:none')); ?> 
-                        <?php echo $this->Form->input('main', array('type' => 'hidden', 'id' => 'hiddenfield_cimg')); ?>
-                    </div>
+            <div class="col-lg-12" style="    padding: 15px;">
+
+                <div class="form-group">
+
+                    <div style="width:50%;float:left;" class="logo-upload">
+                        <label>Avator </label>
+
+                        <?php
+                        echo $this->Form->input('Story.main_img', array('label' => false, 'type' => 'file', 'accept' => 'image/*'));
+                        if (isset($this->request->data['Story']['main_img']) && $this->request->data['Story']['main_img'] != '') {
+                            ?>
+                            <?php echo $this->Html->image($dd['Story']['main_img'], array('style' => 'width:100px;cursor:pointer;')); ?>
+                        <?php } ?>
+                    </div>  
+
+
+                    <div style="width:50%;float:left;" class="logo-main">
+                        <label>Cover Image </label>
+
+                        <?php
+                        echo $this->Form->input('Story.image', array('label' => false, 'type' => 'file', 'accept' => 'image/*'));
+                        if (isset($this->request->data['Story']['image']) && $this->request->data['Story']['image'] != '') {
+                            ?>
+                            <?php echo $this->Html->image($dd['Story']['image'], array('style' => 'width:100px;cursor:pointer;')); ?>
+                        <?php } ?>
+                    </div> 
+
                 </div>   
+
             </div>  
-
-
-            <div style="width:50%;float:left;" class="logo-main">
-                <p style="text-align:center;font-weight: bold;">Cover Image</p>
-                <div style="width:50%;margin: 0 auto;" class="logo-main1">
-                    <div class="col-lg-12 col-md-12 " >
-                        <div id="cttt1" style="display:none;"><div id="upload-cpnyimg1"></div>
-                            <div style="width:35%;margin:0 auto;" ><a class="btn btn-success upload-cimg1"  style="    width: 100%;">Crop Image</a> </div>
-                        </div> 
-                        <?php echo $this->Html->image($cc['Story']['image'], array('style' => 'width:100%;cursor:pointer;', 'id' => 'select-cmpnyimg1')); ?><br>
-                        <?php echo $this->Form->file('Story.image', array('id' => 'my_cimg1', 'style' => 'display:none')); ?>   
-                        <?php echo $this->Form->input('cimage', array('type' => 'hidden', 'id' => 'hiddenfield_cimg1')); ?>
-                    </div>
-                </div>   
-            </div> 
-
-        </div>  
-        </div>  
         </div>
+
         <div class="row">
-         <div class="col-lg-12 panel panel-default" style="    padding: 15px;">
-        <div class="form-group">
-            <lable id="view-lable">Game Title*</lable>
-            <?php echo $this->Form->input('title', array('class' => 'form-control', 'div' => false, 'required', 'label' => false)); ?>
-        </div>
-        
-        <div class="form-group">
-            <lable id="view-lable">Yotube Video Link</lable>
-            <?php echo $this->Form->input('youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
-        </div>
-        
-        <div class="form-group">
-            <lable id="view-lable">Google ad script</lable>
-            <?php echo $this->Form->input('google_ad_code', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
-        </div>
-        
-        <div class="form-group">
-            <lable id="view-lable">Game Story*</lable>
-            <br>
-            <?php echo $this->Form->input('stroy', array('class' => 'form-control', 'div' => false, 'label' => false, 'id' => 'textbottom')); ?>
-        </div>
+            <div class="col-lg-12 panel panel-default" style="    padding: 15px;">
+
+                <?php
+                $account_typ_id = $this->Session->read('Auth.User.account_type_id');
+                if ($account_typ_id == 2) {
+                    ?>
 
 
-             <button type="submit" class="btn-lg btn-primary btn-web-color" id="login-btn" style="width:100%;" >post</button>
-        <?php echo $this->Form->end(); ?>
+                    <div class="form-group">
+                        <lable id="view-lable">Game Title*</lable>
+                        <?php echo $this->Form->input('title', array('class' => 'form-control', 'div' => false, 'required', 'label' => false)); ?>
+                    </div>
+                <?php if ($dd['Story']['youtube_link'] == '') { ?>
+                        <div class="form-group">
+                            <lable id="view-lable">Yotube Video Link</lable>
+                            <?php echo $this->Form->input('Story.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
+                        </div>
+                    <?php } else { ?>
+                  <div class="form-group">
+                            <lable id="view-lable">Yotube Video Link</lable>
+                            <?php echo $this->Form->input('Story.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false,'disabled')); ?>
+                        </div>
+
+                    <?php } ?>
+                    <div class="form-group">
+                        <lable id="view-lable">Google ad script</lable>
+                        <?php echo $this->Form->input('google_ad_code', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
+                    </div>
+
+                    <div class="form-group">
+                        <lable id="view-lable">Category*</lable>
+                        <br>
+                        <?php
+                        echo $this->Form->input('Story.story_catogory', array('type' => 'select', 'options' => array(
+                                'ps4' => 'PS4',
+                                'xbox' => 'XBOX',
+                                'pc' => 'PC',
+                                'movies' => 'MOVIES',
+                                'tv' => 'TV',
+                                'nintendo' => 'NINTENDO',
+                            ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
+                            'class' => 'form-control btn dropdown-toggle selectpicker btn-default', 'required'));
+                        ?>
+                    </div>
+
+                    <div class="form-group">
+                        <lable id="view-lable">Game Story*</lable>
+                        <br>
+                        <?php echo $this->Form->input('stroy', array('class' => 'form-control', 'div' => false, 'label' => false, 'id' => 'textbottom')); ?>
+                    </div>
+                <?php } else if ($account_typ_id == 3) { ?>
+
+                    <div class="form-group">
+                        <lable id="view-lable">Title*</lable>
+                        <?php echo $this->Form->input('title', array('class' => 'form-control', 'div' => false, 'required', 'label' => false)); ?>
+                    </div>
+
+                     <?php if ($dd['Story']['youtube_link'] == '') { ?>
+                        <div class="form-group">
+                            <lable id="view-lable">Yotube Video Link</lable>
+                            <?php echo $this->Form->input('Story.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
+                        </div>
+                    <?php } else { ?>
+                  <div class="form-group">
+                            <lable id="view-lable">Yotube Video Link</lable>
+                            <?php echo $this->Form->input('Story.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false,'disabled')); ?>
+                        </div>
+
+                    <?php } ?>
+
+
+                    <div class="form-group">
+                        <lable id="view-lable">Category*</lable>
+                        <br>
+                        <?php
+                        echo $this->Form->input('Story.story_catogory', array('type' => 'select', 'options' => array(
+                                'ps4' => 'PS4',
+                                'xbox' => 'XBOX',
+                                'pc' => 'PC',
+                                'movies' => 'MOVIES',
+                                'tv' => 'TV',
+                                'nintendo' => 'NINTENDO',
+                                'other' => 'OTHER',
+                            ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
+                            'class' => 'form-control btn dropdown-toggle selectpicker btn-default', 'required'));
+                        ?>
+                    </div>
+
+                    <div class="form-group">
+                        <lable id="view-lable">Your Story*</lable>
+                        <br>
+                        <?php echo $this->Form->input('stroy', array('class' => 'form-control', 'div' => false, 'label' => false, 'id' => 'textbottom')); ?>
+                    </div>
+
+
+                <?php } ?>
+
+                <button type="submit" class="btn-lg btn-primary btn-web-color" id="login-btn" style="width:100%;" >post</button>
+                <?php echo $this->Form->end(); ?>
+            </div>
+
         </div>
- 
-    </div>
+
     </div>
 </div>

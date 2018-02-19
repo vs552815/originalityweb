@@ -16,7 +16,7 @@
                     </div>
                     <div class="info">
                         <div class="title">
-                            <a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'readpost', $value['Story']['id'])); ?>"><?php echo $value['Story']['title']; ?></a>
+                            <a style="    font-size: 14px;"  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'readpost', $value['Story']['id'])); ?>"><?php echo $value['Story']['title']; ?></a>
                         </div>
                         <div class="desc"><?php //echo strip_tags($value['Story']['stroy']);   ?></div>
                         <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'edit_post', 'users' => false, $value['Story']['id'])); ?>">

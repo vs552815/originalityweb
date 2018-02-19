@@ -1,17 +1,3 @@
-<?php echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'); ?>
-<script>
-    $(document).ready(function () {
-        $('.thumbnail').click(function () {
-            $('.modal-body').empty();
-            var title = $(this).parent('a').attr("title");
-            $('.modal-title').html(title);
-            $($(this).parents('div').html()).appendTo('.modal-body');
-            $('#myModal').modal({show: true});
-        });
-    });
-</script>
-
-
 <div class="container" style="padding-bottom: 120px;">
     <h2 style="text-align:center;"><?php echo $Solution['Solution']['title'] ?></h2><br>
     <div class="row">
@@ -35,13 +21,40 @@
 
         <div class="col-sm-6">
             <?php if (!empty($che)) { ?>
-                <?php foreach ($che as $ch) { ?>
-                    <div class="col-lg-6 col-sm-4 col-xs-12">
-                        <a title="<?php echo $ch['SolutionImage']['id'] ?>" href="#">
-                            <?php echo $this->Html->image($ch['SolutionImage']['sloution_image'], array('class' => 'thumbnail img-responsive')); ?>
-                        </a>
+                <div class="">
+
+                    <div class="">
+                        <!-- Carousel -->
+                        <div id="carousel-example-generic" data-interval="false" class="carousel slide home-carousel" data-ride="carousel" style="    box-shadow: 0 3px 25px 0 rgba(47,56,68,0.22);">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators carousel-indicators-home">
+                                <?php foreach ($che as $k => $slider) { ?>
+                                    <li data-target="#carousel-example-generic" data-slide-to="<?php echo $slider['SolutionImage']['id'] ?>" class="<?php echo $k == 0 ? "active" : ""; ?>"></li>
+                                <?php } ?>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <?php foreach ($che as $k => $slider) { ?>
+                                    <div class="item <?php echo $k == 0 ? "active" : ""; ?>" style="    background: #fff;">
+                                        <div class="fw-section rounded padding-top-4x padding-bottom-4x">
+                                            <?php echo $this->Html->image($slider['SolutionImage']['sloution_image'], array('class' => 'thumbnail img-responsive')); ?>
+
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control carousel-control-color" href="#carousel-example-generic" data-slide="prev" style="background-image:none;z-index: 0;">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control carousel-control-color" href="#carousel-example-generic" data-slide="next" style="background-image:none;z-index: 0;">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div><!-- /carousel -->
                     </div>
-                <?php } ?>
+
+
+                </div>
             <?php } ?>
         </div>
 
@@ -66,24 +79,24 @@
                         </span>
                     </div>
                     <?php foreach ($findcomment as $ct) { ?>
-                    
-                    <ul class="list-unstyled ui-sortable">
+
+                        <ul class="list-unstyled ui-sortable">
                             <strong class="pull-left primary-font"><?php echo $ct['User']['fullname'] ?></strong>
                             </br>
                             <li class="ui-state-default"><?php echo $ct['SolutionComment']['comment'] ?></li>
                         </ul>
-                    
+
                     <?php } ?>
 
                 </div>
             </div>
-         
+
         </div>
 
         <div class="col-sm-6">
             <?php if ($Solution['Solution']['video_link'] != '') { ?>
                 <div  class="col-sm-12 ">
-                    <iframe style="    width: 100%;height: 250px;" src="<?php echo $Solution['Solution']['video_link']; ?>" frameborder="0" allowfullscreen></iframe>
+                    <iframe style="width: 100%;height: 250px;" src="<?php echo $Solution['Solution']['video_link']; ?>" frameborder="0" allowfullscreen></iframe>
                 </div>
 
                 <br><br>
@@ -91,18 +104,6 @@
 
         </div>
 
-    </div>
-</div>
-
-<div tabindex="-1" class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <button class="close close-btn" type="button" data-dismiss="modal">×</button>	
-            <div class="modal-body" style="    padding:0px;">
-
-            </div>
-
-        </div>
     </div>
 </div>
 
@@ -178,14 +179,7 @@
         margin-bottom: 0!important;
         border-radius: 0!important;
         border:0px!important;
+        width: 100%;
     }
-    .close-btn{
-        position: absolute;
-        font-size: 50px;
-        z-index: 1;
-        color: #000;
-        right: 0px;
-        opacity: 2;
-        font-weight: normal;
-    }
+    
 </style>

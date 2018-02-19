@@ -55,7 +55,7 @@
             <lable id="view-lable">Category*</lable>
             <br>
              <?php
-                            echo $this->Form->input('ManageDesigner.item_category', array('type' => 'select', 'options' => array(
+                            echo $this->Form->input('Story.story_catogory', array('type' => 'select', 'options' => array(
                                     'ps4' => 'PS4',
                                     'xbox' => 'XBOX',
                                     'pc' => 'PC',

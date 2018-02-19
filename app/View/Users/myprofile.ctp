@@ -4,7 +4,7 @@
 if ($finduser['User']['profile_image'] != '') {
     $img = Router::url("/" . $finduser['User']['profile_image'], true);
 } else {
-    $img = Router::url("/img/images/uploadPhotoAvatarGroup.png", true);
+    $img = Router::url("/img/images/add_image.png", true);
 }
 ?>
 <div class="container">
@@ -24,11 +24,11 @@ if ($finduser['User']['profile_image'] != '') {
             <div class="rela-block user-desc" id="user_description"><?php echo $finduser['User']['description'] ?></div>
             
         </div>
-        <div class="rela-block profile-card-stats">
+<!--        <div class="rela-block profile-card-stats">
             <div class="floated profile-stat works" id="num_works">28<br></div>
             <div class="floated profile-stat followers" id="num_followers">112<br></div>
             <div class="floated profile-stat following" id="num_following">245<br></div>
-        </div>
+        </div>-->
     </div>
 
     </div>

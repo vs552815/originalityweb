@@ -16,7 +16,8 @@ App::uses('CakeEmail', 'Network/Email');
 class UsersController extends AppController {
 
     public $uses = array('Comment', 'LikeDislike', 'Story', 'User', 'Solution', 'SolutionImage', 'SolutionComment', 'LiveStream'
-        , 'TrendingLikeDislike', 'TrendingVideo', 'TrendingVideoComment', 'VideoComment', 'VideoLikeDislike', 'YotubeProfile','UpcomingGame');
+        , 'TrendingLikeDislike', 'TrendingVideo', 'TrendingVideoComment', 'VideoComment', 'VideoLikeDislike', 'YotubeProfile', 'UpcomingGame'
+        ,'GamingStory');
     //var $helpers = array('Sh');
     public $components = array('Pk');
 
@@ -26,7 +27,7 @@ class UsersController extends AppController {
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
         $this->Auth->allow('live_stream', 'checkLiveLogin', 'test', 'delete_userpost', 'approved_post', 'delete_mypost', 'create_post', 'home', 'ajax_login', 'checkLogin', 'readpost', 'registerCompany', 'delete_post', 'story_comment', 'gaming_questions', 'readsolution', 'question_comment'
-                , 'checkapi', 'view_live', 'trending', 'view_video','create_upcomeing');
+                , 'checkapi', 'view_live', 'trending', 'view_video', 'create_upcomeing', 'getdatabycategory','readstory','new_story','gaming_story');
     }
 
     public function logout() {
@@ -87,27 +88,35 @@ class UsersController extends AppController {
     public function home() {
         $this->layout = 'home';
         //UpcomingGame
-        $find = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1), 'order' => array('Story.id' => 'DESC')));
+        $find = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1), 'limit' => 4, 'order' => array('Story.id' => 'DESC')));
         foreach ($find as $i => $j) {
             $find[$i]['Story']['image'] = Router::url("/" . $find[$i]['Story']['image'], true);
             $find[$i]['Story']['main_img'] = Router::url("/" . $find[$i]['Story']['main_img'], true);
         }
         $this->set('find', $find);
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
-        
+
         $find_upcoming = $this->UpcomingGame->find('all', array('conditions' => array('UpcomingGame.id'), 'order' => array('UpcomingGame.id' => 'DESC')));
         foreach ($find_upcoming as $i => $j) {
             $find_upcoming[$i]['UpcomingGame']['image'] = Router::url("/" . $find_upcoming[$i]['UpcomingGame']['image'], true);
-           
         }
-       // print_r($find_upcoming);exit;
+        // print_r($find_upcoming);exit;
         $this->set('find_upcoming', $find_upcoming);
-        
+
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
-        
-        
-        
-        
+        $find_all = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1)
+            // , 'limit'=>4 
+            , 'order' => array('Story.id' => 'DESC')));
+        foreach ($find_all as $i => $k) {
+            $find_all[$i]['Story']['image'] = Router::url("/" . $find_all[$i]['Story']['image'], true);
+            $find_all[$i]['Story']['main_img'] = Router::url("/" . $find_all[$i]['Story']['main_img'], true);
+        }
+        $this->set('find_all', $find_all);
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
         $arr = array();
         $post_search = $this->Story->find('all', array('recursive' => -1));
@@ -376,7 +385,7 @@ class UsersController extends AppController {
             $che[$i]['SolutionImage']['sloution_image'] = Router::url("/" . $che[$i]['SolutionImage']['sloution_image'], true);
         }
         $this->set('che', $che);
-
+       
         ///////////////////////////////////////////////////////////////// 
         $findcomment = $this->SolutionComment->find('all', array('conditions' => array('SolutionComment.solutions_id' => $ids)));
         foreach ($findcomment as $i => $j) {
@@ -438,7 +447,7 @@ class UsersController extends AppController {
         }
     }
 
-    public function user_questions() {
+    public function my_questions() {
         $this->layout = 'home';
         $id = $this->Auth->user('id');
         $find = $this->Solution->find('all', array('conditions' => array('Solution.user_id' => $id)));
@@ -455,7 +464,7 @@ class UsersController extends AppController {
 
 
             if ($this->Solution->save($this->request->data)) {
-                return $this->redirect(array('controller' => 'users', 'action' => 'user_questions'));
+                return $this->redirect(array('controller' => 'users', 'action' => 'my_questions'));
             } else {
                 $this->Flash->error(__('The Solution could not be saved. Please, try again.'));
             }
@@ -471,10 +480,18 @@ class UsersController extends AppController {
         $this->layout = 'home';
         if ($this->request->is('post')) {
             $this->Story->create();
-            if ($this->request->data['Story']['main'] != "") {
-                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+           
+                $link = $this->request->data['Story']['youtube_link'];
+                $video_id = explode("?v=", $link);
+                $video_id = $video_id[1];
+                $this->request->data['Story']['youtube_link'] = $video_id;
+            
+          
+            if ($this->request->data['Story']['main_img']['name'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['Story']['main_img']['name']);
                 $sPath = "story";
-                $file = $this->Pk->uploadImageBase64($this->request->data['Story']['main'], $sFileName, $sPath);
+                $file = $this->Pk->uploadImage($this->request->data['Story']['main_img'], $sFileName, $sPath);
+
                 if ($file['status'] == 'success') {
                     unset($this->request->data['Story']['main_img']);
                     $this->request->data['Story']['main_img'] = $file['url'];
@@ -484,10 +501,12 @@ class UsersController extends AppController {
             } else {
                 unset($this->request->data['Story']['main_img']);
             }
-            if ($this->request->data['Story']['cimage'] != "") {
-                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+
+            if ($this->request->data['Story']['image']['name'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['Story']['image']['name']);
                 $sPath = "story";
-                $file = $this->Pk->uploadImageBase64($this->request->data['Story']['cimage'], $sFileName, $sPath);
+                $file = $this->Pk->uploadImage($this->request->data['Story']['image'], $sFileName, $sPath);
+
                 if ($file['status'] == 'success') {
                     unset($this->request->data['Story']['image']);
                     $this->request->data['Story']['image'] = $file['url'];
@@ -497,7 +516,8 @@ class UsersController extends AppController {
             } else {
                 unset($this->request->data['Story']['image']);
             }
-            $this->request->data['Story']['story_slug'] = $this->slugStory($this->request->data['Story']['title']);
+            // print_r($this->request->data);exit;
+            // $this->request->data['Story']['story_slug'] = $this->slugStory($this->request->data['Story']['title']);
             $user_id = $this->Auth->user('id');
 
             $find_user = $this->User->find('first', array('conditions' => array('User.id' => $user_id), 'recursive' => -1));
@@ -506,6 +526,14 @@ class UsersController extends AppController {
 
             if ($this->Story->save($this->request->data)) {
 
+                $story_id = $this->Story->getLastInsertID();
+                $arr['Story']['story_slug'] = $this->slugStory($this->request->data['Story']['title'], $story_id);
+                $arr['Story']['id'] = $story_id;
+                $this->Story->save($arr);
+
+
+
+                $this->Flash->pending_popup(__('The Story has been saved.'));
                 return $this->redirect(array('action' => 'my_post'));
             } else {
                 $this->Flash->error(__('The user could not be saved. Please, try again.'));
@@ -523,13 +551,21 @@ class UsersController extends AppController {
         }
         //print_r($find_user);exit;
         $this->set('find_post', $find_post);
+        //////////
+        $find_story = $this->GamingStory->find('all', array('conditions' => array('GamingStory.user_id' => $user_id), 'recursive' => -1));
+        foreach ($find_story as $k => $m) {
+            $find_story[$k]['GamingStory']['image'] = Router::url("/" . $find_story[$k]['GamingStory']['image'], true);
+            $find_story[$k]['GamingStory']['cover_image'] = Router::url("/" . $find_story[$k]['GamingStory']['cover_image'], true);
+        }
+        //print_r($find_user);exit;
+        $this->set('find_story', $find_story);
     }
 
     public function delete_mypost($id) {
 
         $this->Story->id = $id;
         if (!$this->Story->exists()) {
-            throw new NotFoundException(__('Invalid Restaurant'));
+            throw new NotFoundException(__('Invalid GamingStory'));
         }
         $this->request->allowMethod('post', 'delete');
         if ($this->Story->delete()) {
@@ -539,24 +575,49 @@ class UsersController extends AppController {
         }
         return $this->redirect(array('action' => 'my_post'));
     }
+    
+    public function delete_mystory($id) {
+
+        $this->GamingStory->id = $id;
+        if (!$this->GamingStory->exists()) {
+            throw new NotFoundException(__('Invalid GamingStory'));
+        }
+        $this->request->allowMethod('post', 'delete');
+        if ($this->GamingStory->delete()) {
+            //   $this->Flash->success(__('The Story has been deleted.'));
+        } else {
+            $this->Flash->error(__('The GamingStory could not be deleted. Please, try again.'));
+        }
+        return $this->redirect(array('action' => 'my_post'));
+    }
 
     public function edit_post($id) {
         $this->layout = 'home';
 
-        $cc = $this->Story->find('first', array('conditions' => array('Story.id' => $id), 'recursive' => -1));
+        $dd = $this->Story->find('first', array('conditions' => array('Story.id' => $id), 'recursive' => -1));
 
-        $cc['Story']['main_img'] = Router::url("/" . $cc['Story']['main_img'], true);
-        $cc['Story']['image'] = Router::url("/" . $cc['Story']['image'], true);
+        $dd['Story']['main_img'] = Router::url("/" . $dd['Story']['main_img'], true);
+        $dd['Story']['image'] = Router::url("/" . $dd['Story']['image'], true);
 
-        $this->set('cc', $cc);
+        $this->set('dd', $dd);
 
         //   print_r($cc);exit;
         if ($this->request->is(array('post', 'put'))) {
+            
+            if ($this->request->data['Story']['youtube_link'] != "") {
+                $link = $this->request->data['Story']['youtube_link'];
+                $video_id = explode("?v=", $link);
+                $video_id = $video_id[1];
+                $this->request->data['Story']['youtube_link'] = $video_id;
+            } else {
+               unset($this->request->data['Story']['youtube_link']);
+            }
 
-            if ($this->request->data['Story']['main'] != "") {
-                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+            if ($this->request->data['Story']['main_img']['name'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['Story']['main_img']['name']);
                 $sPath = "story";
-                $file = $this->Pk->uploadImageBase64($this->request->data['Story']['main'], $sFileName, $sPath);
+                $file = $this->Pk->uploadImage($this->request->data['Story']['main_img'], $sFileName, $sPath);
+
                 if ($file['status'] == 'success') {
                     unset($this->request->data['Story']['main_img']);
                     $this->request->data['Story']['main_img'] = $file['url'];
@@ -566,10 +627,12 @@ class UsersController extends AppController {
             } else {
                 unset($this->request->data['Story']['main_img']);
             }
-            if ($this->request->data['Story']['cimage'] != "") {
-                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
+
+            if ($this->request->data['Story']['image']['name'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['Story']['image']['name']);
                 $sPath = "story";
-                $file = $this->Pk->uploadImageBase64($this->request->data['Story']['cimage'], $sFileName, $sPath);
+                $file = $this->Pk->uploadImage($this->request->data['Story']['image'], $sFileName, $sPath);
+
                 if ($file['status'] == 'success') {
                     unset($this->request->data['Story']['image']);
                     $this->request->data['Story']['image'] = $file['url'];
@@ -697,13 +760,13 @@ class UsersController extends AppController {
         ////////////////////////////////////////////////////////////////////////////////////find youtube profile
     }
 
-    public function youtube_profile() {
+    public function gaming_profile() {
         $this->layout = 'home';
         $id = $this->Auth->user('id');
         if ($this->request->is(array('put', 'post'))) {
             // print_r($this->request->data);exit;
             if ($this->User->save($this->request->data)) {
-                return $this->redirect(array('controller' => 'users', 'action' => 'youtube_profile'));
+                return $this->redirect(array('controller' => 'users', 'action' => 'gaming_profile'));
             } else {
                 $this->Flash->error(__('The youtube_profile could not be saved. Please, try again.'));
             }
@@ -768,7 +831,7 @@ class UsersController extends AppController {
     public function create_upcomeing() {
         $this->layout = 'home';
         //UpcomingGame
-          if ($this->request->is('post')) {
+        if ($this->request->is('post')) {
             $this->UpcomingGame->create();
 //            if ($this->request->data['UpcomingGame']['cimage'] != "") {
 //                $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
@@ -784,7 +847,7 @@ class UsersController extends AppController {
 //                unset($this->request->data['UpcomingGame']['image']);
 //            }
 
-            if ($this->request->data['UpcomingGame']['image']!= "") {
+            if ($this->request->data['UpcomingGame']['image'] != "") {
 
                 $sFileName = time() . "_" . str_replace(" ", "_", md5(time() . rand(1111, 99999)));
                 $sPath = "UpcomingGame";
@@ -798,9 +861,9 @@ class UsersController extends AppController {
             } else {
                 unset($this->request->data['UpcomingGame']['image']);
             }
- // print_r($this->request->data);exit;
+            // print_r($this->request->data);exit;
             if ($this->UpcomingGame->save($this->request->data)) {
-                 $upcoming_id = $this->UpcomingGame->getLastInsertID();
+                $upcoming_id = $this->UpcomingGame->getLastInsertID();
                 $arr['UpcomingGame']['upcoming_games_slug'] = $this->slugUpcomingGame($this->request->data['UpcomingGame']['title'], $upcoming_id);
                 $arr['UpcomingGame']['id'] = $upcoming_id;
                 $this->UpcomingGame->save($arr);
@@ -813,7 +876,173 @@ class UsersController extends AppController {
 
     public function test() {
         $this->layout = 'home';
+    }
+
+    public function getdatabycategory() {
+        if ($this->request->is('ajax')) {
+            $category = $this->request->data['obj_name'];
+            $ajax_find = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1
+                    , 'Story.story_catogory' => $category), 'order' => array('Story.id' => 'DESC'), 'recursive' => -1));
+
+            foreach ($ajax_find as $i => $j) {
+                $ajax_find[$i]['Story']['image'] = Router::url("/" . $ajax_find[$i]['Story']['image'], true);
+                $ajax_find[$i]['Story']['main_img'] = Router::url("/" . $ajax_find[$i]['Story']['main_img'], true);
+            }
+            //     print_r($category);exit;
+            $this->set('ajax_find', $ajax_find);
+        }
+    }
+    
+    public function new_story() {
+        $this->layout = 'home';
+        //GamingStory
+    }
+     public function gaming_story() {
+
+        $this->layout = 'home';
+        if ($this->request->is('post')) {
+            $this->GamingStory->create();
+            
+             if ($this->request->data['GamingStory']['youtube_link'] != "") {
+                $link = $this->request->data['GamingStory']['youtube_link'];
+                $video_id = explode("?v=", $link);
+                $video_id = $video_id[1];
+                $this->request->data['GamingStory']['youtube_link'] = $video_id;
+            } else {
+               $this->request->data['GamingStory']['youtube_link']='';
+            }
+
+            if ($this->request->data['GamingStory']['image']['name'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['GamingStory']['image']['name']);
+                $sPath = "story";
+                $file = $this->Pk->uploadImage($this->request->data['GamingStory']['image'], $sFileName, $sPath);
+
+                if ($file['status'] == 'success') {
+                    unset($this->request->data['GamingStory']['image']);
+                    $this->request->data['GamingStory']['image'] = $file['url'];
+                } else {
+                    $this->request->data['GamingStory']['image'] = "";
+                }
+            } else {
+                unset($this->request->data['GamingStory']['image']);
+            }
+            if ($this->request->data['GamingStory']['cover_image']['name'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['GamingStory']['cover_image']['name']);
+                $sPath = "story";
+                $file = $this->Pk->uploadImage($this->request->data['GamingStory']['cover_image'], $sFileName, $sPath);
+
+                if ($file['status'] == 'success') {
+                    unset($this->request->data['GamingStory']['cover_image']);
+                    $this->request->data['GamingStory']['cover_image'] = $file['url'];
+                } else {
+                    $this->request->data['GamingStory']['cover_image'] = "";
+                }
+            } else {
+                unset($this->request->data['GamingStory']['cover_image']);
+            }
+            // print_r($this->request->data);exit;
+            // $this->request->data['Story']['story_slug'] = $this->slugStory($this->request->data['Story']['title']);
+            $user = $this->Auth->user('id');
+            $this->request->data['GamingStory']['user_id'] = $user;
+            $this->request->data['GamingStory']['story_type'] = 2;
+            if ($this->GamingStory->save($this->request->data)) {
+
+                $gaming_id = $this->GamingStory->getLastInsertID();
+                $arr['GamingStory']['gaming_slug'] = $this->gamingSlugStory($this->request->data['GamingStory']['title'], $gaming_id);
+                $arr['GamingStory']['id'] = $gaming_id;
+                $this->GamingStory->save($arr);
+                $this->Flash->pending_popup(__('The GamingStory has been saved.'));
+                return $this->redirect(array('action' => 'my_post'));
+            } else {
+                $this->Flash->error(__('The GamingStory could not be saved. Please, try again.'));
+            }
+        }
+    }
+      public function edit_mystory($id) {
+        $this->layout = 'home';
+
+        $cc = $this->GamingStory->find('first', array('conditions' => array('GamingStory.id' => $id), 'recursive' => -1));
+
+        $cc['GamingStory']['cover_image'] = Router::url("/" . $cc['GamingStory']['cover_image'], true);
+        $cc['GamingStory']['image'] = Router::url("/" . $cc['GamingStory']['image'], true);
+
+        $this->set('cc', $cc);
+
+        //   print_r($cc);exit;
+        if ($this->request->is(array('post', 'put'))) {
+            
+             if ($this->request->data['GamingStory']['youtube_link'] != "") {
+                $link = $this->request->data['GamingStory']['youtube_link'];
+                $video_id = explode("?v=", $link);
+                $video_id = $video_id[1];
+                $this->request->data['GamingStory']['youtube_link'] = $video_id;
+            } else {
+               unset($this->request->data['GamingStory']['youtube_link']);
+            }
+           // print_r($this->request->data);exit;
+            if ($this->request->data['GamingStory']['cover_image']['name'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['GamingStory']['cover_image']['name']);
+                $sPath = "story";
+                $file = $this->Pk->uploadImage($this->request->data['GamingStory']['cover_image'], $sFileName, $sPath);
+
+                if ($file['status'] == 'success') {
+                    unset($this->request->data['GamingStory']['cover_image']);
+                    $this->request->data['GamingStory']['cover_image'] = $file['url'];
+                } else {
+                    $this->request->data['GamingStory']['cover_image'] = "";
+                }
+            } else {
+                unset($this->request->data['GamingStory']['cover_image']);
+            }
+
+            if ($this->request->data['GamingStory']['image']['name'] != "") {
+                $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['GamingStory']['image']['name']);
+                $sPath = "story";
+                $file = $this->Pk->uploadImage($this->request->data['GamingStory']['image'], $sFileName, $sPath);
+
+                if ($file['status'] == 'success') {
+                    unset($this->request->data['GamingStory']['image']);
+                    $this->request->data['GamingStory']['image'] = $file['url'];
+                } else {
+                    $this->request->data['GamingStory']['image'] = "";
+                }
+            } else {
+                unset($this->request->data['GamingStory']['image']);
+            }
+
+
+            $this->request->data['GamingStory']['id'] = $id;
+            //print_r($this->request->data);exit;
+            if ($this->GamingStory->save($this->request->data)) {
+                $this->Flash->success(__('The GamingStory has been saved.'));
+                return $this->redirect(array('action' => 'my_post'));
+            } else {
+                $this->Flash->error(__('The GamingStory could not be saved. Please, try again.'));
+            }
+        } else {
+            $options = array('conditions' => array('GamingStory.' . $this->GamingStory->primaryKey => $id));
+            $this->request->data = $this->GamingStory->find('first', $options);
+        }
+    }
+    
+    public function readstory() {
+        $this->layout = 'home';
        
+        $find_user = $this->Auth->user('id');
+        $this->set('find_user', $find_user);
+        if ($this->request->params['mystoryslug'] != '') {
+            $c = $this->GamingStory->find('first', array('conditions' => array('GamingStory.gaming_slug' => $this->request->params['mystoryslug'])));
+            if ($c) {
+                $id = $c['GamingStory']['id'];
+            }
+        }
+// print_r($id);exit;
+
+        $findmystory = $this->GamingStory->find('first', array('conditions' => array('GamingStory.id' => $id)));
+        $findmystory['GamingStory']['image'] = Router::url("/" . $findmystory['GamingStory']['image'], true);
+        $findmystory['GamingStory']['cover_image'] = Router::url("/" . $findmystory['GamingStory']['cover_image'], true);
+        $this->set('meta_decscriptoi', $findmystory['GamingStory']['title']);
+         $this->set('findmystory', $findmystory);
     }
 
 }

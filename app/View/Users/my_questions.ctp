@@ -6,48 +6,51 @@
     </div>
 
     <div class="row">
-        <?php if(!empty($find)){ ?>
-<?php foreach ($find as $Solution) { ?>
-            <div class="col-sm-6">
-                <div id="tb-testimonial" class="testimonial testimonial-info">
-                    <div class="testimonial-section">
-    <?php echo $Solution['Solution']['title'] ?>
-                    </div>
-                    <div class="testimonial-desc">
-    <?php echo $this->Html->image($Solution['User']['profile_image']); ?>
-
-                        <div class="testimonial-writer">
-                            <div class="testimonial-writer-name"><?php echo $Solution['User']['fullname'] ?></div>
-                            <div class="testimonial-writer-designation">
-                                <a href="<?php echo $this->Html->url(array('action' => 'editsolution', 'controller' => 'users',$Solution['Solution']['id'])); ?>">
-                                Edit Question
-                                </a>
-                                
-                            
-                            </div>
-                            <a href="#" class="testimonial-writer-company"><?php echo $Solution['User']['solution_type'] ?></a>
-<a href="<?php echo $this->Html->url(array('action' => 'readsolution', 'controller' => 'users', 'solutionslug' => $Solution['Solution']['slug_question'])); ?>" class="testimonial-writer-company">Read More...</a>
+        <?php if (!empty($find)) { ?>
+            <?php foreach ($find as $Solution) { ?>
+                <div class="col-sm-6">
+                    <div id="tb-testimonial" class="testimonial testimonial-info">
+                        <div class="testimonial-section">
+                            <?php echo $Solution['Solution']['title'] ?>
                         </div>
-                    </div>
-                </div>   
+                        <div class="testimonial-desc">
+                            <?php echo $this->Html->image($Solution['User']['profile_image']); ?>
+
+                            <div class="testimonial-writer">
+                                <div class="testimonial-writer-name"><?php echo $Solution['User']['fullname'] ?></div>
+                                <div class="testimonial-writer-designation">
+                                    <a style="color:red;" href="<?php echo $this->Html->url(array('action' => 'editsolution', 'controller' => 'users', $Solution['Solution']['id'])); ?>">
+                                        Edit Question
+                                    </a>
+                                    <br>
+                                    <span >
+                                     <?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete_mypost',  $Solution['Solution']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $Solution['Solution']['title']))); ?>
+                                        </span>
+
+                                </div>
+                                <a href="#" class="testimonial-writer-company"><?php echo $Solution['User']['solution_type'] ?></a>
+                                <a style="color:#000;" href="<?php echo $this->Html->url(array('action' => 'readsolution', 'controller' => 'users', 'solutionslug' => $Solution['Solution']['slug_question'])); ?>" class="testimonial-writer-company">Read More...</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            <?php } ?>
+        <?php } else { ?>      
+            <div class="alert alert-info">
+                <strong>Info!</strong> No question added by you feel free and  
+                <a   href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'ask_question', 'users' => false)); ?>">Ask Question</a>.
             </div>
-<?php } ?>
-  <?php }else{ ?>      
-        <div class="alert alert-info">
-  <strong>Info!</strong> No question added by you feel free and  
-  <a   href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'ask_question', 'users' => false)); ?>">Ask Question</a>.
-</div>
-    </div>
- <?php } ?>  
+        </div>
+    <?php } ?>  
 </div>
 
 <style>
     /*----------------------------------------------------*/
     /*----------------- Testimonials CSS -----------------*/
     /*----------------------------------------------------*/
-  
-        .center-top{text-align: center;}
-  
+
+    .center-top{text-align: center;}
+
 
     #tb-testimonial{
         margin-bottom: 20px;

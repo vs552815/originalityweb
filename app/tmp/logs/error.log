@@ -28229,3 +28229,1450 @@ Stack Trace:
 #10 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #11 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2018-02-19 11:41:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/UpcomingGame/1517674776_29c00c21455a507d5bc090b23e1772ad
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/UpcomingGame/1517674622_f88ad31332fd9158f4bb9d010e911a04
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_ff350470bec0545d4307d4cc40a168b7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_1557e404da90c2ae610632bc32a9e016.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_1960c7469706820fd40c6282162d5c05.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_ff350470bec0545d4307d4cc40a168b7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_ff350470bec0545d4307d4cc40a168b7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_1960c7469706820fd40c6282162d5c05.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_ff350470bec0545d4307d4cc40a168b7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_1557e404da90c2ae610632bc32a9e016.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_1557e404da90c2ae610632bc32a9e016.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:41:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_1960c7469706820fd40c6282162d5c05.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:06 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_ff350470bec0545d4307d4cc40a168b7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_ff350470bec0545d4307d4cc40a168b7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_1557e404da90c2ae610632bc32a9e016.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_1960c7469706820fd40c6282162d5c05.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_ff350470bec0545d4307d4cc40a168b7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_ff350470bec0545d4307d4cc40a168b7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_ff350470bec0545d4307d4cc40a168b7.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_1557e404da90c2ae610632bc32a9e016.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:25 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749342_1960c7469706820fd40c6282162d5c05.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_1557e404da90c2ae610632bc32a9e016.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:42:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/story/1517749995_fed7ec5ffe7b84302f32e06adb702a21.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 11:58:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /originalityweb/users/create_post
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(472): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(438): DboSource->_execute('INSERT INTO `or...', Array)
+#2 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Datasource\DboSource.php(1092): DboSource->execute('INSERT INTO `or...')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1940): DboSource->create(Object(Story), Array, Array)
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\Model\Model.php(1758): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php(521): Model->save(Array)
+#6 [internal function]: UsersController->create_post()
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-02-19 12:01:22 Error: [MissingActionException] Action UsersController::index-construction.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index-construction.html',
+)
+Request URL: /originalityweb/users/index-construction.html
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-02-19 12:04:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/images/uploadPhotoAvatarGroup.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 12:04:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/images/uploadPhotoAvatarGroup.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 12:25:51 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/images/uploadPhotoAvatarGroup.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 12:34:45 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/SolutionImage/1512673670_images.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 12:35:11 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/SolutionImage/1512673670_images.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 12:41:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/SolutionImage/1512673670_images.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 12:41:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/SolutionImage/1512673670_images.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 12:45:00 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\originalityweb\app\View\Users\readsolution.ctp, line 47]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\readsolution.ctp, line 47
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-02-19 12:46:18 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\originalityweb\app\View\Users\readsolution.ctp, line 46]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\readsolution.ctp, line 46
+View::_evaluate() - CORE\Cake\View\View.php, line 971
+View::_render() - CORE\Cake\View\View.php, line 933
+View::render() - CORE\Cake\View\View.php, line 473
+Controller::render() - CORE\Cake\Controller\Controller.php, line 963
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 118
+
+2018-02-19 12:56:31 Error: [MissingActionException] Action UsersController::youtube_profile() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'youtube_profile',
+)
+Request URL: /originalityweb/users/youtube_profile
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-02-19 12:56:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/images/uploadPhotoAvatarGroup.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 13:03:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/images/uploadPhotoAvatarGroup.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 13:03:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/css/edit.css
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 13:03:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/css/edit.css
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 13:04:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/images/uploadPhotoAvatarGroup.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 13:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/css/edit.css
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 13:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/css/edit.css
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 13:52:02 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:20 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:21 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:21 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:21 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:22 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:22 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:22 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:22 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:45 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:50 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:50 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:51 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:51 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:51 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:51 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:51 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:51 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:52:51 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:02 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:03 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:03 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:03 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:03 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:03 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:04 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:04 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:04 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:53:39 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:54:17 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:54:50 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:54:50 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:54:51 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:54:51 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:58:30 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:58:58 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:58:58 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:58:58 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 13:59:01 Error: [MissingHelperException] Helper class GamingStoryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'GamingStoryHelper',
+  'plugin' => false,
+)
+Request URL: /originalityweb/users/gaming_story
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('GamingStory')
+#1 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(858): HelperCollection->__isset('GamingStory')
+#2 C:\xampp\htdocs\originalityweb\app\View\Users\gaming_story.ctp(3): View->__get('GamingStory')
+#3 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\originalityweb\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\originalityweb\lib\Cake\Controller\Controller.php(963): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\originalityweb\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-02-19 14:52:55 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:53:47 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:54:02 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:54:39 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:56:37 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:56:51 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:57:26 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:57:27 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:57:28 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:57:28 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:57:28 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:57:32 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:57:33 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:57:33 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:57:33 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:05 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:05 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:06 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:06 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:06 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:06 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:06 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:06 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:07 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:07 Error: [MissingControllerException] Controller class StoryController could not be found.
+Exception Attributes: array (
+  'class' => 'StoryController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/story/dasad-3
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:42 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1519045979_1507522738_e7a8196ee5fc28519e73c79a6a0364d8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 14:58:44 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1519045979_1507522738_e7a8196ee5fc28519e73c79a6a0364d8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 15:07:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1519045979_1507522738_e7a8196ee5fc28519e73c79a6a0364d8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-02-19 15:07:59 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /originalityweb/img/img/story/1519045979_1507522738_e7a8196ee5fc28519e73c79a6a0364d8.png
+Stack Trace:
+#0 C:\xampp\htdocs\originalityweb\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

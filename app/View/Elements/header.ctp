@@ -30,14 +30,14 @@
 
 <?php } else if ($account_typ_id == 3) { ?>
                    
-                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'youtube_profile', 'users' => false)); ?>" >
-                      Y  <span class="tip-name">YouTube Profile</span></a></li>
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_profile', 'users' => false)); ?>" >
+                      Y  <span class="tip-name">Gaming Profile</span></a></li>
                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'myprofile', 'users' => false)); ?>" >
                      M   <span class="tip-name">My Profile</span></a></li>
 
                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'my_post', 'users' => false)); ?>" >
                       M  <span class="tip-name">My Posts</span></a></li>
-                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'user_questions', 'users' => false)); ?>" >
+                <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'my_questions', 'users' => false)); ?>" >
                       M  <span class="tip-name">My Questions</span></a></li>
                 <li><a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'logout', 'users' => false)); ?>" >
                       S  <span class="tip-name">SIGN OUT</span></a></li>
@@ -64,7 +64,7 @@
             <div class="top-header-widget pt-0 pb-0">
                 <div class="top-header-widget-container mtl">
                     <div class="navbar-header">
-                        <a href="index-construction.html" class="navbar-brand" title="PLUME" style="margin:0px;">
+                        <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'home', 'users' => false)); ?>" class="navbar-brand" title="PLUME" style="margin:0px;">
                             Originalityweb
                         </a>
                     </div>
@@ -94,13 +94,13 @@
 
                                     <div class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                                         <ul class="nav navbar-nav">
-                                            <li><a  class="go-live-header go-live-text" href="javascript:void(0);">Go Live</a></li>
-                                            <li><a class="go-live-header" href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'live_stream', 'users' => false)); ?>">
-                                                    Live Streams</a></li>
+<!--                                            <li><a  class="go-live-header go-live-text" href="javascript:void(0);">Go Live</a></li>-->
+<!--                                            <li><a class="go-live-header" href="<?php //echo $this->Html->url(array('controller' => 'users', 'action' => 'live_stream', 'users' => false)); ?>">
+                                                    Live Streams</a></li>-->
                                             <li><a  class="go-live-header" href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'trending', 'users' => false)); ?>"
                                                     >Trending</a></li>
                                             <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_questions', 'users' => false)); ?>">Ask Questions</a></li>
-                                            <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'create_post', 'users' => false)); ?>">Create Post</a></li>
+                                            <li><a  href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'new_story', 'users' => false)); ?>">Create Post</a></li>
                                             <?php
                                             $account_typ_id = $this->Session->read('Auth.User.account_type_id');
                                             if ($account_typ_id == 2) {
