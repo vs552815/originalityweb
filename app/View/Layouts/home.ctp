@@ -113,7 +113,8 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
 
         <?php echo $this->Html->script(array('https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js'));
         ?>
-    
+        
+      
 
         <script type="text/javascript">
             var webURL = '<?php echo $this->Html->url('/'); ?>'
@@ -150,33 +151,20 @@ if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
         <?php echo $this->Html->script(array('bootstrap-timepicker.min.js')); ?>
         <?php echo $this->Html->script(array('jquery.countdown.min.js')); ?>
 
-
-<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
         <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
 
 
         <script>
-            $(document).ready(function () {
-                $('#textbottom').summernote({
-                    toolbar: [
-                        // [groupName, [list of button]]
-                        ['style', ['bold', 'italic', 'underline', 'clear']],
-                        ['fontname', ['fontname']],
-                        ['fontsize', ['fontsize']],
-                        ['color', ['color']],
-                        ['para', ['ul', 'ol', 'paragraph']],
-                        ['height', ['height']],
-                        ['table', ['table']],
-                        ['insert', ['link', 'picture','video','hr']],
-                        ['view', ['fullscreen', 'codeview']],
-                    ],
-                    
-                    tabsize: 2,
-                    height: 250,
-                    
-                });
-            });
+    $(document).ready(function() {
+        $('#textbottom').summernote({
+            tabsize: 2,
+        height: 250
+        });
+    });
         </script>
+        
+
 
     </body>
 </html>

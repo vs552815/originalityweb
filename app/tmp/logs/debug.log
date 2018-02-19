@@ -7751,7 +7751,11 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 11:41:59 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+=======
+2018-02-03 16:25:57 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\getdatabycategory.ctp, line 18
@@ -7763,7 +7767,11 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 11:42:06 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+=======
+2018-02-03 16:25:59 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\getdatabycategory.ctp, line 18
@@ -7775,7 +7783,11 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 11:42:06 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+=======
+2018-02-03 16:26:01 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\getdatabycategory.ctp, line 18
@@ -7787,6 +7799,7 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 11:58:11 Debug: Notice (8): Undefined index: main in [C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php, line 484]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
@@ -8392,6 +8405,12 @@ Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:27:08 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8400,10 +8419,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:28:28 Debug: Notice (8): Undefined index: story_slug in [C:\xampp\htdocs\originalityweb\app\View\Users\my_post.ctp, line 61]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:46:07 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8412,10 +8438,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:29:11 Debug: Notice (8): Undefined index: story_slug in [C:\xampp\htdocs\originalityweb\app\View\Users\my_post.ctp, line 61]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:46:07 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8424,10 +8457,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:32:09 Debug: Notice (8): Undefined index: story_slug in [C:\xampp\htdocs\originalityweb\app\View\Users\my_post.ctp, line 61]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:47:32 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8436,10 +8476,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:32:48 Debug: Notice (8): Undefined index: story_slug in [C:\xampp\htdocs\originalityweb\app\View\Users\my_post.ctp, line 61]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:47:33 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8448,6 +8495,7 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:33:03 Debug: Notice (8): Undefined index: youtube_link in [C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php, line 959]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
@@ -8462,6 +8510,12 @@ Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:47:36 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8470,6 +8524,7 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:33:54 Debug: Notice (8): Undefined index: GamingStory in [C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php, line 601]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
@@ -8484,6 +8539,12 @@ Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:50:21 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8492,10 +8553,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:38:02 Debug: Notice (8): Undefined index: story_slug in [C:\xampp\htdocs\originalityweb\app\View\Users\my_post.ctp, line 61]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:50:22 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8504,10 +8572,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:39:23 Debug: Notice (8): Undefined index: story_slug in [C:\xampp\htdocs\originalityweb\app\View\Users\my_post.ctp, line 61]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:59:12 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8516,10 +8591,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:41:42 Debug: Notice (8): Undefined index: story_slug in [C:\xampp\htdocs\originalityweb\app\View\Users\my_post.ctp, line 61]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 16:59:14 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8528,6 +8610,7 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:42:39 Debug: Notice (8): Undefined index: youtube_link in [C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php, line 607]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
@@ -8542,6 +8625,12 @@ Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 17:01:04 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8550,10 +8639,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:42:46 Debug: Notice (8): Undefined index: story_slug in [C:\xampp\htdocs\originalityweb\app\View\Users\my_post.ctp, line 61]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\my_post.ctp, line 61
+=======
+2018-02-03 17:01:05 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8562,6 +8658,7 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:53:01 Debug: Notice (8): Undefined variable: id in [C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php, line 241]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
@@ -8616,6 +8713,12 @@ Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\readpost.ctp, line 9
+=======
+2018-02-03 17:01:12 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8624,10 +8727,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:53:01 Debug: Notice (8): Undefined index: stroy in [C:\xampp\htdocs\originalityweb\app\View\Users\readpost.ctp, line 26]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\readpost.ctp, line 26
+=======
+2018-02-03 17:04:29 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8636,10 +8746,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:53:01 Debug: Notice (8): Undefined index: id in [C:\xampp\htdocs\originalityweb\app\View\Users\readpost.ctp, line 44]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\readpost.ctp, line 44
+=======
+2018-02-03 17:04:30 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8648,10 +8765,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:53:01 Debug: Notice (8): Undefined index: youtube_link in [C:\xampp\htdocs\originalityweb\app\View\Users\readpost.ctp, line 80]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\readpost.ctp, line 80
+=======
+2018-02-03 17:04:37 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8660,10 +8784,17 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 14:53:01 Debug: Notice (8): Undefined index: google_ad_code in [C:\xampp\htdocs\originalityweb\app\View\Users\readpost.ctp, line 90]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
 include - APP\View\Users\readpost.ctp, line 90
+=======
+2018-02-03 17:06:11 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\originalityweb\app\View\Users\getdatabycategory.ctp, line 18]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\View\Users\getdatabycategory.ctp, line 18
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
 View::_evaluate() - CORE\Cake\View\View.php, line 971
 View::_render() - CORE\Cake\View\View.php, line 933
 View::render() - CORE\Cake\View\View.php, line 473
@@ -8672,6 +8803,7 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 200
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+<<<<<<< HEAD
 2018-02-19 15:07:37 Debug: Notice (8): Undefined index: cover_img in [C:\xampp\htdocs\originalityweb\app\Controller\UsersController.php, line 1043]
 Trace:
 ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
@@ -8682,3 +8814,5 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 118
 
+=======
+>>>>>>> 6d25eb61f731f2a5133f16d1737d96d3863cd921
