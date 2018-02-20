@@ -50,7 +50,7 @@
         
         <div class="container text-center" style="border-top:1px solid grey;">
             <p style="    color: #fff;
-    margin-top: 20px;">Copyright © Originalityweb. 2017. </p>
+    margin-top: 20px;">Copyright © GameingHub. 2017. </p>
         </div>
         
     </footer>

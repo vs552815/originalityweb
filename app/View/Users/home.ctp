@@ -72,7 +72,7 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
     <div class="row">
         <div class="alert alert-success">  <span>Upcoming Games</span></div>
 
-        <div class="col-md-4">
+        <div class="col-md-8">
             <!-- begin panel group -->
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
@@ -86,7 +86,7 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
                             </div>
                         </span>
 
-                        <div id="collapse<?php echo $game['UpcomingGame']['id'] ?>" class="panel-collapse collapse <?php echo $k == 0 ? "" : ""; ?>" role="tabpanel" aria-labelledby="headingOne">
+                        <div id="collapse<?php echo $game['UpcomingGame']['id'] ?>" class="panel-collapse collapse <?php echo $k == 0 ? "in active" : ""; ?>" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
                                 <!-- Tab content goes here -->
                                 <b>Release Date<?php echo $game['UpcomingGame']['release_date'] ?></b>
@@ -100,7 +100,7 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
 
         </div> <!-- /col-md-4 -->
 
-        <div class="col-md-8">
+        <div class="col-md-4">
             <!-- begin macbook pro mockup -->
             <div class="md-macbook-pro md-glare">
                 <div class="md-lid">
@@ -110,7 +110,7 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
                         <div class="tab-featured-image">
                             <div class="tab-content">
                                 <?php foreach ($find_upcoming as $k => $game) { ?>
-                                    <div class="tab-pane   <?php echo $k == 0 ? "in active" : ""; ?>" id="tab<?php echo $game['UpcomingGame']['id'] ?>">
+                                <div class="tab-pane   <?php echo $k == 0 ? "in active" : ""; ?>" id="tab<?php echo $game['UpcomingGame']['id'] ?>" style="    padding:0px 0px 15px 0px;">
                                         <?php echo $this->Html->image($game['UpcomingGame']['image'], array('alt' => 'tab' . $game['UpcomingGame']['id'], 'class' => 'img img-responsive')) ?>
                                     </div>
                                 <?php } ?>
@@ -160,7 +160,7 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
         } else {
             ?>
             <div style="text-align:center;padding: 20px;">
-                <p>There are currently no gaming stories listed on Originalityweb. Share your gaming experience.</p>  
+                <p>There are currently no gaming stories listed on GameingHub. Share your gaming experience.</p>  
                 <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_story', 'users' => false)); ?>">Click here</a>
             </div>
         <?php } ?>

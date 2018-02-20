@@ -370,7 +370,7 @@ $(document).ready(function () {
                 if (data.status == 'success') {
                     window.location.href =  "";
                 } else {
-                    swal("", "That email address already in Originalityweb.", "error");
+                    swal("", "That email address already in GameingHub.", "error");
                     //$('#SignupPopup').modal('hide');
                     
                 }

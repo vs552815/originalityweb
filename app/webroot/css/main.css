@@ -576,8 +576,8 @@ span.tip-name{position:absolute;left:-190px;background-color:#c44848;color:#fff;
     
         .alert-success {
             color: #fff;
-            background-color: #000;
-            border-color: #000;
+               background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+            border: none;
             border-radius: 0;
         }
         .tab-pane .img-responsive{

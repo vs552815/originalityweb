@@ -22,14 +22,14 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
 <html lang="en">
     <head>
         <?php echo $this->Html->charset(); ?>
-        <title> Originalityweb is the leading source for PS4, PS4 Pro, Xbox One X, Xbox One, PS3, Xbox 360, Wii U, PS Vita, Wii, PC, 3DS,  previews, news, reviews, trailers, walkthroughs, movies, and more. </title>
+        <title> GameingHub is the leading source for PS4, PS4 Pro, Xbox One X, Xbox One, PS3, Xbox 360, Wii U, PS Vita, Wii, PC, 3DS,  previews, news, reviews, trailers, walkthroughs, movies, and more. </title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex,nofollow" />
-        <meta name="description" content="<?php if(empty($meta_decscriptoi)){echo "Originalityweb is the leading source for PS4, PS4 Pro, Xbox One X, Xbox One, PS3, Xbox 360, Wii U, PS Vita, Wii, PC, 3DS,  previews, news, reviews, trailers, walkthroughs, movies, and more.";}else{echo $meta_decscriptoi ;}?>">
-        <meta name="keywords" content="game,gaming,pc,ps4,graphic card,hack,crack,gaming crack,originalityweb,ps4 game,ps4 pro,xbox one,xbox s,originalityweb.com,www.originalityweb.com, originality web, original web">
+        <meta name="description" content="<?php if(empty($meta_decscriptoi)){echo "GameingHub is the leading source for PS4, PS4 Pro, Xbox One X, Xbox One, PS3, Xbox 360, Wii U, PS Vita, Wii, PC, 3DS,  previews, news, reviews, trailers, walkthroughs, movies, and more.";}else{echo $meta_decscriptoi ;}?>">
+        <meta name="keywords" content="game,gaming,pc,ps4,graphic card,hack,crack,gaming crack,GameingHub,ps4 game,ps4 pro,xbox one,xbox s,GameingHub.com,www.GameingHub.com, Gameing Hub, original web">
         
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <link rel="icon" type="image/png"  href="<?php echo $this->Html->url('/'); ?>img/601819.png">

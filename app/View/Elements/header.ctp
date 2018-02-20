@@ -71,7 +71,7 @@
                         <div class="top-header-widget-container mtl">
                             <div class="navbar-header">
                                 <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'home', 'users' => false)); ?>" class="navbar-brand" title="PLUME" style="margin:0px;">
-                                    Originalityweb
+                                    GameingHub
                                 </a>
                             </div>
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
