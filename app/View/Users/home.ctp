@@ -96,7 +96,6 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
                     </div> 
                 <?php } ?>
                 <!-- / panel 1 -->
-
             </div> <!-- / panel-group -->
 
         </div> <!-- /col-md-4 -->
@@ -121,85 +120,48 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
                 </div>
                 <div class="md-base"></div>
             </div> <!-- end macbook pro mockup -->
-
-
-
         </div> <!-- / .col-md-8 -->
-
-
     </div>
     <style>
 
-        .alert-success {
-            color: #fff;
-            background-color: #000;
-            border-color: #000;
-            border-radius: 0;
-        }
-        .tab-pane .img-responsive{
-            width:100%;
-        }
-        .panel-heading:hover {
-            cursor:pointer;
-        }
-        .panel-heading {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;    
-        }
-
-        .side-tab:hover {
-            cursor: pointer;
-        }
-        .panel.panel-default {
-            border: none;
-            box-shadow: none !important;
-            border-bottom-right-radius: 0px;
-            border-bottom-left-radius: 0px;
-
-        }
-        .panel-heading {
-            border: none;
-            background-color: #eee;
-
-        }
-        .panel-body {
-            background-color: #f5f5f5;
-        }
-        .panel-title {
-            font-weight: 400;
-            color: #000;
-        }
     </style>
 
     <div class="row">
-        <div class="alert alert-success">  <span>New Stories</span></div>
-        <?php foreach ($find as $story) { ?>
-            <div class="col-lg-3 col-sm-6">
-                <a  href="<?php echo $this->Html->url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $story['Story']['story_slug'])); ?>">
+        <div class="alert alert-success">  <span>Gaming Stories</span></div>
+        <?php
+        if (!empty($find)) {
+
+            foreach ($find as $story) {
+                ?>
+                <div class="col-lg-3 col-sm-6">
                     <div class="card hovercard">
-                        <div class="cardheader" style=" background-image: url(<?php echo $story['Story']['image']; ?>);" alt="<?php echo $story['Story']['title']; ?>" >
+                        <div class="cardheader" style=" background-image: url(<?php echo $story['GamingStory']['image']; ?>);" alt="<?php echo $story['GamingStory']['title']; ?>" >
 
                         </div>
                         <div class="avatar">
 
-                            <?php echo $this->Html->image($story['Story']['main_img'], array('alt' => $story['Story']['title'])) ?>
+                            <?php echo $this->Html->image($story['GamingStory']['cover_image'], array('alt' => $story['GamingStory']['title'])) ?>
                         </div>
                         <div class="info">
                             <div class="title">
 
-                                <a  href="<?php echo $this->Html->url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $story['Story']['story_slug'])); ?>">
+                                <a  href="<?php echo $this->Html->url(array('action' => 'readstory', 'controller' => 'users', 'mystoryslug' => $story['GamingStory']['gaming_slug'])); ?>">
                                     <?php echo strip_tags($story['Story']['title']); ?>
+                                </a>
                             </div>
                             <div class="desc">Posted by: <?php echo strip_tags($story['User']['fullname']); ?></div>
 
                         </div>
 
                     </div>
-                </a>
+
+                </div>
+            <?php }
+        } else {
+            ?>
+            <div style="text-align:center;padding: 20px;">
+                <p>There are currently no gaming stories listed on Originalityweb. Share your gaming experience.</p>  
+                <a href="<?php echo $this->Html->url(array('controller' => 'users', 'action' => 'gaming_story', 'users' => false)); ?>">Click here</a>
             </div>
         <?php } ?>
     </div>
@@ -217,6 +179,7 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
                 <li ><a href=""  class="tab-data" data-toggle="tab" rel="nintendo">NINTENDO</a></li>
                 <li ><a href=""  class="tab-data" data-toggle="tab" rel="tv">TV</a></li>
                 <li ><a href=""   class="tab-data" data-toggle="tab" rel="movies">MOVIES</a></li>
+                <li ><a href=""   class="tab-data" data-toggle="tab" rel="other">OTHER</a></li>
             </ul>
 
         </div>
@@ -251,52 +214,5 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
 </div>
 
 <style>
-    .glyphicon { margin-right:5px;}
-    .section-box h2 { margin-top:0px;}
-    .section-box h2 a { font-size:15px; }
-    .glyphicon-heart { color:#e74c3c;}
-    .glyphicon-comment { color:#27ae60;}
-    .separator { padding-right:5px;padding-left:5px; }
-    .section-box hr {margin-top: 0;margin-bottom: 5px;border: 0;border-top: 1px solid rgb(199, 199, 199);}
-    .nav-tabs { border-bottom: 2px solid #DDD; }
-    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
-    .nav-tabs > li > a { border: none; color: #666; }
-    .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
-    .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
-    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
-    .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
-    .tab-pane { padding: 15px 0; }
 
-    .header-text {
-        position: absolute;
-        top: 35%;
-        left: 1.8%;
-        right: auto;
-        width: 96.66666666666666%;
-        color: #fff;
-        font-size:18px;
-        letter-spacing:1px;
-    }
-
-    .header-text h2 {font-size: 60px;color:#fff; font-weight:600;}
-    .header-text h2 span {padding: 10px; color:orange;}
-    .header-text h3 span {padding: 15px;}
-
-    .btn-min-block {min-width: 170px;line-height: 26px;}
-
-    .btn-theme {
-        color: #fff;
-        background-color: transparent;
-        border: 2px solid #fff;
-        margin-right: 15px;
-    }
-
-    .btn-theme:hover {
-        color: #000;
-        background-color: #f7941d;
-        border-color: #fff;
-    }
-    .navbar {
-        margin-bottom:0px;
-    }
 </style>

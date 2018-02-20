@@ -1,9 +1,11 @@
 <div class="container">
+   
 <?php $account_typ_id = $this->Session->read('Auth.User.id');
     if (!empty($account_typ_id)) {
         ?>
  <?php echo $this->Form->create('GamingStory', array('enctype' => 'multipart/form-data')); ?>
     <div class="row" style="    margin-bottom: 50px;">
+        <h3 class="charts--headline">Your Gateway to share your gaming experience and story.</h3>
         <div class="col-lg-12" style="    padding: 15px;">
             <div class="form-group">
 

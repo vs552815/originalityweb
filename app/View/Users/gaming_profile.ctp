@@ -22,7 +22,7 @@
                         
                         <div class="form-group">
                             <label>YouTube channel URL</label>
-                            <?php echo $this->Form->input('User.youtube_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'YouTube channel URL', 'label' => false, 'required')); ?>
+                            <?php echo $this->Form->input('User.youtube_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'YouTube channel URL', 'label' => false)); ?>
 
                         </div>
                                 
@@ -30,14 +30,14 @@
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="form-group">
                                              <label>Twitter Page Link</label>
-                           <?php echo $this->Form->input('User.twitter_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'Twitter Page Link', 'label' => false, 'required')); ?>                 
+                           <?php echo $this->Form->input('User.twitter_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'Twitter Page Link', 'label' => false)); ?>                 
                                
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="form-group">
                                              <label>Facebook Page Link</label>
-				  <?php echo $this->Form->input('User.facebook_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'Facebook Page Link', 'label' => false, 'required')); ?>                 
+				  <?php echo $this->Form->input('User.facebook_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'Facebook Page Link', 'label' => false)); ?>                 
                         
 					</div>
 				</div>
@@ -46,7 +46,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="form-group">
                                              <label>Google+ Page Link</label>
-				  <?php echo $this->Form->input('User.google_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'Google+ Page Link', 'label' => false, 'required')); ?>                 
+				  <?php echo $this->Form->input('User.google_page_link', array('class' => 'form-control input-lg', 'placeholder' => 'Google+ Page Link', 'label' => false)); ?>                 
                         
 					</div>
 				</div>

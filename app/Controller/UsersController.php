@@ -17,7 +17,7 @@ class UsersController extends AppController {
 
     public $uses = array('Comment', 'LikeDislike', 'Story', 'User', 'Solution', 'SolutionImage', 'SolutionComment', 'LiveStream'
         , 'TrendingLikeDislike', 'TrendingVideo', 'TrendingVideoComment', 'VideoComment', 'VideoLikeDislike', 'YotubeProfile', 'UpcomingGame'
-        ,'GamingStory');
+        , 'GamingStory');
     //var $helpers = array('Sh');
     public $components = array('Pk');
 
@@ -27,7 +27,8 @@ class UsersController extends AppController {
         // $this->Auth->allow('login', 'logout', 'forgot', 'reset');
 
         $this->Auth->allow('live_stream', 'checkLiveLogin', 'test', 'delete_userpost', 'approved_post', 'delete_mypost', 'create_post', 'home', 'ajax_login', 'checkLogin', 'readpost', 'registerCompany', 'delete_post', 'story_comment', 'gaming_questions', 'readsolution', 'question_comment'
-                , 'checkapi', 'view_live', 'trending', 'view_video', 'create_upcomeing', 'getdatabycategory','readstory','new_story','gaming_story');
+                , 'checkapi', 'view_live', 'trending', 'view_video', 'create_upcomeing', 'getdatabycategory', 'readstory', 'new_story', 'gaming_story'
+                , 'delete_userstory', 'approved_story','delete_video');
     }
 
     public function logout() {
@@ -88,10 +89,12 @@ class UsersController extends AppController {
     public function home() {
         $this->layout = 'home';
         //UpcomingGame
-        $find = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1), 'limit' => 4, 'order' => array('Story.id' => 'DESC')));
+        $find = $this->GamingStory->find('all', array('conditions' => array('GamingStory.id', 'GamingStory.status' => 1),
+            //  'limit' => 4, 
+            'order' => array('GamingStory.id' => 'DESC')));
         foreach ($find as $i => $j) {
-            $find[$i]['Story']['image'] = Router::url("/" . $find[$i]['Story']['image'], true);
-            $find[$i]['Story']['main_img'] = Router::url("/" . $find[$i]['Story']['main_img'], true);
+            $find[$i]['GamingStory']['image'] = Router::url("/" . $find[$i]['GamingStory']['image'], true);
+            $find[$i]['GamingStory']['cover_image'] = Router::url("/" . $find[$i]['GamingStory']['cover_image'], true);
         }
         $this->set('find', $find);
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -385,7 +388,7 @@ class UsersController extends AppController {
             $che[$i]['SolutionImage']['sloution_image'] = Router::url("/" . $che[$i]['SolutionImage']['sloution_image'], true);
         }
         $this->set('che', $che);
-       
+
         ///////////////////////////////////////////////////////////////// 
         $findcomment = $this->SolutionComment->find('all', array('conditions' => array('SolutionComment.solutions_id' => $ids)));
         foreach ($findcomment as $i => $j) {
@@ -480,13 +483,15 @@ class UsersController extends AppController {
         $this->layout = 'home';
         if ($this->request->is('post')) {
             $this->Story->create();
-           
+            if ($this->request->data['Story']['youtube_link'] != "") {
                 $link = $this->request->data['Story']['youtube_link'];
                 $video_id = explode("?v=", $link);
                 $video_id = $video_id[1];
                 $this->request->data['Story']['youtube_link'] = $video_id;
-            
-          
+            } else {
+                unset($this->request->data['Story']['youtube_link']);
+            }
+
             if ($this->request->data['Story']['main_img']['name'] != "") {
                 $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['Story']['main_img']['name']);
                 $sPath = "story";
@@ -516,23 +521,20 @@ class UsersController extends AppController {
             } else {
                 unset($this->request->data['Story']['image']);
             }
-            // print_r($this->request->data);exit;
+
             // $this->request->data['Story']['story_slug'] = $this->slugStory($this->request->data['Story']['title']);
             $user_id = $this->Auth->user('id');
 
             $find_user = $this->User->find('first', array('conditions' => array('User.id' => $user_id), 'recursive' => -1));
             $this->request->data['Story']['user_id'] = $find_user['User']['id'];
             $this->request->data['Story']['account_type_id'] = $find_user['User']['account_type_id'];
-
+            //print_r($this->request->data);exit;
             if ($this->Story->save($this->request->data)) {
 
                 $story_id = $this->Story->getLastInsertID();
                 $arr['Story']['story_slug'] = $this->slugStory($this->request->data['Story']['title'], $story_id);
                 $arr['Story']['id'] = $story_id;
                 $this->Story->save($arr);
-
-
-
                 $this->Flash->pending_popup(__('The Story has been saved.'));
                 return $this->redirect(array('action' => 'my_post'));
             } else {
@@ -575,7 +577,7 @@ class UsersController extends AppController {
         }
         return $this->redirect(array('action' => 'my_post'));
     }
-    
+
     public function delete_mystory($id) {
 
         $this->GamingStory->id = $id;
@@ -603,14 +605,14 @@ class UsersController extends AppController {
 
         //   print_r($cc);exit;
         if ($this->request->is(array('post', 'put'))) {
-            
+
             if ($this->request->data['Story']['youtube_link'] != "") {
                 $link = $this->request->data['Story']['youtube_link'];
                 $video_id = explode("?v=", $link);
                 $video_id = $video_id[1];
                 $this->request->data['Story']['youtube_link'] = $video_id;
             } else {
-               unset($this->request->data['Story']['youtube_link']);
+                unset($this->request->data['Story']['youtube_link']);
             }
 
             if ($this->request->data['Story']['main_img']['name'] != "") {
@@ -669,6 +671,14 @@ class UsersController extends AppController {
         }
         //  print_r($find_post);exit;
         $this->set('find_post', $find_post);
+        //////////
+        $find_story = $this->GamingStory->find('all', array('conditions' => array('GamingStory.id', 'GamingStory.status' => 0)));
+        foreach ($find_story as $k => $m) {
+            $find_story[$k]['GamingStory']['image'] = Router::url("/" . $find_story[$k]['GamingStory']['image'], true);
+            $find_story[$k]['GamingStory']['cover_image'] = Router::url("/" . $find_story[$k]['GamingStory']['cover_image'], true);
+        }
+        // print_r($find_story);exit;
+        $this->set('find_story', $find_story);
     }
 
     public function approved_post($id) {
@@ -816,16 +826,18 @@ class UsersController extends AppController {
 
     public function view_video() {
         $this->layout = 'home';
-        if ($this->request->params['liveslug'] != '') {
-            $c = $this->LiveStream->find('first', array('conditions' => array('LiveStream.live_slug' => $this->request->params['liveslug'])));
+        if ($this->request->params['trendingslug'] != '') {
+            $c = $this->TrendingVideo->find('first', array('conditions' => array('TrendingVideo.trending_slug' => $this->request->params['trendingslug'])));
             if ($c) {
-                $id = $c['LiveStream']['id'];
+                $id = $c['TrendingVideo']['id'];
             }
         }
-        $find_live = $this->LiveStream->find('first', array('conditions' => array('LiveStream.id' => $id)));
+         
+        $find_live = $this->TrendingVideo->find('first', array('conditions' => array('TrendingVideo.id' => $id)));
+        
         $find_live['User']['profile_image'] = Router::url("/" . $find_live['User']['profile_image'], true);
         $this->set('find_live', $find_live);
-        //print_r($find_live);exit;
+      // print_r($find_live);exit;
     }
 
     public function create_upcomeing() {
@@ -892,24 +904,25 @@ class UsersController extends AppController {
             $this->set('ajax_find', $ajax_find);
         }
     }
-    
+
     public function new_story() {
         $this->layout = 'home';
         //GamingStory
     }
-     public function gaming_story() {
+
+    public function gaming_story() {
 
         $this->layout = 'home';
         if ($this->request->is('post')) {
             $this->GamingStory->create();
-            
-             if ($this->request->data['GamingStory']['youtube_link'] != "") {
+
+            if ($this->request->data['GamingStory']['youtube_link'] != "") {
                 $link = $this->request->data['GamingStory']['youtube_link'];
                 $video_id = explode("?v=", $link);
                 $video_id = $video_id[1];
                 $this->request->data['GamingStory']['youtube_link'] = $video_id;
             } else {
-               $this->request->data['GamingStory']['youtube_link']='';
+                $this->request->data['GamingStory']['youtube_link'] = '';
             }
 
             if ($this->request->data['GamingStory']['image']['name'] != "") {
@@ -958,7 +971,8 @@ class UsersController extends AppController {
             }
         }
     }
-      public function edit_mystory($id) {
+
+    public function edit_mystory($id) {
         $this->layout = 'home';
 
         $cc = $this->GamingStory->find('first', array('conditions' => array('GamingStory.id' => $id), 'recursive' => -1));
@@ -970,16 +984,16 @@ class UsersController extends AppController {
 
         //   print_r($cc);exit;
         if ($this->request->is(array('post', 'put'))) {
-            
-             if ($this->request->data['GamingStory']['youtube_link'] != "") {
+
+            if ($this->request->data['GamingStory']['youtube_link'] != "") {
                 $link = $this->request->data['GamingStory']['youtube_link'];
                 $video_id = explode("?v=", $link);
                 $video_id = $video_id[1];
                 $this->request->data['GamingStory']['youtube_link'] = $video_id;
             } else {
-               unset($this->request->data['GamingStory']['youtube_link']);
+                unset($this->request->data['GamingStory']['youtube_link']);
             }
-           // print_r($this->request->data);exit;
+            // print_r($this->request->data);exit;
             if ($this->request->data['GamingStory']['cover_image']['name'] != "") {
                 $sFileName = time() . "_" . str_replace(" ", "_", $this->request->data['GamingStory']['cover_image']['name']);
                 $sPath = "story";
@@ -1024,10 +1038,10 @@ class UsersController extends AppController {
             $this->request->data = $this->GamingStory->find('first', $options);
         }
     }
-    
+
     public function readstory() {
         $this->layout = 'home';
-       
+
         $find_user = $this->Auth->user('id');
         $this->set('find_user', $find_user);
         if ($this->request->params['mystoryslug'] != '') {
@@ -1042,7 +1056,55 @@ class UsersController extends AppController {
         $findmystory['GamingStory']['image'] = Router::url("/" . $findmystory['GamingStory']['image'], true);
         $findmystory['GamingStory']['cover_image'] = Router::url("/" . $findmystory['GamingStory']['cover_image'], true);
         $this->set('meta_decscriptoi', $findmystory['GamingStory']['title']);
-         $this->set('findmystory', $findmystory);
+        $this->set('findmystory', $findmystory);
+    }
+
+    public function approved_story($id) {
+        $arr['GamingStory']['id'] = $id;
+        $arr['GamingStory']['status'] = 1;
+
+        $this->GamingStory->save($arr);
+
+        $this->Flash->success(__('The GamingStory has been saved.'));
+        return $this->redirect(array('action' => 'user_post'));
+        exit;
+    }
+
+    public function delete_userstory($id) {
+
+        $this->GamingStory->id = $id;
+        if (!$this->GamingStory->exists()) {
+            throw new NotFoundException(__('Invalid GamingStory'));
+        }
+        $this->request->allowMethod('post', 'delete');
+        if ($this->GamingStory->delete()) {
+            //   $this->Flash->success(__('The Story has been deleted.'));
+        } else {
+            $this->Flash->error(__('The GamingStory could not be deleted. Please, try again.'));
+        }
+        return $this->redirect(array('action' => 'user_post'));
+    }
+    public function delete_video($id) {
+
+        $this->TrendingVideo->id = $id;
+        if (!$this->TrendingVideo->exists()) {
+            throw new NotFoundException(__('Invalid TrendingVideo'));
+        }
+        $this->request->allowMethod('post', 'delete');
+        if ($this->TrendingVideo->delete()) {
+            //   $this->Flash->success(__('The Story has been deleted.'));
+        } else {
+            $this->Flash->error(__('The TrendingVideo could not be deleted. Please, try again.'));
+        }
+        return $this->redirect(array('action' => 'manage_vidoes'));
+    }
+
+    public function manage_vidoes() {
+        $this->layout = 'home';
+        $find_user = $this->Auth->user('id');
+        $find_video = $this->TrendingVideo->find('all', array('conditions' => array('TrendingVideo.user_id' => $find_user),'recursive'=>-1));
+        $this->set('find_video', $find_video);
+       
     }
 
 }

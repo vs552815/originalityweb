@@ -130,7 +130,7 @@ class AppController extends Controller {
         return $text . "-" . $job_id;
     }
     
-        public function slugTreding($text, $job_id) {
+        public function slugTreding($text, $trending_id) {
         //$this->loadModel('Job');
         $title = $text;
         // replace non letter or digits by -
@@ -156,7 +156,7 @@ class AppController extends Controller {
         }
 
 
-        return $text . "-" . $job_id;
+        return $text . "-" . $trending_id;
     }
     
     public function slugUpcomingGame($text, $game_id) {

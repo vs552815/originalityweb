@@ -32,6 +32,14 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
         
            Router::connect('/gaming-questions', array('controller' => 'users', 'action' => 'gaming_questions'));
+           Router::connect('/new-story', array('controller' => 'users', 'action' => 'new_story'));
+           Router::connect('/create-post', array('controller' => 'users', 'action' => 'create_post'));
+           Router::connect('/gaming-story', array('controller' => 'users', 'action' => 'gaming_story'));
+           Router::connect('/my-questions', array('controller' => 'users', 'action' => 'my_questions'));
+           Router::connect('/manage-vidoes', array('controller' => 'users', 'action' => 'manage_vidoes'));
+           Router::connect('/my-gaming-profile', array('controller' => 'users', 'action' => 'gaming_profile'));
+           Router::connect('/my-profile', array('controller' => 'users', 'action' => 'myprofile'));
+           Router::connect('/my-post', array('controller' => 'users', 'action' => 'my_post'));
         
         Router::connect('/:storyslug', array('controller' => 'users', 'action' => 'readpost'), array('storyslug' => '[a-zA-Z0-9_-]+'));
         Router::connect('/story/:mystoryslug', array('controller' => 'users', 'action' => 'readstory'), array('mystoryslug' => '[a-zA-Z0-9_-]+'));
