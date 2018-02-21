@@ -37,17 +37,12 @@
                 <lable id="view-lable">Title*</lable>
                 <?php echo $this->Form->input('GamingStory.title', array('class' => 'form-control', 'div' => false, 'required', 'label' => false)); ?>
             </div>
-            <?php if($cc['GamingStory']['youtube_link'] == ''){ ?>
+          
             <div class="form-group">
                 <lable id="view-lable">Yotube Video Link</lable>
                 <?php echo $this->Form->input('GamingStory.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
             </div>
-              <?php } else{?>
-             <div class="form-group">
-                <lable id="view-lable">Yotube Video Link</lable>
-                <?php echo $this->Form->input('GamingStory.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false,'disabled')); ?>
-            </div>
-              <?php }?>
+             
 
             <div class="form-group">
                 <lable id="view-lable">Category*</lable>

@@ -63,15 +63,16 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         ?>
         
    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81193898-5"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81193898-6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-81193898-5');
+  gtag('config', 'UA-81193898-6');
 </script>
-     
+
   
     </head>
     <body style="    height: 100%;

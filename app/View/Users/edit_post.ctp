@@ -49,18 +49,13 @@
                         <lable id="view-lable">Game Title*</lable>
                         <?php echo $this->Form->input('title', array('class' => 'form-control', 'div' => false, 'required', 'label' => false)); ?>
                     </div>
-                <?php if ($dd['Story']['youtube_link'] == '') { ?>
-                        <div class="form-group">
-                            <lable id="view-lable">Yotube Video Link</lable>
-                            <?php echo $this->Form->input('Story.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
-                        </div>
-                    <?php } else { ?>
-                  <div class="form-group">
-                            <lable id="view-lable">Yotube Video Link</lable>
-                            <?php echo $this->Form->input('Story.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false,'disabled')); ?>
-                        </div>
+                
+                <div class="form-group">
+                        <lable id="view-lable">Yotube Video Link</lable>
+                        <?php echo $this->Form->input('Story.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
+                    </div>
 
-                    <?php } ?>
+                   
                     <div class="form-group">
                         <lable id="view-lable">Google ad script</lable>
                         <?php echo $this->Form->input('google_ad_code', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
@@ -94,18 +89,13 @@
                         <?php echo $this->Form->input('title', array('class' => 'form-control', 'div' => false, 'required', 'label' => false)); ?>
                     </div>
 
-                     <?php if ($dd['Story']['youtube_link'] == '') { ?>
+                     
                         <div class="form-group">
                             <lable id="view-lable">Yotube Video Link</lable>
                             <?php echo $this->Form->input('Story.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false)); ?>
                         </div>
-                    <?php } else { ?>
-                  <div class="form-group">
-                            <lable id="view-lable">Yotube Video Link</lable>
-                            <?php echo $this->Form->input('Story.youtube_link', array('class' => 'form-control', 'div' => false, 'label' => false,'disabled')); ?>
-                        </div>
-
-                    <?php } ?>
+                   
+                 
 
 
                     <div class="form-group">

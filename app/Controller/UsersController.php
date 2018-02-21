@@ -484,9 +484,9 @@ class UsersController extends AppController {
         if ($this->request->is('post')) {
             $this->Story->create();
             if ($this->request->data['Story']['youtube_link'] != "") {
-                $link = $this->request->data['Story']['youtube_link'];
-                $video_id = explode("?v=", $link);
-                $video_id = $video_id[1];
+                $url = urldecode(rawurldecode($this->request->data['Story']['youtube_link']));
+                preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $url, $matches);
+                $video_id = $matches[1];
                 $this->request->data['Story']['youtube_link'] = $video_id;
             } else {
                 unset($this->request->data['Story']['youtube_link']);
@@ -607,9 +607,9 @@ class UsersController extends AppController {
         if ($this->request->is(array('post', 'put'))) {
 
             if ($this->request->data['Story']['youtube_link'] != "") {
-                $link = $this->request->data['Story']['youtube_link'];
-                $video_id = explode("?v=", $link);
-                $video_id = $video_id[1];
+                $url = urldecode(rawurldecode($this->request->data['Story']['youtube_link']));
+                preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $url, $matches);
+                $video_id = $matches[1];
                 $this->request->data['Story']['youtube_link'] = $video_id;
             } else {
                 unset($this->request->data['Story']['youtube_link']);
@@ -805,9 +805,9 @@ class UsersController extends AppController {
         $this->set('check_watermark', $check_watermark);
         if ($this->request->is('post')) {
             $this->TrendingVideo->create();
-            $link = $this->request->data['TrendingVideo']['trending_video_link'];
-            $video_id = explode("?v=", $link);
-            $video_id = $video_id[1];
+            $url = urldecode(rawurldecode($this->request->data['TrendingVideo']['trending_video_link']));
+            preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $url, $matches);
+            $video_id = $matches[1];
             $this->request->data['TrendingVideo']['trending_video_link'] = $video_id;
             $this->request->data['TrendingVideo']['user_id'] = $id;
 
@@ -917,9 +917,9 @@ class UsersController extends AppController {
             $this->GamingStory->create();
 
             if ($this->request->data['GamingStory']['youtube_link'] != "") {
-                $link = $this->request->data['GamingStory']['youtube_link'];
-                $video_id = explode("?v=", $link);
-                $video_id = $video_id[1];
+                $url = urldecode(rawurldecode($this->request->data['GamingStory']['youtube_link']));
+                preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $url, $matches);
+                $video_id = $matches[1];
                 $this->request->data['GamingStory']['youtube_link'] = $video_id;
             } else {
                 $this->request->data['GamingStory']['youtube_link'] = '';
@@ -986,9 +986,9 @@ class UsersController extends AppController {
         if ($this->request->is(array('post', 'put'))) {
 
             if ($this->request->data['GamingStory']['youtube_link'] != "") {
-                $link = $this->request->data['GamingStory']['youtube_link'];
-                $video_id = explode("?v=", $link);
-                $video_id = $video_id[1];
+                $url = urldecode(rawurldecode($this->request->data['GamingStory']['youtube_link']));
+                preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $url, $matches);
+                $video_id = $matches[1];
                 $this->request->data['GamingStory']['youtube_link'] = $video_id;
             } else {
                 unset($this->request->data['GamingStory']['youtube_link']);
