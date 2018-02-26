@@ -26,13 +26,14 @@
         <div class="col-sm-4">
          
             <div class="col-sm-12">
+            <div class="row">
                 <div  id="green">
 
                     <div class="panel panel-success coupon">
                         <div class="panel-heading" id="head">
                             <div class="panel-title" id="title" style="text-align:center;">
 
-                                <span>Info</span>
+                                <span>User Info</span>
                             </div>
                         </div>
                         <div class="panel-body">
@@ -40,12 +41,10 @@
                             <?php echo $find_live['User']['email'] ?><br>                                  
                             <?php echo $find_live['User']['description'] ?><br>    
                         </div>
-                        <div class="panel-footer">
-
-                            <div class="exp">Start: Sep 30, 2016 2:30 AM</div>
-                        </div>
+                        
                     </div>
 
+                </div>
                 </div>
             </div>
             

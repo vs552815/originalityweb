@@ -1,8 +1,42 @@
 /* global webURL */
+$(document).on('click', '.next a', function (e) {
+    $.ajax({
+        type: "POST",
+        url: $(this).attr('href'),
+        dataType: 'json',
+        success: function (data) {
+
+            //$('#pagi').remove();
+            $('.more-items').append(data.data);
+            $('#pagination').html(data.pagination);
+            //$('#sorting-table').html(data.sort_p);
+        }
+    });
+    var pageurl = $(this).attr('href');
+    if (pageurl != window.location) {
+        // window.history.pushState({path: pageurl}, '', pageurl);
+    }
+    e.preventDefault();
+    return false;
+});
+
+
+
+$(document).on('click', '.forget-modal', function (e) {
+    $('#LoginPopup').modal('hide');
+    setTimeout(function () {
+        $('#forgot-password').modal('show');
+    }, 350)
+});
+$(document).ready(function () {
+    setTimeout(function () {
+        $('#reset-password').modal('show');
+    }, 200);
+});
 ///////////////////////////////////////////////////////////
 jQuery(document).ready(function ($) {
     //////////////////////
-     $('#timepicker1').timepicker();
+    $('#timepicker1').timepicker();
     ///////////////////////
     $('.hide-login').on('click', function () {
         $('#LoginPopup').modal('hide');
@@ -10,12 +44,12 @@ jQuery(document).ready(function ($) {
     $('.hide-signup').on('click', function () {
         $('#SignupPopup').modal('hide');
     });
-    
-   
-  $('#checkLogin').on('click', function () {
-      // var obj=$(this).attr('rel');
-       var obj2=$(this).attr('data-id');
-      
+
+
+    $('#checkLogin').on('click', function () {
+        // var obj=$(this).attr('rel');
+        var obj2 = $(this).attr('data-id');
+
         var url = webURL + "users/checkLogin";
         $.ajax({
             type: "POST",
@@ -27,34 +61,34 @@ jQuery(document).ready(function ($) {
             {
                 console.info(data); // show response from the php script.
                 if (data.status == 'success') {
-                       var url = webURL + "users/story_comment/" + obj2;
-                        $.ajax({
-                            type: "POST",
-                            url: url,
-                            data: {commentstory: $('#Comment_obj').val()}, // serializes the form's elements.
-                            dataType: 'json',
-                            context: this,
-                            success: function (data)
-                            {
-                                console.info(data); // show response from the php script.
-                                if (data.status == 'success') {
-                                     location.reload();
-                                } else {
-                                    location.reload();
-                                }
+                    var url = webURL + "users/story_comment/" + obj2;
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: {commentstory: $('#Comment_obj').val()}, // serializes the form's elements.
+                        dataType: 'json',
+                        context: this,
+                        success: function (data)
+                        {
+                            console.info(data); // show response from the php script.
+                            if (data.status == 'success') {
+                                location.reload();
+                            } else {
+                                location.reload();
                             }
-                        });
+                        }
+                    });
 
                 } else {
-                   $('.show-alert').show();
-                   // $('#LoginPopup').modal('show');
+                    $('.show-alert').show();
+                    // $('#LoginPopup').modal('show');
                 }
             }
         });
     });
 
 ///////////////////////////////////////////////////////////////go live page check
- $('.go-live-text').on('click', function () {
+    $('.go-live-text').on('click', function () {
         var url = webURL + "users/checkLiveLogin";
         $.ajax({
             type: "POST",
@@ -66,17 +100,17 @@ jQuery(document).ready(function ($) {
             {
                 console.info(data); // show response from the php script.
                 if (data.status == 'success') {
-                       window.location.href = webURL + "users/add_live_stream";
+                    window.location.href = webURL + "users/add_live_stream";
                 } else {
-                   $('#LoginPopup').modal('show');
-                   
+                    $('#LoginPopup').modal('show');
+
                 }
             }
         });
     });
 
 ///////////////////////////////////////////////////////////////add trending viddeo
- $('.go-trending-text').on('click', function () {
+    $('.go-trending-text').on('click', function () {
         var url = webURL + "users/checkLiveLogin";
         $.ajax({
             type: "POST",
@@ -88,10 +122,10 @@ jQuery(document).ready(function ($) {
             {
                 console.info(data); // show response from the php script.
                 if (data.status == 'success') {
-                       window.location.href = webURL + "users/add_video";
+                    window.location.href = webURL + "users/add_video";
                 } else {
-                   $('#LoginPopup').modal('show');
-                   
+                    $('#LoginPopup').modal('show');
+
                 }
             }
         });
@@ -137,10 +171,10 @@ jQuery(document).ready(function ($) {
 
 
 
-      $('#commentLogin').on('click', function () {
-      // var obj=$(this).attr('rel');
-       var obj=$(this).attr('rel');
-      
+    $('#commentLogin').on('click', function () {
+        // var obj=$(this).attr('rel');
+        var obj = $(this).attr('rel');
+
         var url = webURL + "users/checkLogin";
         $.ajax({
             type: "POST",
@@ -152,42 +186,92 @@ jQuery(document).ready(function ($) {
             {
                 console.info(data); // show response from the php script.
                 if (data.status == 'success') {
-                       var url = webURL + "users/question_comment/" + obj;
-                        $.ajax({
-                            type: "POST",
-                            url: url,
-                            data: {commentsolution: $('#Comment_sol').val()}, // serializes the form's elements.
-                            dataType: 'json',
-                            context: this,
-                            success: function (data)
-                            {
-                                console.info(data); // show response from the php script.
-                                if (data.status == 'success') {
-                                     location.reload();
-                                } else {
-                                    location.reload();
-                                }
+                    var url = webURL + "users/question_comment/" + obj;
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: {commentsolution: $('#Comment_sol').val()}, // serializes the form's elements.
+                        dataType: 'json',
+                        context: this,
+                        success: function (data)
+                        {
+                            console.info(data); // show response from the php script.
+                            if (data.status == 'success') {
+                                location.reload();
+                            } else {
+                                location.reload();
                             }
-                        });
+                        }
+                    });
 
                 } else {
-                   $('.show-alert').show();
-                   // $('#LoginPopup').modal('show');
+                    $('.show-alert').show();
+                    // $('#LoginPopup').modal('show');
                 }
             }
         });
     });
 
+    ///////////////////////////forget password
+    $("#frmForgot").submit(function (e) {
+        var url = webURL + "users/user_forgot";
+        // alert(url); return false;
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $("#frmForgot").serialize(), // serializes the form's elements.
+            dataType: 'json',
+            context: this,
+            success: function (data)
+            {
+                console.info(data); // show response from the php script.forgot-set-html
+                if (data.status == 'success') {
+                    $('#frmForgot').hide();
+                    $('.forgot-set-html').html(data.message);
+                } else {
+                    $('.forgot-set-html').html(data.message);
+                }
+            }
+        });
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+//////////////////////////////////////reset pssword
+    $("#user_resets").submit(function (e) {
+        var url = webURL + "users/password_reset"; // the script where you handle the form input.
+        // alert(url); return false;
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $("#user_resets").serialize(), // serializes the form's elements.
+            dataType: 'json',
+            context: this,
+            success: function (data)
+            {
+                console.info(data); // show response from the php script.
+                if (data.status == 'success') {
+                    $('.hide-reset-form').hide();
+                    $('.rest-success-data').html(data.message);
+                } else {
+                    $('.error-data').html(data.message);
+
+                    // alert(data.message);
+                }
+            }
+
+        });
+        e.preventDefault(); // avoid to execute the actual submit of the form.        
+    });
 
 
- });
- 
- 
- 
- ///////////////////////////////////////////////////////////////////
+
+});
+
+
+
+///////////////////////////////////////////////////////////////////
 $uploadCrr = $('#upload-cpnyimg').croppie({
     enableExif: true,
-     viewport: {
+    viewport: {
         width: 250,
         height: 250,
         type: 'circle'
@@ -202,8 +286,8 @@ $uploadCrr = $('#upload-cpnyimg').croppie({
 $('#my_cimg').on('change', function () {
     $('#cttt').show();
     $('#select-cmpnyimg').hide();
-    $('.logo-upload').css({width:'100%',float:'none'});
-    $('.logo-upload1').css({width:'100%',margin:'0'});
+    $('.logo-upload').css({width: '100%', float: 'none'});
+    $('.logo-upload1').css({width: '100%', margin: '0'});
     $('.logo-main').hide();
     //$('#hide-remove-button1').hide();
     var reader = new FileReader();
@@ -223,14 +307,14 @@ $('.upload-cimg').on('click', function (ev) {
         type: 'canvas',
         size: 'viewport'
     }).then(function (resp) {
-                 $('#select-cmpnyimg').attr('src', resp);
-                 $('#hiddenfield_cimg').val( resp);
-             $('#select-cmpnyimg').show();
-              $("#cttt").hide();
-              $('.logo-upload').css({width:'50%',float:'left'});
-               $('.logo-upload1').css({width:'50%',margin:'0 auto'});
-    $('.logo-main').show();
-               
+        $('#select-cmpnyimg').attr('src', resp);
+        $('#hiddenfield_cimg').val(resp);
+        $('#select-cmpnyimg').show();
+        $("#cttt").hide();
+        $('.logo-upload').css({width: '50%', float: 'left'});
+        $('.logo-upload1').css({width: '50%', margin: '0 auto'});
+        $('.logo-main').show();
+
     });
 });
 
@@ -245,7 +329,7 @@ $(document).ready(function () {
 ///////////////////////////////////////////////////////////////////
 $uploadCrrimg = $('#upload-cpnyimg1').croppie({
     enableExif: true,
-     viewport: {
+    viewport: {
         width: 600,
         height: 350,
         type: 'square'
@@ -260,8 +344,8 @@ $uploadCrrimg = $('#upload-cpnyimg1').croppie({
 $('#my_cimg1').on('change', function () {
     $('#cttt1').show();
     $('#select-cmpnyimg1').hide();
-     $('.logo-main').css({width:'100%',float:'none'});
-    $('.logo-main1').css({width:'100%',margin:'0'});
+    $('.logo-main').css({width: '100%', float: 'none'});
+    $('.logo-main1').css({width: '100%', margin: '0'});
     $('.logo-upload').hide();
     //$('#hide-remove-button1').hide();
     var reader = new FileReader();
@@ -281,14 +365,14 @@ $('.upload-cimg1').on('click', function (ev) {
         type: 'canvas',
         size: 'viewport'
     }).then(function (resp) {
-                 $('#select-cmpnyimg1').attr('src', resp);
-                 $('#hiddenfield_cimg1').val( resp);
-             $('#select-cmpnyimg1').show();
-              $("#cttt1").hide();
-                $('.logo-main').css({width:'50%',float:'left'});
-    $('.logo-main1').css({width:'50%',margin:'0 auto'});
-    $('.logo-upload').show();
-               
+        $('#select-cmpnyimg1').attr('src', resp);
+        $('#hiddenfield_cimg1').val(resp);
+        $('#select-cmpnyimg1').show();
+        $("#cttt1").hide();
+        $('.logo-main').css({width: '50%', float: 'left'});
+        $('.logo-main1').css({width: '50%', margin: '0 auto'});
+        $('.logo-upload').show();
+
     });
 });
 
@@ -301,10 +385,10 @@ $(document).ready(function () {
 
 
 
- ///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
 $uploadC = $('#upload-uimg').croppie({
     enableExif: true,
-     viewport: {
+    viewport: {
         width: 150,
         height: 150,
         type: 'circle'
@@ -319,7 +403,7 @@ $uploadC = $('#upload-uimg').croppie({
 $('#my_uimg').on('change', function () {
     $('#1cttt').show();
     $('#select-uimg').hide();
-     $("#my_uimg").hide();
+    $("#my_uimg").hide();
     //$('#hide-remove-button1').hide();
     var reader = new FileReader();
     reader.onload = function (e) {
@@ -338,13 +422,13 @@ $('.upload').on('click', function (ev) {
         type: 'canvas',
         size: 'viewport'
     }).then(function (resp) {
-        
-                 $('#select-uimg').attr('src', resp);
-                 $('#hiddenfield_uimg').val( resp);
-             $('#select-uimg').show();
-              $("#1cttt").hide();
-              $("#my_uimg").hide();
-               
+
+        $('#select-uimg').attr('src', resp);
+        $('#hiddenfield_uimg').val(resp);
+        $('#select-uimg').show();
+        $("#1cttt").hide();
+        $("#my_uimg").hide();
+
     });
 });
 
@@ -356,42 +440,42 @@ $(document).ready(function () {
 ///////////////////////////////////////////////////////////
 
 
- $("#createuser").submit(function (e) {
-        var url = webURL + "users/registerCompany"; // the script where you handle the form input.
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: $("#createuser").serialize(), // serializes the form's elements.
-            dataType: 'json',
-            context: this,
-            success: function (data)
-            {
-                console.info(data); // show response from the php script.
-                if (data.status == 'success') {
-                    window.location.href =  "";
-                } else {
-                    swal("", "That email address already in GameingHub.", "error");
-                    //$('#SignupPopup').modal('hide');
-                    
-                }
+$("#createuser").submit(function (e) {
+    var url = webURL + "users/registerCompany"; // the script where you handle the form input.
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: $("#createuser").serialize(), // serializes the form's elements.
+        dataType: 'json',
+        context: this,
+        success: function (data)
+        {
+            console.info(data); // show response from the php script.
+            if (data.status == 'success') {
+                window.location.href = "";
+            } else {
+                swal("", "That email address already in GameingHub.", "error");
+                //$('#SignupPopup').modal('hide');
+
             }
-        });
-        e.preventDefault(); // avoid to execute the actual submit of the form.
+        }
     });
-    
-    $(document).ready(function(){
-    $('.diable-btn').attr('disabled',true);
-    $('#Comment_sol').keyup(function(){
-        if($(this).val().length !=0)
-            $('.diable-btn').attr('disabled', false);            
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+});
+
+$(document).ready(function () {
+    $('.diable-btn').attr('disabled', true);
+    $('#Comment_sol').keyup(function () {
+        if ($(this).val().length != 0)
+            $('.diable-btn').attr('disabled', false);
         else
-            $('.diable-btn').attr('disabled',true);
+            $('.diable-btn').attr('disabled', true);
     });
-    
+
     //////////////////////////////////////////////////////
     $(".watermark-btn").click(function (e) {
         var url = webURL + "users/addwatermark";
-      
+
         $.ajax({
             type: "POST",
             url: url,
@@ -409,12 +493,12 @@ $(document).ready(function () {
             }
         });
     });
-    
-    
-     //////////////////////////////////////////////////////
+
+
+    //////////////////////////////////////////////////////
     $(".watermark-btn").click(function (e) {
         var url = webURL + "users/addwatermark";
-      
+
         $.ajax({
             type: "POST",
             url: url,
@@ -432,11 +516,11 @@ $(document).ready(function () {
             }
         });
     });
-    
+
     //////////////////////////////////////////////////////
     $(".edit-watermark-btn").click(function (e) {
         var url = webURL + "users/addwatermark";
-      
+
         $.ajax({
             type: "POST",
             url: url,
@@ -454,32 +538,32 @@ $(document).ready(function () {
             }
         });
     });
-    
-      $(".tab-data").on('click', function () {
-      
-       var obj =$(this).attr('rel');
-     // alert(obj);return false;
+
+    $(".tab-data").on('click', function () {
+
+        var obj = $(this).attr('rel');
+        // alert(obj);return false;
         var url = webURL + "users/getdatabycategory";
-      
+
         $.ajax({
             type: "POST",
             url: url,
             data: {obj_name: obj}, // serializes the form's elements.
-           // dataType: 'json',
+            // dataType: 'json',
             context: this,
             success: function (data)
             {
-            console.info(data); // show response from the php script.
-            if (!$.trim(data)) {
-                swal("", "no result found !", "warning");
-            } else {
-                $('.tab-data-container').html(data);
-            }
+                console.info(data); // show response from the php script.
+                if (!$.trim(data)) {
+                    swal("", "no result found !", "warning");
+                } else {
+                    $('.tab-data-container').html(data);
+                }
 
-        }
+            }
         });
     });
-    
+
 });
 
 
@@ -490,7 +574,7 @@ $("#open-menu").click(function () {
 });
 
 
-    
+
 
 
 // /////////////////////////////////////////////////////////////////// this is for home header images

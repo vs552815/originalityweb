@@ -5,6 +5,8 @@
 
 <div class="container">
     <div class="row">
+        <br>
+        <div class="sharethis-inline-share-buttons"></div>
         <div class="col-lg-8">
             <h2 style="text-transform: uppercase;text-align: center;"><?php echo $findstory['Story']['title'] ?></h2>
         </div>

@@ -179,21 +179,37 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
                 <li ><a href=""  class="tab-data" data-toggle="tab" rel="nintendo">NINTENDO</a></li>
                 <li ><a href=""  class="tab-data" data-toggle="tab" rel="tv">TV</a></li>
                 <li ><a href=""   class="tab-data" data-toggle="tab" rel="movies">MOVIES</a></li>
+                <li ><a href=""   class="tab-data" data-toggle="tab" rel="sports">SPORTS</a></li>
+                <li ><a href=""   class="tab-data" data-toggle="tab" rel="technology">TECHNOLOGY</a></li>
                 <li ><a href=""   class="tab-data" data-toggle="tab" rel="other">OTHER</a></li>
             </ul>
 
         </div>
-        <div class="tab-data-container">
-            <?php foreach ($find_all as $story) { ?>
+        <div class="tab-data-container more-items">
+            <?php foreach ($find_all as $story) { 
+                
+               if ($story['Story']['image'] != '') {
+                    $fileuser = Router::url("/" . $story['Story']['image'], true);
+                } else {
+                    $fileuser = Router::url("/img/avatar.png", true);
+                }
+                
+                if ($story['Story']['main_img'] != '') {
+                    $fileuser1 = Router::url("/" . $story['Story']['main_img'], true);
+                } else {
+                    $fileuser1 = Router::url("/img/avatar.png", true);
+                }
+                ?>
+            
                 <div class="col-lg-3 col-sm-6">
                     <a  href="<?php echo $this->Html->url(array('action' => 'readpost', 'controller' => 'users', 'storyslug' => $story['Story']['story_slug'])); ?>">
                         <div class="card hovercard">
-                            <div class="cardheader" style=" background-image: url(<?php echo $story['Story']['image']; ?>);" alt="<?php echo $story['Story']['title']; ?>" >
+                            <div class="cardheader" style=" background-image: url(<?php echo $fileuser; ?>);" alt="<?php echo $story['Story']['title']; ?>" >
 
                             </div>
                             <div class="avatar">
 
-                                <?php echo $this->Html->image($story['Story']['main_img'], array('alt' => $story['Story']['title'])) ?>
+                                <?php echo $this->Html->image($fileuser1, array('alt' => $story['Story']['title'])) ?>
                             </div>
                             <div class="info">
                                 <div class="title">
@@ -209,7 +225,21 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
                     </a>
                 </div>
             <?php } ?>
+            
         </div>
+        <div class="col-sm-12 hide-pagination" >
+                <div style="text-align:center;" id="pagination">
+
+                    <?php
+                    if ($this->Paginator->hasNext()) {
+                        echo $this->Paginator->next('VIEW MORE ', array('tag' => 'p', 'escape' => false), null, array('class' => 'next disabled nxt',
+                            'escape' => false));
+                    }
+                    ?>
+                    <span><?php echo $this->Paginator->counter('Showing {:end} of  {:count}'); ?></span>
+                </div>
+                <br><Br>
+            </div>
     </div>
 </div>
 

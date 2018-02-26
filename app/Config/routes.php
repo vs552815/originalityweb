@@ -33,6 +33,7 @@
         
            Router::connect('/gaming-questions', array('controller' => 'users', 'action' => 'gaming_questions'));
            Router::connect('/new-story', array('controller' => 'users', 'action' => 'new_story'));
+           Router::connect('/trending', array('controller' => 'users', 'action' => 'trending'));
            Router::connect('/create-post', array('controller' => 'users', 'action' => 'create_post'));
            Router::connect('/gaming-story', array('controller' => 'users', 'action' => 'gaming_story'));
            Router::connect('/my-questions', array('controller' => 'users', 'action' => 'my_questions'));

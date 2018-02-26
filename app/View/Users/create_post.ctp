@@ -16,7 +16,7 @@
     <?php echo $this->Form->create('Story', array('enctype' => 'multipart/form-data')); ?>
 
         <div class="row" style="    margin-bottom: 50px;">
-            <h3 class="charts--headline">Your Gateway to create your own Game News/Story, Entertainment News<br>upcoming game details <b>Anything</b>.</h3>
+            <h3 class="charts--headline">Your Gateway to create your own Game News/Story, Entertainment News<br>Technology/Sports, upcoming game details <b>Anything</b>.</h3>
             <div class="col-lg-12" style="    padding: 15px;">
                 <div class="form-group">
 
@@ -28,7 +28,9 @@
 
                     <div style="width:50%;float:left;" class="logo-main">
                          <label>Cover Image </label>
+                        
                        <?php echo $this->Form->file('Story.image', array('required')); ?> 
+                          <small>Recommended size 600 X 350</small>
                     </div> 
 
                 </div>  
@@ -58,6 +60,8 @@
                                     'movies' => 'MOVIES',
                                     'tv' => 'TV',
                                     'nintendo' => 'NINTENDO',
+                                    'sports' => 'SPORTS',
+                                    'technology' => 'TECHNOLOGY',
                                     'other' => 'OTHER',
                                 ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
                                 'class' => 'form-control btn dropdown-toggle selectpicker btn-default','required'));

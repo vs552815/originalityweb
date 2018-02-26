@@ -26,6 +26,7 @@
                     <button class="btn btn-primary btn-web-color btn-block">Login</button>
                 </div>
                     <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                        <h5 style="text-align: center;cursor: pointer;" class="forget-modal"> Forgot Password?</h5>
                         <h5 style="text-align:center;">Don't have an account? <a href="javascript:void(0);" onclick="$('#SignupPopup').modal('show');" id="signup-btn" class="hide-login">Sign up</a></h5>
                     </div>
                 <?php echo $this->Form->end(); ?>                    
@@ -129,3 +130,61 @@
                      box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075); 
     }
 </style>
+
+
+<div class="modal fade"  role="dialog" id="forgot-password">
+    <div class="modal-dialog modal-sm" id="login-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" id="refresh-page">&times;</button>
+            </div>
+            
+            <div class="modal-body" style="    text-align: center;">
+                <h4 style="margin:0px;">Reset password</h4>
+                <h6 class="forgot-set-html">Enter your email address we will sent you the password reset link.</h6>
+                <?php echo $this->Form->create('User', array('id' => 'frmForgot')); ?>
+                <div class="form-group" id="forgot-password email-lowercase" >
+                   
+                        <?php echo $this->Form->input('email', array('class' => 'form-control', 'placeholder' => 'Enter Email ', 'label' => false, 'div' => false, 'aria-describedby' => 'inputGroupSuccess1Status', 'required')); ?>
+
+                </div>
+                 <div style="width: 50%;margin: 0 auto;">
+                    <button type="submit" class="btn btn-black btn-md" id="reset-btn" style="border-radius: 20px;">Reset</button>
+                </div>
+                <?php echo $this->Form->end(); ?>
+            </div>
+           
+            
+        </div>
+    </div>
+</div>
+
+<!-- reset password modal -->
+<?php if (isset($this->params['named']['hash']) && $this->params['named']['hash'] != '') { ?>
+<div class="modal fade"  role="dialog" id="reset-password">
+    <div class="modal-dialog modal-sm" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" id="refresh-page">&times;</button>
+            </div>
+            <div class="modal-body" style="padding:15px;text-align:center;">
+                <h4 class="rest-success-data" style="    margin: 0px;"></h4>
+                <div class="hide-reset-form">
+                <h4 style="text-align:center;margin:0 0 10px 0;">Enter new password</h4>
+                <h6 class="error-data" style="color:red;"></h6>
+                <?php echo $this->Form->create("reset", array('class' => 'form-horizontal', 'role' => 'form', 'id' => 'user_resets')); ?>
+                <?php echo $this->Form->input('User.id', array('div' => false, 'label' => false, 'type' => 'hidden', 'value' => $forgot_user_id)) ?>
+                    <?php echo $this->Form->input('password1', array('type' => 'password', 'class' => 'form-control', 'placeholder' => 'New Password', 'label' => false, 'required' => true)); ?>
+                <br>
+                    <?php echo $this->Form->input('password2', array('type' => 'password', 'class' => 'form-control', 'placeholder' => 'Confirm Password', 'label' => false, 'required' => true)); ?>
+                <br>
+                <div>
+                    <button type="submit" class="btn btn-black btn-md" id="login-btn" style="border-radius: 20px;">Reset Password</button>
+                </div>
+                <?php echo $this->Form->end(); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php } ?>

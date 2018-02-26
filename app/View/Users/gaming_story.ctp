@@ -41,16 +41,18 @@
                 <br>
                 <?php
                 echo $this->Form->input('GamingStory.gaming_catogory', array('type' => 'select', 'options' => array(
-                        'ps4' => 'PS4',
-                        'xbox' => 'XBOX',
-                        'pc' => 'PC',
-                        'movies' => 'MOVIES',
-                        'tv' => 'TV',
-                        'nintendo' => 'NINTENDO',
-                        'other' => 'OTHER',
-                    ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
-                    'class' => 'form-control btn dropdown-toggle selectpicker btn-default', 'required'));
-                ?>
+                            'ps4' => 'PS4',
+                            'xbox' => 'XBOX',
+                            'pc' => 'PC',
+                            'movies' => 'MOVIES',
+                            'tv' => 'TV',
+                            'nintendo' => 'NINTENDO',
+                            'sports' => 'SPORTS',
+                            'technology' => 'TECHNOLOGY',
+                            'other' => 'OTHER',
+                        ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
+                        'class' => 'form-control btn dropdown-toggle selectpicker btn-default', 'required'));
+                    ?>
             </div>
             <div class="form-group">
                 <lable id="view-lable">Your Story*</lable>

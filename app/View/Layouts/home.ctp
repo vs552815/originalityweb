@@ -161,7 +161,7 @@ if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
 
         <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
         <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
-
+        <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a943b2fe28d380013fe528d&product=inline-share-buttons"></script>
 
         <script>
     $(document).ready(function() {

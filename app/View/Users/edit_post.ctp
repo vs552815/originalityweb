@@ -72,6 +72,8 @@
                                 'movies' => 'MOVIES',
                                 'tv' => 'TV',
                                 'nintendo' => 'NINTENDO',
+                             'sports' => 'SPORTS',
+                            'technology' => 'TECHNOLOGY',
                             ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
                             'class' => 'form-control btn dropdown-toggle selectpicker btn-default', 'required'));
                         ?>
@@ -109,6 +111,8 @@
                                 'movies' => 'MOVIES',
                                 'tv' => 'TV',
                                 'nintendo' => 'NINTENDO',
+                             'sports' => 'SPORTS',
+                            'technology' => 'TECHNOLOGY',
                                 'other' => 'OTHER',
                             ), 'label' => false, 'empty' => 'Select-Category', 'style' => 'width:100%;',
                             'class' => 'form-control btn dropdown-toggle selectpicker btn-default', 'required'));

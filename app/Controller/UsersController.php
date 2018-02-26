@@ -28,7 +28,7 @@ class UsersController extends AppController {
 
         $this->Auth->allow('live_stream', 'checkLiveLogin', 'test', 'delete_userpost', 'approved_post', 'delete_mypost', 'create_post', 'home', 'ajax_login', 'checkLogin', 'readpost', 'registerCompany', 'delete_post', 'story_comment', 'gaming_questions', 'readsolution', 'question_comment'
                 , 'checkapi', 'view_live', 'trending', 'view_video', 'create_upcomeing', 'getdatabycategory', 'readstory', 'new_story', 'gaming_story'
-                , 'delete_userstory', 'approved_story','delete_video');
+                , 'delete_userstory', 'approved_story','delete_video', 'password_reset','user_forgot','ajax_pagination','ajax_story');
     }
 
     public function logout() {
@@ -89,6 +89,17 @@ class UsersController extends AppController {
     public function home() {
         $this->layout = 'home';
         //UpcomingGame
+      
+        if (isset($this->request->params['named']['hash']) && $this->request->params['named']['hash'] != '') {
+           //  print_r($this->request->params['named']['hash']);exit;
+            $check = $this->User->find('first', array('conditions' => array('User.forgot_hash' => $this->request->params['named']['hash'], 'User.forgot_expire >=' => date('Y-m-d H:i:s', time()))));
+          //print_r($check);exit;
+            if (!$check) {
+                return $this->redirect(array('controller' => 'users', 'action' => 'home'));
+            } else {
+                $this->set('forgot_user_id', $check['User']['id']);
+            }
+        }
         $find = $this->GamingStory->find('all', array('conditions' => array('GamingStory.id', 'GamingStory.status' => 1),
             //  'limit' => 4, 
             'order' => array('GamingStory.id' => 'DESC')));
@@ -107,14 +118,57 @@ class UsersController extends AppController {
         $this->set('find_upcoming', $find_upcoming);
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
-        $find_all = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1)
-            // , 'limit'=>4 
-            , 'order' => array('Story.id' => 'DESC')));
-        foreach ($find_all as $i => $k) {
-            $find_all[$i]['Story']['image'] = Router::url("/" . $find_all[$i]['Story']['image'], true);
-            $find_all[$i]['Story']['main_img'] = Router::url("/" . $find_all[$i]['Story']['main_img'], true);
-        }
+         $this->User->unbindModel(
+                array(
+                    //'belongsTo' => array('Story'),
+                    'hasMany' => array('Story'),
+                )
+        );
+        $this->Story->unbindModel(
+                array(
+                    //'belongsTo' => array('Comment'),
+                    'hasMany' => array('Comment'),
+                )
+        );
+        
+        $this->Story->recursive = 2;
+        $this->Paginator->settings = array(
+            // 'conditions' => array('Recipe.title LIKE' => 'a%'),
+            'limit' => 8
+        );
+
+        $conditions = array(
+            'Story.approved_post' => 1,
+        );
+        $this->Paginator->settings['conditions'] = $conditions;
+        $this->Paginator->settings['order'] = 'Story.create_date DESC';
+        $find_all = $this->Paginator->paginate('Story');
+
         $this->set('find_all', $find_all);
+        
+        if ($this->request->is('ajax')) {
+            $this->layout = 'ajax';
+            $view = new View($this, false);
+            $data = $view->render('ajax_story');
+            $view2 = new View($this, false);
+            $pagination = $view2->render('ajax_pagination');
+
+            echo json_encode(array('data' => $data, 'pagination' => $pagination));
+            exit;
+        } else {
+            $this->render('home');
+        }
+
+
+
+//        $find_all = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1)
+//            // , 'limit'=>4 
+//            , 'order' => array('Story.id' => 'DESC')));
+//        foreach ($find_all as $i => $k) {
+//            $find_all[$i]['Story']['image'] = Router::url("/" . $find_all[$i]['Story']['image'], true);
+//            $find_all[$i]['Story']['main_img'] = Router::url("/" . $find_all[$i]['Story']['main_img'], true);
+//        }
+//        $this->set('find_all', $find_all);
         /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -788,8 +842,9 @@ class UsersController extends AppController {
 
     public function trending() {
         $this->layout = 'home';
-
-        $find_live = $this->TrendingVideo->find('all');
+         $find_live = $this->TrendingVideo->find('all', array('conditions' => array(),
+            //  'limit' => 4, 
+            'order' => array('TrendingVideo.id' => 'DESC')));
         //$log = $this->TrendingVideo->getDataSource()->getLog(false, false);
         //debug($log);exit;
         $this->set('find_live', $find_live);
@@ -894,7 +949,7 @@ class UsersController extends AppController {
         if ($this->request->is('ajax')) {
             $category = $this->request->data['obj_name'];
             $ajax_find = $this->Story->find('all', array('conditions' => array('Story.id', 'Story.approved_post' => 1
-                    , 'Story.story_catogory' => $category), 'order' => array('Story.id' => 'DESC'), 'recursive' => -1));
+                    , 'Story.story_catogory' => $category), 'order' => array('Story.id' => 'DESC')));
 
             foreach ($ajax_find as $i => $j) {
                 $ajax_find[$i]['Story']['image'] = Router::url("/" . $ajax_find[$i]['Story']['image'], true);
@@ -1105,6 +1160,82 @@ class UsersController extends AppController {
         $find_video = $this->TrendingVideo->find('all', array('conditions' => array('TrendingVideo.user_id' => $find_user),'recursive'=>-1));
         $this->set('find_video', $find_video);
        
+    }
+   
+    function user_forgot() {
+        $this->layout = 'ajax';
+        $this->autoRender = false;
+        if ($this->request->is('ajax')) {
+            if ($this->request->is('post')) {
+                if ($this->request->data['User']['email'] != '') {
+                    $user = $this->User->find('first', array('conditions' => array('User.email' => $this->request->data['User']['email'])));
+                    if ($user) {
+                        $user_email = $user['User']['email'];
+                        $hash = md5(time() . rand(0, 9999));
+                        $link = Router::url(array('controller' => 'users', 'action' => 'home', 'hash' => $hash), true);
+                        $Email = new CakeEmail();
+                        $Email->config('gmail');
+                        $Email->subject('Password Reset');
+                        $Email->viewVars(array('link' => $link, 'email' => $user_email));
+                        $Email->template('forgot', 'default')
+                                ->emailFormat('html')
+                                ->to($user['User']['email'])
+                                ->from('vikas@developingnow.com')
+                                ->send();
+                        $arr = array();
+                        $arr['User']['forgot_hash'] = $hash;
+                        $arr['User']['forgot_expire'] = date('Y-m-d H:i:s', (time() + 24 * 60 * 60));
+                        $arr['User']['id'] = $user['User']['id'];
+
+                        $u = $this->User->save($arr);
+
+                        echo json_encode(array('status' => 'success', 'message' => 'Please check your email address for further instractions.'));
+                    } else {
+                        //$this->Flash->error(__(''));
+                        echo json_encode(array('status' => 'error', 'message' => 'Email address does not exist in our system, try again'));
+                    }
+                } else {
+                   // $arrr = array("status" => "failed", "message" => "Invalid email address, try again");
+                  //  echo json_encode($arrr);
+                     echo json_encode(array('status' => 'failed', 'message' => 'Invalid email address, try again'));
+                }
+            }
+        }
+    }
+    
+    public function password_reset() {
+        $this->layout = 'ajax';
+        $this->autoRender = false;
+        if ($this->request->is('ajax')) {
+            if (!empty($this->request->data)) {
+                if (isset($this->request->data['reset']['password1']) && $this->request->data['reset']['password1'] == '') {
+                    //$ar = array("status" => "error", "message" => "Please enter new passwrod");
+                    echo json_encode(array('status' => 'error', 'message' => 'Please enter new passwrod'));
+                    //echo json_encode($ar);
+                    exit;
+                } elseif ($this->request->data['reset']['password1'] != $this->request->data['reset']['password2']) {
+                   // $ar = array("status" => "error", "message" => "Confirm password is not correct");
+                     echo json_encode(array('status' => 'error', 'message' => 'Confirm password is not correct'));
+                   // echo json_encode($ar);
+                    exit;
+                }
+                $this->request->data['User']['password'] = AuthComponent::password($this->request->data['reset']['password1']);
+                $this->request->data['User']['forgot_hash'] = '';
+                $this->request->data['User']['forgot_expire'] = '';
+                $this->request->data['User']['id'] = $this->request->data['User']['id'];
+
+                if ($u = $this->User->save($this->request->data)) {
+                    $this->Flash->success('');
+                    echo json_encode(array('status' => 'success', 'message' => 'The password is successfully changed.'));
+                   // echo json_encode(array('status' => 'success', 'message' => 'The password is successfully changed'));
+                } else {
+                     echo json_encode(array('status' => 'failed', 'message' => '"There was an error during the save!'));
+                    //$ar = array("status" => "failed", "message" => "There was an error during the save!");
+                   // echo json_encode($ar);
+                }
+            }
+        }
+        exit;
     }
 
 }
