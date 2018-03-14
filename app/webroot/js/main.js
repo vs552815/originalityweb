@@ -49,7 +49,7 @@ jQuery(document).ready(function ($) {
     $('#checkLogin').on('click', function () {
         // var obj=$(this).attr('rel');
         var obj2 = $(this).attr('data-id');
-
+        var comment_box = $('#Comment_obj').val();
         var url = webURL + "users/checkLogin";
         $.ajax({
             type: "POST",
@@ -61,7 +61,13 @@ jQuery(document).ready(function ($) {
             {
                 console.info(data); // show response from the php script.
                 if (data.status == 'success') {
-                    var url = webURL + "users/story_comment/" + obj2;
+                   
+                    if (comment_box.length === 0) {
+                        alert('please enter something first');
+                        return false;
+                    } else {
+                         var url = webURL + "users/story_comment/" + obj2;
+                    }
                     $.ajax({
                         type: "POST",
                         url: url,
@@ -261,7 +267,55 @@ jQuery(document).ready(function ($) {
         });
         e.preventDefault(); // avoid to execute the actual submit of the form.        
     });
+    //////////////////////////////////////////////////////////////////////////////////////
+       $('#gamingcomment').on('click', function () {
+        // var obj=$(this).attr('rel');
+        var obj = $(this).attr('data-id');
+         var comment_text = $('#Comment_story').val();
+      //  alert(obj);return false;
+        var url = webURL + "users/checkLogin";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {}, // serializes the form's elements.
+            dataType: 'json',
+            context: this,
+            success: function (data)
+            {
+                console.info(data); // show response from the php script.
+                if (data.status == 'success') {
+                    if (comment_text.length === 0) {
+                        alert('please enter something first');
+                        return false;
+                    } else {
+                         var url2 = webURL + "users/gaming_comment/" + obj;
+                    }
+                   
+                   // alert(url2);return false;
+                    $.ajax({
+                        type: "POST",
+                        url: url2,
+                        data: {commentsolution: $('#Comment_story').val()}, // serializes the form's elements.
+                        dataType: 'json',
+                        context: this,
+                        success: function (data)
+                        {
+                            console.info(data); // show response from the php script.
+                            if (data.status == 'success') {
+                                location.reload();
+                            } else {
+                               location.reload();
+                            }
+                        }
+                    });
 
+                } else {
+                    $('.show-alert').show();
+                    // $('#LoginPopup').modal('show');
+                }
+            }
+        });
+    });
 
 
 });

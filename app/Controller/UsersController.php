@@ -17,7 +17,7 @@ class UsersController extends AppController {
 
     public $uses = array('Comment', 'LikeDislike', 'Story', 'User', 'Solution', 'SolutionImage', 'SolutionComment', 'LiveStream'
         , 'TrendingLikeDislike', 'TrendingVideo', 'TrendingVideoComment', 'VideoComment', 'VideoLikeDislike', 'YotubeProfile', 'UpcomingGame'
-        , 'GamingStory');
+        , 'GamingStory','GamingStoriesComment');
     //var $helpers = array('Sh');
     public $components = array('Pk');
 
@@ -28,7 +28,7 @@ class UsersController extends AppController {
 
         $this->Auth->allow('live_stream', 'checkLiveLogin', 'test', 'delete_userpost', 'approved_post', 'delete_mypost', 'create_post', 'home', 'ajax_login', 'checkLogin', 'readpost', 'registerCompany', 'delete_post', 'story_comment', 'gaming_questions', 'readsolution', 'question_comment'
                 , 'checkapi', 'view_live', 'trending', 'view_video', 'create_upcomeing', 'getdatabycategory', 'readstory', 'new_story', 'gaming_story'
-                , 'delete_userstory', 'approved_story','delete_video', 'password_reset','user_forgot','ajax_pagination','ajax_story');
+                , 'delete_userstory', 'approved_story','delete_video', 'password_reset','user_forgot','ajax_pagination','ajax_story','gaming_comment');
     }
 
     public function logout() {
@@ -1106,12 +1106,24 @@ class UsersController extends AppController {
             }
         }
 // print_r($id);exit;
+        //GamingStoriesComment
 
         $findmystory = $this->GamingStory->find('first', array('conditions' => array('GamingStory.id' => $id)));
         $findmystory['GamingStory']['image'] = Router::url("/" . $findmystory['GamingStory']['image'], true);
         $findmystory['GamingStory']['cover_image'] = Router::url("/" . $findmystory['GamingStory']['cover_image'], true);
         $this->set('meta_decscriptoi', $findmystory['GamingStory']['title']);
         $this->set('findmystory', $findmystory);
+
+        $findcomment = $this->GamingStoriesComment->find('all', array('conditions' => array('GamingStoriesComment.gaming_stories_id' => $id)));
+        foreach ($findcomment as $i => $j) {
+            //$findcomment[$i]['Comment']['created_date'] = PkComponent::timeAgoInWords($findcomment[$i]['Comment']['created_date']);
+            if ($findcomment[$i]['User']['profile_image'] != '') {
+                $findcomment[$i]['User']['profile_image'] = Router::url("/" . $findcomment[$i]['User']['profile_image'], true);
+            } else {
+                $findcomment[$i]['User']['profile_image'] = Router::url("/" . 'img/images/avatar.png', true);
+            }
+        }
+         $this->set('findcomment', $findcomment);
     }
 
     public function approved_story($id) {
@@ -1236,6 +1248,19 @@ class UsersController extends AppController {
             }
         }
         exit;
+    }
+    
+      public function gaming_comment($id) {
+        $user_id = $this->Auth->user('id');
+      
+        $arr['GamingStoriesComment']['comment'] = $this->request->data['commentsolution'];
+        $arr['GamingStoriesComment']['gaming_stories_id'] = $id;
+        $arr['GamingStoriesComment']['user_id'] = $user_id;
+        
+        if ($this->GamingStoriesComment->save($arr)) {
+            echo json_encode(array('status' => 'success', 'message' => 'The SolutionComment has been saved.'));
+            exit;
+        }exit;
     }
 
 }

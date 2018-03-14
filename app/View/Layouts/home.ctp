@@ -28,13 +28,17 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex,nofollow" />
-        <meta name="description" content="<?php if(empty($meta_decscriptoi)){echo "GameingHub is the leading source for PS4, PS4 Pro, Xbox One X, Xbox One, PS3, Xbox 360, Wii U, PS Vita, Wii, PC, 3DS,  previews, news, reviews, trailers, walkthroughs, movies, and more.";}else{echo $meta_decscriptoi ;}?>">
+        <meta name="description" content="<?php if (empty($meta_decscriptoi)) {
+            echo "GameingHub is the leading source for PS4, PS4 Pro, Xbox One X, Xbox One, PS3, Xbox 360, Wii U, PS Vita, Wii, PC, 3DS,  previews, news, reviews, trailers, walkthroughs, movies, and more.";
+        } else {
+            echo $meta_decscriptoi;
+        } ?>">
         <meta name="keywords" content="game,gaming,pc,ps4,graphic card,hack,crack,gaming crack,GameingHub,ps4 game,ps4 pro,xbox one,xbox s,GameingHub.com,www.GameingHub.com, Gameing Hub, original web">
-        
+
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <link rel="icon" type="image/png"  href="<?php echo $this->Html->url('/'); ?>img/601819.png">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300,400|Yellowtail" rel="stylesheet">
-<!--Provide featuring news, reviews, playthroughs, and more - Originalityweb-->
+        <!--Provide featuring news, reviews, playthroughs, and more - Originalityweb-->
         <?php
         echo $this->Html->css(array('bootstrap.min.css'));
         echo $this->Html->css(array('cover.css'));
@@ -50,10 +54,10 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         echo $this->Html->script('https://use.fontawesome.com/6a1b3d5e67.js');
         ?>
         <!--[if lt IE 9]>
-        <?php
-        echo $this->Html->script('https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js');
-        echo $this->Html->script('https://oss.maxcdn.com/respond/1.4.2/respond.min.js');
-        ?>
+<?php
+echo $this->Html->script('https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js');
+echo $this->Html->script('https://oss.maxcdn.com/respond/1.4.2/respond.min.js');
+?>
       <![endif]-->
 
         <?php
@@ -61,43 +65,45 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         echo $this->fetch('css');
         echo $this->fetch('script');
         ?>
-        
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81193898-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-81193898-6');
-</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81193898-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-5915063633225550",
-    enable_page_level_ads: true
-  });
-</script>
-  
+            gtag('config', 'UA-81193898-6');
+        </script>
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-5915063633225550",
+                enable_page_level_ads: true
+            });
+        </script>
+
     </head>
     <body style="    height: 100%;
           display: flex;
           display: -webkit-flex;
           flex-direction: column;
           -webkit-flex-direction: column;">
-          <?php //echo $this->Flash->render(); ?>
+             <?php //echo $this->Flash->render();  ?>
 
         <div style="background-color: #f4f4f4;    flex: 1 0 auto;
              -webkit-flex: 1 0 auto;
              min-height: 500px;">
-             <?php echo $this->element('header'); ?>
-             <?php echo $this->fetch('content'); ?>
-             <?php echo $this->element('modal'); ?>
-           
+        <?php echo $this->element('header'); ?>
+        <?php echo $this->fetch('content'); ?>
+        <?php echo $this->element('modal'); ?>
+
         </div>
-          <?php echo $this->element('footer'); ?>
+        <?php echo $this->element('footer'); ?>
         <?php
         echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js');
         //echo $this->Html->script('js-webshim/minified/polyfiller.js');
@@ -119,59 +125,90 @@ $cakeDescription = __d('cake_dev', 'SecurityHorse');
         </style>
 
 
-        <?php echo $this->Html->script(array('https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js'));
-        ?>
-        
-      
+<?php echo $this->Html->script(array('https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js'));
+?>
+
+
 
         <script type="text/javascript">
-            var webURL = '<?php echo $this->Html->url('/'); ?>'
-            
-            ///////////////////////////////////////////////////////////this for iphone model jumping modal
-if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-    $('.modal').on('show.bs.modal', function () {
-        $(this)
-                .css({
+    var webURL = '<?php echo $this->Html->url('/'); ?>'
+
+    ///////////////////////////////////////////////////////////this for iphone model jumping modal
+    if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+        $('.modal').on('show.bs.modal', function () {
+            $(this)
+                    .css({
+                        position: 'absolute',
+                        marginTop: $(window).scrollTop() + 'px',
+                        bottom: 'auto'
+                    });
+            setTimeout(function () {
+                $('.modal-backdrop').css({
                     position: 'absolute',
-                    marginTop: $(window).scrollTop() + 'px',
-                    bottom: 'auto'
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: Math.max(
+                            document.body.scrollHeight, document.documentElement.scrollHeight,
+                            document.body.offsetHeight, document.documentElement.offsetHeight,
+                            document.body.clientHeight, document.documentElement.clientHeight
+                            ) + 'px'
                 });
-        setTimeout(function () {
-            $('.modal-backdrop').css({
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: Math.max(
-                        document.body.scrollHeight, document.documentElement.scrollHeight,
-                        document.body.offsetHeight, document.documentElement.offsetHeight,
-                        document.body.clientHeight, document.documentElement.clientHeight
-                        ) + 'px'
-            });
-        }, 0);
-    });
-}
-            
-            
-            
+            }, 0);
+        });
+    }
+
+
+
         </script>
-        <?php echo $this->Html->script(array('main.js')); ?>
-        <?php echo $this->Html->script(array('bootstrap-timepicker.min.js')); ?>
+<?php echo $this->Html->script(array('main.js')); ?>
+<?php echo $this->Html->script(array('bootstrap-timepicker.min.js')); ?>
         <?php echo $this->Html->script(array('jquery.countdown.min.js')); ?>
 
         <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
         <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
         <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a943b2fe28d380013fe528d&product=inline-share-buttons"></script>
-
+<?php
+echo $this->Html->script(array('https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'));
+echo $this->Html->css(array('https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'));
+?>
         <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#textbottom').summernote({
+            toolbar: [
+                // [groupName, [list of button]]
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video', 'hr']],
+                ['view', ['fullscreen', 'codeview']],
+            ],
+
             tabsize: 2,
-        height: 250
+            height: 250,
+
         });
     });
+    //////////////////////////
+    $(document).ready(function () {
+        var owl = $("#owl-demo");
+        owl.owlCarousel({
+            autoPlay: false,
+            items: 3, //10 items above 1000px browser width
+            itemsDesktop: [1000, 4], //5 items between 1000px and 901px
+            itemsDesktopSmall: [900, 3], // 3 items betweem 900px and 601px
+            itemsTablet: [600, 1], //2 items between 600 and 0;
+            itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination: false
+        });
+
+    });
         </script>
-        
+
 
 
     </body>

@@ -739,3 +739,31 @@ span.tip-name{position:absolute;left:-190px;background-color:#c44848;color:#fff;
     a.vimeo i,.vimeo h4.list-group-item-heading { color:#44bbff; }
     a.vimeo:hover { background-color:#44bbff; }
     a.vimeo:hover * { color:#FFF; }
+    
+     #owl-demo .item{
+        margin: 3px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+    }
+	#owl-demo .item img{
+		width:100%;
+/*		height:300px;*/
+	}
+    .customNavigation{
+      text-align: right;
+	  margin-top:10px;
+	  margin-bottom:3px;
+	  padding-bottom:3px;
+	  border-bottom:2px solid #333;
+    }
+    .customNavigation a{
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }

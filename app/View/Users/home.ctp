@@ -73,6 +73,13 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
         <div class="alert alert-success">  <span>Upcoming Games</span></div>
 
         <div class="col-md-8">
+<!--              <div id="owl-demo" class="owl-carousel">
+                    <?php //foreach ($arr as $item) { ?>
+                        <div class="item">
+                           
+                        </div>
+                    <?php//} ?>
+                </div>-->
             <!-- begin panel group -->
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
@@ -146,7 +153,7 @@ echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jq
                             <div class="title">
 
                                 <a  href="<?php echo $this->Html->url(array('action' => 'readstory', 'controller' => 'users', 'mystoryslug' => $story['GamingStory']['gaming_slug'])); ?>">
-                                    <?php echo strip_tags($story['Story']['title']); ?>
+                                    <?php echo strip_tags($story['GamingStory']['title']); ?>
                                 </a>
                             </div>
                             <div class="desc">Posted by: <?php echo strip_tags($story['User']['fullname']); ?></div>
